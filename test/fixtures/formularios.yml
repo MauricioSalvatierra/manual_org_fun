@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  area_id: 1
+  usuario_id: 1
+  objectivo_area_funcional: MyText
+  descripcion_funcion_principal: MyText
+  descripcion_funciones_especificas: MyText
+  relaciones_coordinacion_interna: MyText
+  relacionamiento_interinstitucional: MyText
+  fecha_aprovacion: 2009-07-08
+  fecha_actualizacion: 2009-07-08
+
+two:
+  area_id: 1
+  usuario_id: 1
+  objectivo_area_funcional: MyText
+  descripcion_funcion_principal: MyText
+  descripcion_funciones_especificas: MyText
+  relaciones_coordinacion_interna: MyText
+  relacionamiento_interinstitucional: MyText
+  fecha_aprovacion: 2009-07-08
+  fecha_actualizacion: 2009-07-08

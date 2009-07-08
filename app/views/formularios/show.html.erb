@@ -1,0 +1,48 @@
+<p>
+  <b>Area:</b>
+  <%=h @formulario.area_id %>
+</p>
+
+<p>
+  <b>Usuario:</b>
+  <%=h @formulario.usuario_id %>
+</p>
+
+<p>
+  <b>Objectivo area funcional:</b>
+  <%=h @formulario.objectivo_area_funcional %>
+</p>
+
+<p>
+  <b>Descripcion funcion principal:</b>
+  <%=h @formulario.descripcion_funcion_principal %>
+</p>
+
+<p>
+  <b>Descripcion funciones especificas:</b>
+  <%=h @formulario.descripcion_funciones_especificas %>
+</p>
+
+<p>
+  <b>Relaciones coordinacion interna:</b>
+  <%=h @formulario.relaciones_coordinacion_interna %>
+</p>
+
+<p>
+  <b>Relacionamiento interinstitucional:</b>
+  <%=h @formulario.relacionamiento_interinstitucional %>
+</p>
+
+<p>
+  <b>Fecha aprovacion:</b>
+  <%=h @formulario.fecha_aprovacion %>
+</p>
+
+<p>
+  <b>Fecha actualizacion:</b>
+  <%=h @formulario.fecha_actualizacion %>
+</p>
+
+
+<%= link_to 'Edit', edit_formulario_path(@formulario) %> |
+<%= link_to 'Back', formularios_path %>

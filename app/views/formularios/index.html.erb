@@ -1,0 +1,36 @@
+<h1>Listing formularios</h1>
+
+<table>
+  <tr>
+    <th>Area</th>
+    <th>Usuario</th>
+    <th>Objectivo area funcional</th>
+    <th>Descripcion funcion principal</th>
+    <th>Descripcion funciones especificas</th>
+    <th>Relaciones coordinacion interna</th>
+    <th>Relacionamiento interinstitucional</th>
+    <th>Fecha aprovacion</th>
+    <th>Fecha actualizacion</th>
+  </tr>
+
+<% @formularios.each do |formulario| %>
+  <tr>
+    <td><%=h formulario.area_id %></td>
+    <td><%=h formulario.usuario_id %></td>
+    <td><%=h formulario.objectivo_area_funcional %></td>
+    <td><%=h formulario.descripcion_funcion_principal %></td>
+    <td><%=h formulario.descripcion_funciones_especificas %></td>
+    <td><%=h formulario.relaciones_coordinacion_interna %></td>
+    <td><%=h formulario.relacionamiento_interinstitucional %></td>
+    <td><%=h formulario.fecha_aprovacion %></td>
+    <td><%=h formulario.fecha_actualizacion %></td>
+    <td><%= link_to 'Show', formulario %></td>
+    <td><%= link_to 'Edit', edit_formulario_path(formulario) %></td>
+    <td><%= link_to 'Destroy', formulario, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New formulario', new_formulario_path %>

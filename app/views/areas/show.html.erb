@@ -1,0 +1,33 @@
+<p>
+  <b>Parent:</b>
+  <%=h @area.parent_id %>
+</p>
+
+<p>
+  <b>Nombre:</b>
+  <%=h @area.nombre %>
+</p>
+
+<p>
+  <b>Tipo:</b>
+  <%=h @area.tipo_id %>
+</p>
+
+<p>
+  <b>Nivel:</b>
+  <%=h @area.nivel_id %>
+</p>
+
+<p>
+  <b>Lft:</b>
+  <%=h @area.lft %>
+</p>
+
+<p>
+  <b>Rgt:</b>
+  <%=h @area.rgt %>
+</p>
+
+
+<%= link_to 'Edit', edit_area_path(@area) %> |
+<%= link_to 'Back', areas_path %>

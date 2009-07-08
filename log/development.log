@@ -1,0 +1,1406 @@
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-08 10:59:01) [GET]
+
+ActionController::RoutingError (No route matches "/documentos" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-08 11:02:33) [GET]
+
+ActionController::RoutingError (No route matches "/documentos" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-08 11:02:36) [GET]
+
+ActionController::RoutingError (No route matches "/documentos" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-08 11:02:37) [GET]
+
+ActionController::RoutingError (No route matches "/documentos" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-08 11:02:37) [GET]
+
+ActionController::RoutingError (No route matches "/documentos" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-08 11:02:37) [GET]
+
+ActionController::RoutingError (No route matches "/documentos" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-08 11:02:37) [GET]
+
+ActionController::RoutingError (No route matches "/documentos" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-08 11:02:37) [GET]
+
+ActionController::RoutingError (No route matches "/documentos" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-08 11:02:38) [GET]
+
+ActionController::RoutingError (No route matches "/documentos" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-08 11:02:38) [GET]
+
+ActionController::RoutingError (No route matches "/documentos" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-08 11:02:38) [GET]
+
+ActionController::RoutingError (No route matches "/documentos" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-08 11:02:38) [GET]
+
+ActionController::RoutingError (No route matches "/documentos" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-08 11:02:38) [GET]
+
+ActionController::RoutingError (No route matches "/documentos" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-08 11:02:38) [GET]
+
+ActionController::RoutingError (No route matches "/documentos" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-08 11:02:38) [GET]
+
+ActionController::RoutingError (No route matches "/documentos" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-08 11:02:39) [GET]
+
+ActionController::RoutingError (No route matches "/documentos" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-08 11:02:39) [GET]
+
+ActionController::RoutingError (No route matches "/documentos" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-08 11:02:39) [GET]
+
+ActionController::RoutingError (No route matches "/documentos" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-08 11:02:39) [GET]
+
+ActionController::RoutingError (No route matches "/documentos" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-08 11:07:49) [GET]
+
+ActionController::RoutingError (No route matches "/documentos" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:08:58) [GET]
+Rendering documentos/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #13 of app/views/documentos/index.html.erb:
+10:     <th class="ui-state-default"></th>
+11:   </tr>
+12: 
+13: <% @items.each do |item| %>
+14:   <tr>
+15:     <td><%=h item.partida %></td>
+16:     <td><%=h item.codigo %></td>
+
+    app/views/documentos/index.html.erb:13
+    app/controllers/documentos_controller.rb:3:in `index'
+
+Rendered rescues/_trace (106.4ms)
+Rendered rescues/_request_and_response (15.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:11:52) [GET]
+Rendering documentos/index
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:13:04) [GET]
+Rendering documentos/index
+Completed in 14ms (View: 7, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:13:06) [GET]
+Rendering documentos/index
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:13:07) [GET]
+Rendering documentos/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:18:18) [GET]
+Rendering documentos/index
+Completed in 17ms (View: 10, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:19:09) [GET]
+Rendering documentos/index
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:19:11) [GET]
+Rendering documentos/index
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:19:12) [GET]
+Rendering documentos/index
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:19:27) [GET]
+Rendering documentos/index
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:20:08) [GET]
+Rendering documentos/index
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:20:10) [GET]
+Rendering documentos/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:24:53) [GET]
+Rendering documentos/index
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:25:19) [GET]
+Rendering documentos/index
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:26:11) [GET]
+Rendering documentos/index
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:32:45) [GET]
+Rendering documentos/index
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:38:17) [GET]
+Rendering documentos/index
+Completed in 115ms (View: 108, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:38:19) [GET]
+Rendering documentos/index
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:42:35) [GET]
+Rendering documentos/index
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:42:36) [GET]
+Rendering documentos/index
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:43:05) [GET]
+Rendering documentos/index
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:43:33) [GET]
+Rendering documentos/index
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:43:33) [GET]
+Rendering documentos/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:48:41) [GET]
+Rendering documentos/index
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:49:47) [GET]
+Rendering documentos/index
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:50:27) [GET]
+Rendering documentos/index
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:50:28) [GET]
+Rendering documentos/index
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:50:52) [GET]
+Rendering documentos/index
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:50:54) [GET]
+Rendering documentos/index
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:50:55) [GET]
+Rendering documentos/index
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:51:26) [GET]
+Rendering documentos/index
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:51:47) [GET]
+Rendering documentos/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:51:49) [GET]
+Rendering documentos/index
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:51:49) [GET]
+Rendering documentos/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:52:29) [GET]
+Rendering documentos/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:52:30) [GET]
+Rendering documentos/index
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:52:30) [GET]
+Rendering documentos/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:52:30) [GET]
+Rendering documentos/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:52:30) [GET]
+Rendering documentos/index
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:52:30) [GET]
+Rendering documentos/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:52:31) [GET]
+Rendering documentos/index
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:52:31) [GET]
+Rendering documentos/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:52:31) [GET]
+Rendering documentos/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:52:31) [GET]
+Rendering documentos/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:52:32) [GET]
+Rendering documentos/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:52:32) [GET]
+Rendering documentos/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:52:32) [GET]
+Rendering documentos/index
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:52:32) [GET]
+Rendering documentos/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:53:11) [GET]
+Rendering documentos/index
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:53:32) [GET]
+Rendering documentos/index
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://localhost/documentos]
+
+
+Processing DocumentosController#index (for 127.0.0.1 at 2009-07-08 11:53:34) [GET]
+Rendering documentos/index
+Completed in 8ms (View: 1, DB: 0) | 200 OK [http://localhost/documentos]
+/!\ FAILSAFE /!\  Wed Jul 08 14:42:31 -0400 2009
+  Status: 500 Internal Server Error
+  No such file or directory - /home/desarrollo2/dev/ruby/manual/config/routes.rb
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:297:in `stat'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:297:in `routes_changed_at'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:296:in `each'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:296:in `routes_changed_at'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:274:in `reload'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:59:in `reload_application'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:8:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+    /usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Wed Jul 08 15:06:29 -0400 2009
+  Status: 500 Internal Server Error
+  No such file or directory - /home/desarrollo2/dev/ruby/manual/config/routes.rb
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:297:in `stat'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:297:in `routes_changed_at'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:296:in `each'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:296:in `routes_changed_at'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:274:in `reload'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:59:in `reload_application'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:8:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+    /usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+  [4;36;1mSQL (8.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (46.8ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (10.7ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTipos (20090708162603)
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCREATE TABLE "tipos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090708162603')[0m
+Migrating to CreateNiveles (20090708162807)
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCREATE TABLE "niveles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090708162807')[0m
+Migrating to CreateAreas (20090708162944)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCREATE TABLE "areas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "nombre" varchar(255), "tipo_id" integer, "nivel_id" integer, "lft" integer, "rgt" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090708162944')[0m
+Migrating to CreateFormularios (20090708163210)
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCREATE TABLE "formularios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "area_id" integer, "usuario_id" integer, "objectivo_area_funcional" text, "descripcion_funcion_principal" text, "descripcion_funciones_especificas" text, "relaciones_coordinacion_interna" text, "relacionamiento_interinstitucional" text, "fecha_aprovacion" date, "fecha_actualizacion" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090708163210')[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("areas")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("formularios")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("niveles")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("tipos")[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT max("areas".rgt) AS max_rgt FROM "areas" [0m
+  [4;36;1mArea Create (0.5ms)[0m   [0;1mINSERT INTO "areas" ("created_at", "nombre", "updated_at", "nivel_id", "lft", "tipo_id", "parent_id", "rgt") VALUES('2009-07-08 20:12:55', 'Despacho Ministro', '2009-07-08 20:12:55', NULL, 1, NULL, NULL, 2)[0m
+  [4;35;1mArea Load (0.8ms)[0m   [0mSELECT * FROM "areas" [0m
+WARNING: Can't mass-assign these protected attributes: parent_id
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT max("areas".rgt) AS max_rgt FROM "areas" [0m
+  [4;35;1mArea Create (0.5ms)[0m   [0mINSERT INTO "areas" ("created_at", "nombre", "updated_at", "nivel_id", "lft", "tipo_id", "parent_id", "rgt") VALUES('2009-07-08 20:15:25', 'Viceministro de Exploracion y Explotacion de Hidrocarburos', '2009-07-08 20:15:25', NULL, 3, NULL, NULL, 4)[0m
+  [4;36;1mArea Load (0.8ms)[0m   [0;1mSELECT * FROM "areas" LIMIT 1[0m
+  [4;35;1mArea Load (0.8ms)[0m   [0mSELECT * FROM "areas" LIMIT 1[0m
+  [4;36;1mArea Load (0.5ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."parent_id" = 1) ORDER BY "lft"[0m
+  [4;35;1mArea Load (0.9ms)[0m   [0mSELECT * FROM "areas" ORDER BY areas.id DESC LIMIT 1[0m
+  [4;36;1mArea Load (1.3ms)[0m   [0;1mSELECT * FROM "areas" ORDER BY areas.id DESC LIMIT 1[0m
+  [4;35;1mArea Load (19.5ms)[0m   [0mSELECT * FROM "areas" ORDER BY areas.id DESC LIMIT 1[0m
+  [4;36;1mArea Load (0.8ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY "lft"[0m
+  [4;35;1mArea Load (0.4ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 2) [0m
+  [4;36;1mArea Update (19.9ms)[0m   [0;1mUPDATE "areas" SET "lft" = CASE WHEN "lft" BETWEEN 2 AND 2 THEN "lft" + 4 - 2 WHEN "lft" BETWEEN 3 AND 4 THEN "lft" + 2 - 3 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 2 AND 2 THEN "rgt" + 4 - 2 WHEN "rgt" BETWEEN 3 AND 4 THEN "rgt" + 2 - 3 ELSE "rgt" END, "parent_id" = CASE WHEN id = 2 THEN 1 ELSE "parent_id" END [0m
+  [4;35;1mArea Load (0.5ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 1) [0m
+  [4;36;1mArea Load (0.5ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 2) [0m
+  [4;35;1mArea Load (1.0ms)[0m   [0mSELECT * FROM "areas" LIMIT 1[0m
+  [4;36;1mArea Load (0.8ms)[0m   [0;1mSELECT * FROM "areas" LIMIT 1[0m
+  [4;35;1mArea Load (10.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."parent_id" = 1) ORDER BY "lft"[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT max("areas".rgt) AS max_rgt FROM "areas" [0m
+  [4;35;1mArea Create (0.5ms)[0m   [0mINSERT INTO "areas" ("created_at", "nombre", "updated_at", "nivel_id", "lft", "tipo_id", "parent_id", "rgt") VALUES('2009-07-08 20:18:56', 'Direccion General de Exploracion y Explotacion de Hidrocarburos', '2009-07-08 20:18:56', NULL, 5, NULL, NULL, 6)[0m
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY "lft"[0m
+  [4;35;1mArea Load (0.4ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 3) [0m
+  [4;36;1mArea Update (0.5ms)[0m   [0;1mUPDATE "areas" SET "lft" = CASE WHEN "lft" BETWEEN 3 AND 4 THEN "lft" + 6 - 4 WHEN "lft" BETWEEN 5 AND 6 THEN "lft" + 3 - 5 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 3 AND 4 THEN "rgt" + 6 - 4 WHEN "rgt" BETWEEN 5 AND 6 THEN "rgt" + 3 - 5 ELSE "rgt" END, "parent_id" = CASE WHEN id = 3 THEN 2 ELSE "parent_id" END [0m
+  [4;35;1mArea Load (0.5ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 2) [0m
+  [4;36;1mArea Load (0.5ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 3) [0m
+  [4;35;1mArea Load (0.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 2) [0m
+  [4;36;1mArea Load (0.8ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) [0m
+  [4;35;1mArea Load (0.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."parent_id" = 2) ORDER BY "lft"[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT max("areas".rgt) AS max_rgt FROM "areas" [0m
+  [4;35;1mArea Create (0.5ms)[0m   [0mINSERT INTO "areas" ("created_at", "nombre", "updated_at", "nivel_id", "lft", "tipo_id", "parent_id", "rgt") VALUES('2009-07-08 20:19:43', 'Unidad de Explotacion', '2009-07-08 20:19:43', NULL, 7, NULL, NULL, 8)[0m
+  [4;36;1mArea Load (0.8ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY "lft"[0m
+  [4;35;1mArea Load (0.4ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 4) [0m
+  [4;36;1mArea Update (0.5ms)[0m   [0;1mUPDATE "areas" SET "lft" = CASE WHEN "lft" BETWEEN 4 AND 6 THEN "lft" + 8 - 6 WHEN "lft" BETWEEN 7 AND 8 THEN "lft" + 4 - 7 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 4 AND 6 THEN "rgt" + 8 - 6 WHEN "rgt" BETWEEN 7 AND 8 THEN "rgt" + 4 - 7 ELSE "rgt" END, "parent_id" = CASE WHEN id = 4 THEN 3 ELSE "parent_id" END [0m
+  [4;35;1mArea Load (0.6ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 3) [0m
+  [4;36;1mArea Load (269.9ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 4) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT max("areas".rgt) AS max_rgt FROM "areas" [0m
+  [4;36;1mArea Create (0.4ms)[0m   [0;1mINSERT INTO "areas" ("created_at", "nombre", "updated_at", "nivel_id", "lft", "tipo_id", "parent_id", "rgt") VALUES('2009-07-08 20:20:17', 'Unidad de Exploracion', '2009-07-08 20:20:17', NULL, 9, NULL, NULL, 10)[0m
+  [4;35;1mArea Load (0.8ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY "lft"[0m
+  [4;36;1mArea Load (0.4ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 5) [0m
+  [4;35;1mArea Update (0.5ms)[0m   [0mUPDATE "areas" SET "lft" = CASE WHEN "lft" BETWEEN 6 AND 8 THEN "lft" + 10 - 8 WHEN "lft" BETWEEN 9 AND 10 THEN "lft" + 6 - 9 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 6 AND 8 THEN "rgt" + 10 - 8 WHEN "rgt" BETWEEN 9 AND 10 THEN "rgt" + 6 - 9 ELSE "rgt" END, "parent_id" = CASE WHEN id = 5 THEN 3 ELSE "parent_id" END [0m
+  [4;36;1mArea Load (0.5ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 3) [0m
+  [4;35;1mArea Load (0.5ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 5) [0m
+  [4;36;1mArea Load (1.1ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 3) [0m
+  [4;35;1mArea Load (0.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 3) [0m
+  [4;36;1mArea Load (1.2ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."parent_id" = 3) ORDER BY "lft"[0m
+  [4;35;1mArea Load (1.0ms)[0m   [0mSELECT * FROM "areas" ORDER BY areas.id DESC LIMIT 1[0m
+  [4;36;1mArea Load (1.3ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 3) [0m
+  [4;35;1mArea Load (1.2ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."parent_id" = 3) ORDER BY "lft"[0m
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 5) [0m
+  [4;35;1mArea Load (0.8ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 4) ORDER BY "lft"[0m
+  [4;36;1mArea Load (0.4ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 5) [0m
+  [4;35;1mArea Update (0.5ms)[0m   [0mUPDATE "areas" SET "lft" = CASE WHEN "lft" BETWEEN 4 AND 5 THEN "lft" + 7 - 5 WHEN "lft" BETWEEN 6 AND 7 THEN "lft" + 4 - 6 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 4 AND 5 THEN "rgt" + 7 - 5 WHEN "rgt" BETWEEN 6 AND 7 THEN "rgt" + 4 - 6 ELSE "rgt" END, "parent_id" = CASE WHEN id = 5 THEN 3 ELSE "parent_id" END [0m
+  [4;36;1mArea Load (0.5ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 4) [0m
+  [4;35;1mArea Load (0.5ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 5) [0m
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 3) [0m
+  [4;35;1mArea Load (1.2ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."parent_id" = 3) ORDER BY "lft"[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (58.5ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (38.7ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTipos (20090708162603)
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCREATE TABLE "tipos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090708162603')[0m
+Migrating to CreateNiveles (20090708162807)
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCREATE TABLE "niveles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090708162807')[0m
+Migrating to CreateAreas (20090708162944)
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE TABLE "areas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "nombre" varchar(255), "tipo_id" integer, "nivel_id" integer, "lft" integer, "rgt" integer, "activo" boolean, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090708162944')[0m
+Migrating to CreateFormularios (20090708163210)
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCREATE TABLE "formularios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "area_id" integer, "usuario_id" integer, "objectivo_area_funcional" text, "descripcion_funcion_principal" text, "descripcion_funciones_especificas" text, "relaciones_coordinacion_interna" text, "relacionamiento_interinstitucional" text, "fecha_aprovacion" date, "fecha_actualizacion" date, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090708163210')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("areas")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("formularios")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("niveles")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("tipos")[0m
+  [4;36;1mArea Load (2.7ms)[0m   [0;1mSELECT * FROM "areas" [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT max("areas".rgt) AS max_rgt FROM "areas" [0m
+  [4;36;1mArea Create (0.6ms)[0m   [0;1mINSERT INTO "areas" ("created_at", "nombre", "updated_at", "nivel_id", "lft", "tipo_id", "parent_id", "rgt", "activo") VALUES('2009-07-08 20:29:32', 'VM', '2009-07-08 20:29:32', NULL, 11, NULL, NULL, 12, 'f')[0m
+  [4;35;1mArea Load (0.8ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY "lft"[0m
+  [4;36;1mArea Load (0.5ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 6) [0m
+  [4;35;1mArea Update (0.6ms)[0m   [0mUPDATE "areas" SET "lft" = CASE WHEN "lft" BETWEEN 10 AND 10 THEN "lft" + 12 - 10 WHEN "lft" BETWEEN 11 AND 12 THEN "lft" + 10 - 11 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 10 AND 10 THEN "rgt" + 12 - 10 WHEN "rgt" BETWEEN 11 AND 12 THEN "rgt" + 10 - 11 ELSE "rgt" END, "parent_id" = CASE WHEN id = 6 THEN 1 ELSE "parent_id" END [0m
+  [4;36;1mArea Load (0.5ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 1) [0m
+  [4;35;1mArea Load (0.5ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 6) [0m
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" LIMIT 1[0m
+  [4;35;1mArea Load (1.3ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."parent_id" = 1) ORDER BY "lft"[0m
+  [4;36;1mArea Load (1.1ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 6) [0m
+  [4;35;1mArea Load (0.8ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY "lft"[0m
+  [4;36;1mArea Load (0.8ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 6) [0m
+  [4;35;1mArea Update (0.6ms)[0m   [0mUPDATE "areas" SET "lft" = CASE WHEN "lft" BETWEEN 2 AND 9 THEN "lft" + 11 - 9 WHEN "lft" BETWEEN 10 AND 11 THEN "lft" + 2 - 10 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 2 AND 9 THEN "rgt" + 11 - 9 WHEN "rgt" BETWEEN 10 AND 11 THEN "rgt" + 2 - 10 ELSE "rgt" END, "parent_id" = CASE WHEN id = 6 THEN 1 ELSE "parent_id" END [0m
+  [4;36;1mArea Load (0.6ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 2) [0m
+  [4;35;1mArea Load (0.5ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 6) [0m
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" LIMIT 1[0m
+  [4;35;1mArea Load (1.3ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."parent_id" = 1) ORDER BY "lft"[0m
+  [4;36;1mArea Load (1.0ms)[0m   [0;1mSELECT * FROM "areas" ORDER BY areas.id DESC LIMIT 1[0m
+  [4;35;1mArea Load (0.9ms)[0m   [0mSELECT * FROM "areas" ORDER BY areas.id DESC LIMIT 1[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT max("areas".rgt) AS max_rgt FROM "areas" [0m
+  [4;35;1mArea Create (0.5ms)[0m   [0mINSERT INTO "areas" ("created_at", "nombre", "updated_at", "nivel_id", "lft", "tipo_id", "parent_id", "rgt", "activo") VALUES('2009-07-08 20:31:37', 'Dir', '2009-07-08 20:31:37', NULL, 13, NULL, NULL, 14, 'f')[0m
+  [4;36;1mArea Load (0.6ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 6) [0m
+  [4;35;1mArea Load (0.5ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 7) [0m
+  [4;36;1mArea Update (0.8ms)[0m   [0;1mUPDATE "areas" SET "lft" = CASE WHEN "lft" BETWEEN 3 AND 12 THEN "lft" + 14 - 12 WHEN "lft" BETWEEN 13 AND 14 THEN "lft" + 3 - 13 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 3 AND 12 THEN "rgt" + 14 - 12 WHEN "rgt" BETWEEN 13 AND 14 THEN "rgt" + 3 - 13 ELSE "rgt" END, "parent_id" = CASE WHEN id = 7 THEN 6 ELSE "parent_id" END [0m
+  [4;35;1mArea Load (0.5ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 6) [0m
+  [4;36;1mArea Load (0.5ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 7) [0m
+  [4;35;1mArea Load (1.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."parent_id" = 6) ORDER BY "lft"[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT max("areas".rgt) AS max_rgt FROM "areas" [0m
+  [4;35;1mArea Create (0.5ms)[0m   [0mINSERT INTO "areas" ("created_at", "nombre", "updated_at", "nivel_id", "lft", "tipo_id", "parent_id", "rgt", "activo") VALUES('2009-07-08 20:33:09', 'Unidad de Comunicacion Social', '2009-07-08 20:33:09', NULL, 15, NULL, NULL, 16, 't')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT max("areas".rgt) AS max_rgt FROM "areas" [0m
+  [4;35;1mArea Create (0.5ms)[0m   [0mINSERT INTO "areas" ("created_at", "nombre", "updated_at", "nivel_id", "lft", "tipo_id", "parent_id", "rgt", "activo") VALUES('2009-07-08 20:33:21', 'Unidad de Comunicacion Social', '2009-07-08 20:33:21', NULL, 17, NULL, NULL, 18, 't')[0m
+  [4;36;1mArea Load (0.5ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 6) [0m
+  [4;35;1mArea Load (0.4ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 9) [0m
+  [4;36;1mArea Update (0.6ms)[0m   [0;1mUPDATE "areas" SET "lft" = CASE WHEN "lft" BETWEEN 5 AND 16 THEN "lft" + 18 - 16 WHEN "lft" BETWEEN 17 AND 18 THEN "lft" + 5 - 17 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 5 AND 16 THEN "rgt" + 18 - 16 WHEN "rgt" BETWEEN 17 AND 18 THEN "rgt" + 5 - 17 ELSE "rgt" END, "parent_id" = CASE WHEN id = 9 THEN 6 ELSE "parent_id" END [0m
+  [4;35;1mArea Load (0.6ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 6) [0m
+  [4;36;1mArea Load (0.6ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 9) [0m
+  [4;35;1mArea Load (1.5ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."parent_id" = 6) ORDER BY "lft"[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT max("areas".rgt) AS max_rgt FROM "areas" [0m
+  [4;35;1mArea Create (2.4ms)[0m   [0mINSERT INTO "areas" ("created_at", "nombre", "updated_at", "nivel_id", "lft", "tipo_id", "parent_id", "rgt", "activo") VALUES('2009-07-08 20:33:50', 'Unidad de Auditoria Interna', '2009-07-08 20:33:50', NULL, 19, NULL, NULL, 20, 't')[0m
+  [4;36;1mArea Load (0.6ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 6) [0m
+  [4;35;1mArea Load (0.4ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 10) [0m
+  [4;36;1mArea Update (0.6ms)[0m   [0;1mUPDATE "areas" SET "lft" = CASE WHEN "lft" BETWEEN 7 AND 18 THEN "lft" + 20 - 18 WHEN "lft" BETWEEN 19 AND 20 THEN "lft" + 7 - 19 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 7 AND 18 THEN "rgt" + 20 - 18 WHEN "rgt" BETWEEN 19 AND 20 THEN "rgt" + 7 - 19 ELSE "rgt" END, "parent_id" = CASE WHEN id = 10 THEN 6 ELSE "parent_id" END [0m
+  [4;35;1mArea Load (0.7ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 6) [0m
+  [4;36;1mArea Load (0.7ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 10) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT max("areas".rgt) AS max_rgt FROM "areas" [0m
+  [4;36;1mArea Create (2.1ms)[0m   [0;1mINSERT INTO "areas" ("created_at", "nombre", "updated_at", "nivel_id", "lft", "tipo_id", "parent_id", "rgt", "activo") VALUES('2009-07-08 20:34:08', 'Unidad de Transparencia', '2009-07-08 20:34:08', NULL, 21, NULL, NULL, 22, 't')[0m
+  [4;35;1mArea Load (0.8ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 6) [0m
+  [4;36;1mArea Load (0.6ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 11) [0m
+  [4;35;1mArea Update (0.6ms)[0m   [0mUPDATE "areas" SET "lft" = CASE WHEN "lft" BETWEEN 9 AND 20 THEN "lft" + 22 - 20 WHEN "lft" BETWEEN 21 AND 22 THEN "lft" + 9 - 21 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 9 AND 20 THEN "rgt" + 22 - 20 WHEN "rgt" BETWEEN 21 AND 22 THEN "rgt" + 9 - 21 ELSE "rgt" END, "parent_id" = CASE WHEN id = 11 THEN 6 ELSE "parent_id" END [0m
+  [4;36;1mArea Load (0.7ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 6) [0m
+  [4;35;1mArea Load (0.5ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 11) [0m
+  [4;36;1mArea Load (2.2ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" IS NULL) [0m
+  [4;35;1mArea Load (2.2ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" IS NULL) [0m
+  [4;36;1mArea Update (0.5ms)[0m   [0;1mUPDATE "areas" SET "updated_at" = '2009-07-08 20:35:57', "activo" = 't' WHERE "id" = 1[0m
+  [4;35;1mArea Update (0.4ms)[0m   [0mUPDATE "areas" SET "updated_at" = '2009-07-08 20:35:57', "activo" = 't' WHERE "id" = 2[0m
+  [4;36;1mArea Update (0.6ms)[0m   [0;1mUPDATE "areas" SET "updated_at" = '2009-07-08 20:35:57', "activo" = 't' WHERE "id" = 3[0m
+  [4;35;1mArea Update (0.4ms)[0m   [0mUPDATE "areas" SET "updated_at" = '2009-07-08 20:35:57', "activo" = 't' WHERE "id" = 4[0m
+  [4;36;1mArea Update (0.6ms)[0m   [0;1mUPDATE "areas" SET "updated_at" = '2009-07-08 20:35:57', "activo" = 't' WHERE "id" = 5[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT max("areas".rgt) AS max_rgt FROM "areas" [0m
+  [4;36;1mArea Create (0.5ms)[0m   [0;1mINSERT INTO "areas" ("created_at", "nombre", "updated_at", "nivel_id", "lft", "tipo_id", "parent_id", "rgt", "activo") VALUES('2009-07-08 20:40:15', 'Direccion de Planificacion', '2009-07-08 20:40:15', NULL, 23, NULL, NULL, 24, 't')[0m
+  [4;35;1mArea Load (0.5ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 6) [0m
+  [4;36;1mArea Load (0.4ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 12) [0m
+  [4;35;1mArea Update (0.6ms)[0m   [0mUPDATE "areas" SET "lft" = CASE WHEN "lft" BETWEEN 11 AND 22 THEN "lft" + 24 - 22 WHEN "lft" BETWEEN 23 AND 24 THEN "lft" + 11 - 23 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 11 AND 22 THEN "rgt" + 24 - 22 WHEN "rgt" BETWEEN 23 AND 24 THEN "rgt" + 11 - 23 ELSE "rgt" END, "parent_id" = CASE WHEN id = 12 THEN 6 ELSE "parent_id" END [0m
+  [4;36;1mArea Load (0.6ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 6) [0m
+  [4;35;1mArea Load (0.6ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 12) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT max("areas".rgt) AS max_rgt FROM "areas" [0m
+  [4;35;1mArea Create (0.6ms)[0m   [0mINSERT INTO "areas" ("created_at", "nombre", "updated_at", "nivel_id", "lft", "tipo_id", "parent_id", "rgt", "activo") VALUES('2009-07-08 20:40:54', 'Direccion General de Asuntos Juridicos', '2009-07-08 20:40:54', NULL, 25, NULL, NULL, 26, 't')[0m
+  [4;36;1mArea Load (0.6ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 6) [0m
+  [4;35;1mArea Load (0.4ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 13) [0m
+  [4;36;1mArea Update (0.7ms)[0m   [0;1mUPDATE "areas" SET "lft" = CASE WHEN "lft" BETWEEN 13 AND 24 THEN "lft" + 26 - 24 WHEN "lft" BETWEEN 25 AND 26 THEN "lft" + 13 - 25 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 13 AND 24 THEN "rgt" + 26 - 24 WHEN "rgt" BETWEEN 25 AND 26 THEN "rgt" + 13 - 25 ELSE "rgt" END, "parent_id" = CASE WHEN id = 13 THEN 6 ELSE "parent_id" END [0m
+  [4;35;1mArea Load (0.8ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 6) [0m
+  [4;36;1mArea Load (0.5ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 13) [0m
+  [4;35;1mArea Load (2.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."parent_id" = 6) ORDER BY "lft"[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT max("areas".rgt) AS max_rgt FROM "areas" [0m
+  [4;35;1mArea Create (0.5ms)[0m   [0mINSERT INTO "areas" ("created_at", "nombre", "updated_at", "nivel_id", "lft", "tipo_id", "parent_id", "rgt", "activo") VALUES('2009-07-08 20:44:28', 'Unidad de Analisis Juridico', '2009-07-08 20:44:28', NULL, 27, NULL, NULL, 28, 't')[0m
+  [4;36;1mArea Load (0.8ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 13) ORDER BY "lft"[0m
+  [4;35;1mArea Load (0.5ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 14) [0m
+  [4;36;1mArea Update (0.7ms)[0m   [0;1mUPDATE "areas" SET "lft" = CASE WHEN "lft" BETWEEN 14 AND 26 THEN "lft" + 28 - 26 WHEN "lft" BETWEEN 27 AND 28 THEN "lft" + 14 - 27 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 14 AND 26 THEN "rgt" + 28 - 26 WHEN "rgt" BETWEEN 27 AND 28 THEN "rgt" + 14 - 27 ELSE "rgt" END, "parent_id" = CASE WHEN id = 14 THEN 13 ELSE "parent_id" END [0m
+  [4;35;1mArea Load (0.5ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 13) [0m
+  [4;36;1mArea Load (0.5ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 14) [0m
+  [4;35;1mArea Load (0.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 13) [0m
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."parent_id" = 13) ORDER BY "lft"[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT max("areas".rgt) AS max_rgt FROM "areas" [0m
+  [4;36;1mArea Create (0.5ms)[0m   [0;1mINSERT INTO "areas" ("created_at", "nombre", "updated_at", "nivel_id", "lft", "tipo_id", "parent_id", "rgt", "activo") VALUES('2009-07-08 20:45:47', ' Unidad de Gestion Juridica', '2009-07-08 20:45:47', NULL, 29, NULL, NULL, 30, 't')[0m
+  [4;35;1mArea Load (1.3ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 13) ORDER BY "lft"[0m
+  [4;36;1mArea Load (0.7ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 15) [0m
+  [4;35;1mArea Update (0.7ms)[0m   [0mUPDATE "areas" SET "lft" = CASE WHEN "lft" BETWEEN 16 AND 28 THEN "lft" + 30 - 28 WHEN "lft" BETWEEN 29 AND 30 THEN "lft" + 16 - 29 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 16 AND 28 THEN "rgt" + 30 - 28 WHEN "rgt" BETWEEN 29 AND 30 THEN "rgt" + 16 - 29 ELSE "rgt" END, "parent_id" = CASE WHEN id = 15 THEN 13 ELSE "parent_id" END [0m
+  [4;36;1mArea Load (0.7ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 13) [0m
+  [4;35;1mArea Load (0.5ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 15) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT max("areas".rgt) AS max_rgt FROM "areas" [0m
+  [4;35;1mArea Create (0.7ms)[0m   [0mINSERT INTO "areas" ("created_at", "nombre", "updated_at", "nivel_id", "lft", "tipo_id", "parent_id", "rgt", "activo") VALUES('2009-07-08 20:46:25', 'Direccion General de Asuntos Administrativos', '2009-07-08 20:46:25', NULL, 31, NULL, NULL, 32, 't')[0m
+  [4;36;1mArea Load (0.5ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 6) [0m
+  [4;35;1mArea Load (0.6ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 16) [0m
+  [4;36;1mArea Update (0.7ms)[0m   [0;1mUPDATE "areas" SET "lft" = CASE WHEN "lft" BETWEEN 19 AND 30 THEN "lft" + 32 - 30 WHEN "lft" BETWEEN 31 AND 32 THEN "lft" + 19 - 31 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 19 AND 30 THEN "rgt" + 32 - 30 WHEN "rgt" BETWEEN 31 AND 32 THEN "rgt" + 19 - 31 ELSE "rgt" END, "parent_id" = CASE WHEN id = 16 THEN 6 ELSE "parent_id" END [0m
+  [4;35;1mArea Load (0.5ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 6) [0m
+  [4;36;1mArea Load (0.5ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 16) [0m
+  [4;35;1mArea Load (3.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."parent_id" = 6) ORDER BY "lft"[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT max("areas".rgt) AS max_rgt FROM "areas" [0m
+  [4;35;1mArea Create (0.6ms)[0m   [0mINSERT INTO "areas" ("created_at", "nombre", "updated_at", "nivel_id", "lft", "tipo_id", "parent_id", "rgt", "activo") VALUES('2009-07-08 20:47:19', 'Unidad Financiera', '2009-07-08 20:47:19', NULL, 33, NULL, NULL, 34, 't')[0m
+  [4;36;1mArea Load (0.8ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 16) ORDER BY "lft"[0m
+  [4;35;1mArea Load (0.4ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 17) [0m
+  [4;36;1mArea Update (0.7ms)[0m   [0;1mUPDATE "areas" SET "lft" = CASE WHEN "lft" BETWEEN 20 AND 32 THEN "lft" + 34 - 32 WHEN "lft" BETWEEN 33 AND 34 THEN "lft" + 20 - 33 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 20 AND 32 THEN "rgt" + 34 - 32 WHEN "rgt" BETWEEN 33 AND 34 THEN "rgt" + 20 - 33 ELSE "rgt" END, "parent_id" = CASE WHEN id = 17 THEN 16 ELSE "parent_id" END [0m
+  [4;35;1mArea Load (0.5ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 16) [0m
+  [4;36;1mArea Load (0.5ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 17) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT max("areas".rgt) AS max_rgt FROM "areas" [0m
+  [4;36;1mArea Create (0.5ms)[0m   [0;1mINSERT INTO "areas" ("created_at", "nombre", "updated_at", "nivel_id", "lft", "tipo_id", "parent_id", "rgt", "activo") VALUES('2009-07-08 20:47:42', 'Unidad Recursos Humanos y Administrativos', '2009-07-08 20:47:42', NULL, 35, NULL, NULL, 36, 't')[0m
+  [4;35;1mArea Load (0.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 16) ORDER BY "lft"[0m
+  [4;36;1mArea Load (0.4ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 18) [0m
+  [4;35;1mArea Update (0.7ms)[0m   [0mUPDATE "areas" SET "lft" = CASE WHEN "lft" BETWEEN 22 AND 34 THEN "lft" + 36 - 34 WHEN "lft" BETWEEN 35 AND 36 THEN "lft" + 22 - 35 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 22 AND 34 THEN "rgt" + 36 - 34 WHEN "rgt" BETWEEN 35 AND 36 THEN "rgt" + 22 - 35 ELSE "rgt" END, "parent_id" = CASE WHEN id = 18 THEN 16 ELSE "parent_id" END [0m
+  [4;36;1mArea Load (0.5ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 16) [0m
+  [4;35;1mArea Load (0.5ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 18) [0m
+  [4;36;1mArea Load (1.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 16) [0m
+  [4;35;1mArea Load (1.3ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."parent_id" = 16) ORDER BY "lft"[0m
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) [0m
+  [4;35;1mArea Load (1.2ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."parent_id" = 1) ORDER BY "lft"[0m
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) [0m
+  [4;35;1mArea Load (0.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."parent_id" = 2) ORDER BY "lft"[0m
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 3) [0m
+  [4;35;1mArea Load (1.2ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."parent_id" = 3) ORDER BY "lft"[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT max("areas".rgt) AS max_rgt FROM "areas" [0m
+  [4;35;1mArea Create (0.5ms)[0m   [0mINSERT INTO "areas" ("created_at", "nombre", "updated_at", "nivel_id", "lft", "tipo_id", "parent_id", "rgt", "activo") VALUES('2009-07-08 20:51:07', ' Viceministro de Industrializacion, Comercializacion, Transporte y Almacenaje', '2009-07-08 20:51:07', NULL, 37, NULL, NULL, 38, 't')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT max("areas".rgt) AS max_rgt FROM "areas" [0m
+  [4;35;1mArea Create (0.8ms)[0m   [0mINSERT INTO "areas" ("created_at", "nombre", "updated_at", "nivel_id", "lft", "tipo_id", "parent_id", "rgt", "activo") VALUES('2009-07-08 20:51:35', ' Viceministro de Industrializacion, Comercializacion, Transporte y Almacenaje', '2009-07-08 20:51:35', NULL, 39, NULL, NULL, 40, 't')[0m
+  [4;36;1mArea Load (1.1ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY "lft"[0m
+  [4;35;1mArea Load (0.5ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 20) [0m
+  [4;36;1mArea Update (0.7ms)[0m   [0;1mUPDATE "areas" SET "lft" = CASE WHEN "lft" BETWEEN 34 AND 38 THEN "lft" + 40 - 38 WHEN "lft" BETWEEN 39 AND 40 THEN "lft" + 34 - 39 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 34 AND 38 THEN "rgt" + 40 - 38 WHEN "rgt" BETWEEN 39 AND 40 THEN "rgt" + 34 - 39 ELSE "rgt" END, "parent_id" = CASE WHEN id = 20 THEN 1 ELSE "parent_id" END [0m
+  [4;35;1mArea Load (0.5ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 1) [0m
+  [4;36;1mArea Load (0.5ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 20) [0m
+  [4;35;1mArea Load (0.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) [0m
+  [4;36;1mArea Load (1.6ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."parent_id" = 1) ORDER BY "lft"[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT max("areas".rgt) AS max_rgt FROM "areas" [0m
+  [4;36;1mArea Create (0.5ms)[0m   [0;1mINSERT INTO "areas" ("created_at", "nombre", "updated_at", "nivel_id", "lft", "tipo_id", "parent_id", "rgt", "activo") VALUES('2009-07-08 20:52:46', 'Direccion General de Industrializacion y Refinacion', '2009-07-08 20:52:46', NULL, 41, NULL, NULL, 42, 't')[0m
+  [4;35;1mArea Load (0.8ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 20) ORDER BY "lft"[0m
+  [4;36;1mArea Load (0.5ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 21) [0m
+  [4;35;1mArea Update (0.7ms)[0m   [0mUPDATE "areas" SET "lft" = CASE WHEN "lft" BETWEEN 35 AND 40 THEN "lft" + 42 - 40 WHEN "lft" BETWEEN 41 AND 42 THEN "lft" + 35 - 41 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 35 AND 40 THEN "rgt" + 42 - 40 WHEN "rgt" BETWEEN 41 AND 42 THEN "rgt" + 35 - 41 ELSE "rgt" END, "parent_id" = CASE WHEN id = 21 THEN 20 ELSE "parent_id" END [0m
+  [4;36;1mArea Load (0.5ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 20) [0m
+  [4;35;1mArea Load (0.5ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 21) [0m
+  [4;36;1mArea Load (1.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 20) [0m
+  [4;35;1mArea Load (0.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."parent_id" = 20) ORDER BY "lft"[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT max("areas".rgt) AS max_rgt FROM "areas" [0m
+  [4;35;1mArea Create (0.5ms)[0m   [0mINSERT INTO "areas" ("created_at", "nombre", "updated_at", "nivel_id", "lft", "tipo_id", "parent_id", "rgt", "activo") VALUES('2009-07-08 20:53:33', 'Unidad de Industrializacion y Refinacion', '2009-07-08 20:53:33', NULL, 43, NULL, NULL, 44, 't')[0m
+  [4;36;1mArea Load (0.8ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 21) ORDER BY "lft"[0m
+  [4;35;1mArea Load (0.4ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 22) [0m
+  [4;36;1mArea Update (0.7ms)[0m   [0;1mUPDATE "areas" SET "lft" = CASE WHEN "lft" BETWEEN 36 AND 42 THEN "lft" + 44 - 42 WHEN "lft" BETWEEN 43 AND 44 THEN "lft" + 36 - 43 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 36 AND 42 THEN "rgt" + 44 - 42 WHEN "rgt" BETWEEN 43 AND 44 THEN "rgt" + 36 - 43 ELSE "rgt" END, "parent_id" = CASE WHEN id = 22 THEN 21 ELSE "parent_id" END [0m
+  [4;35;1mArea Load (0.6ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 21) [0m
+  [4;36;1mArea Load (0.5ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 22) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT max("areas".rgt) AS max_rgt FROM "areas" [0m
+  [4;36;1mArea Create (0.6ms)[0m   [0;1mINSERT INTO "areas" ("created_at", "nombre", "updated_at", "nivel_id", "lft", "tipo_id", "parent_id", "rgt", "activo") VALUES('2009-07-08 20:54:08', 'Direccion General de Comercializacion, transporte y Almacenaje', '2009-07-08 20:54:08', NULL, 45, NULL, NULL, 46, 't')[0m
+  [4;35;1mArea Load (0.8ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 20) ORDER BY "lft"[0m
+  [4;36;1mArea Load (0.4ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 23) [0m
+  [4;35;1mArea Update (0.8ms)[0m   [0mUPDATE "areas" SET "lft" = CASE WHEN "lft" BETWEEN 39 AND 44 THEN "lft" + 46 - 44 WHEN "lft" BETWEEN 45 AND 46 THEN "lft" + 39 - 45 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 39 AND 44 THEN "rgt" + 46 - 44 WHEN "rgt" BETWEEN 45 AND 46 THEN "rgt" + 39 - 45 ELSE "rgt" END, "parent_id" = CASE WHEN id = 23 THEN 20 ELSE "parent_id" END [0m
+  [4;36;1mArea Load (0.6ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 20) [0m
+  [4;35;1mArea Load (0.5ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 23) [0m
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 20) [0m
+  [4;35;1mArea Load (1.3ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."parent_id" = 20) ORDER BY "lft"[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT max("areas".rgt) AS max_rgt FROM "areas" [0m
+  [4;35;1mArea Create (0.5ms)[0m   [0mINSERT INTO "areas" ("created_at", "nombre", "updated_at", "nivel_id", "lft", "tipo_id", "parent_id", "rgt", "activo") VALUES('2009-07-08 20:54:52', 'Unidad de Comercializacion de Hidrocarburos', '2009-07-08 20:54:52', NULL, 47, NULL, NULL, 48, 't')[0m
+  [4;36;1mArea Load (1.3ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 23) ORDER BY "lft"[0m
+  [4;35;1mArea Load (0.5ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 24) [0m
+  [4;36;1mArea Update (0.8ms)[0m   [0;1mUPDATE "areas" SET "lft" = CASE WHEN "lft" BETWEEN 40 AND 46 THEN "lft" + 48 - 46 WHEN "lft" BETWEEN 47 AND 48 THEN "lft" + 40 - 47 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 40 AND 46 THEN "rgt" + 48 - 46 WHEN "rgt" BETWEEN 47 AND 48 THEN "rgt" + 40 - 47 ELSE "rgt" END, "parent_id" = CASE WHEN id = 24 THEN 23 ELSE "parent_id" END [0m
+  [4;35;1mArea Load (0.6ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 23) [0m
+  [4;36;1mArea Load (0.5ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 24) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT max("areas".rgt) AS max_rgt FROM "areas" [0m
+  [4;36;1mArea Create (0.6ms)[0m   [0;1mINSERT INTO "areas" ("created_at", "nombre", "updated_at", "nivel_id", "lft", "tipo_id", "parent_id", "rgt", "activo") VALUES('2009-07-08 20:55:34', 'Unidad de Transporte, Almacenaje y Distribucion de Gas por Redes', '2009-07-08 20:55:34', NULL, 49, NULL, NULL, 50, 't')[0m
+  [4;35;1mArea Load (0.8ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 23) ORDER BY "lft"[0m
+  [4;36;1mArea Load (0.4ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 25) [0m
+  [4;35;1mArea Update (0.8ms)[0m   [0mUPDATE "areas" SET "lft" = CASE WHEN "lft" BETWEEN 42 AND 48 THEN "lft" + 50 - 48 WHEN "lft" BETWEEN 49 AND 50 THEN "lft" + 42 - 49 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 42 AND 48 THEN "rgt" + 50 - 48 WHEN "rgt" BETWEEN 49 AND 50 THEN "rgt" + 42 - 49 ELSE "rgt" END, "parent_id" = CASE WHEN id = 25 THEN 23 ELSE "parent_id" END [0m
+  [4;36;1mArea Load (0.5ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 23) [0m
+  [4;35;1mArea Load (0.5ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 25) [0m
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 23) [0m
+  [4;35;1mArea Load (1.2ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."parent_id" = 23) ORDER BY "lft"[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT max("areas".rgt) AS max_rgt FROM "areas" [0m
+  [4;35;1mArea Create (0.5ms)[0m   [0mINSERT INTO "areas" ("created_at", "nombre", "updated_at", "nivel_id", "lft", "tipo_id", "parent_id", "rgt", "activo") VALUES('2009-07-08 20:56:29', 'Viceministro de Desarrollo Energetico', '2009-07-08 20:56:29', NULL, 51, NULL, NULL, 52, 't')[0m
+  [4;36;1mArea Load (1.2ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY "lft"[0m
+  [4;35;1mArea Load (0.7ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 26) [0m
+  [4;36;1mArea Update (1.3ms)[0m   [0;1mUPDATE "areas" SET "lft" = CASE WHEN "lft" BETWEEN 46 AND 50 THEN "lft" + 52 - 50 WHEN "lft" BETWEEN 51 AND 52 THEN "lft" + 46 - 51 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 46 AND 50 THEN "rgt" + 52 - 50 WHEN "rgt" BETWEEN 51 AND 52 THEN "rgt" + 46 - 51 ELSE "rgt" END, "parent_id" = CASE WHEN id = 26 THEN 1 ELSE "parent_id" END [0m
+  [4;35;1mArea Load (0.5ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 1) [0m
+  [4;36;1mArea Load (0.5ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 26) [0m
+  [4;35;1mArea Load (0.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) [0m
+  [4;36;1mArea Load (1.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."parent_id" = 1) ORDER BY "lft"[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT max("areas".rgt) AS max_rgt FROM "areas" [0m
+  [4;36;1mArea Create (0.6ms)[0m   [0;1mINSERT INTO "areas" ("created_at", "nombre", "updated_at", "nivel_id", "lft", "tipo_id", "parent_id", "rgt", "activo") VALUES('2009-07-08 20:57:19', 'Direccion General de Planificacion e Integracion Energetica', '2009-07-08 20:57:19', NULL, 53, NULL, NULL, 54, 't')[0m
+  [4;35;1mArea Load (0.8ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 26) ORDER BY "lft"[0m
+  [4;36;1mArea Load (0.5ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 27) [0m
+  [4;35;1mArea Update (0.8ms)[0m   [0mUPDATE "areas" SET "lft" = CASE WHEN "lft" BETWEEN 47 AND 52 THEN "lft" + 54 - 52 WHEN "lft" BETWEEN 53 AND 54 THEN "lft" + 47 - 53 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 47 AND 52 THEN "rgt" + 54 - 52 WHEN "rgt" BETWEEN 53 AND 54 THEN "rgt" + 47 - 53 ELSE "rgt" END, "parent_id" = CASE WHEN id = 27 THEN 26 ELSE "parent_id" END [0m
+  [4;36;1mArea Load (0.8ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 26) [0m
+  [4;35;1mArea Load (0.7ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 27) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT max("areas".rgt) AS max_rgt FROM "areas" [0m
+  [4;35;1mArea Create (0.5ms)[0m   [0mINSERT INTO "areas" ("created_at", "nombre", "updated_at", "nivel_id", "lft", "tipo_id", "parent_id", "rgt", "activo") VALUES('2009-07-08 20:58:04', 'Direccion General de Gestion Socio Ambiental', '2009-07-08 20:58:04', NULL, 55, NULL, NULL, 56, 't')[0m
+  [4;36;1mArea Load (0.8ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 26) ORDER BY "lft"[0m
+  [4;35;1mArea Load (0.7ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 28) [0m
+  [4;36;1mArea Update (1.1ms)[0m   [0;1mUPDATE "areas" SET "lft" = CASE WHEN "lft" BETWEEN 49 AND 54 THEN "lft" + 56 - 54 WHEN "lft" BETWEEN 55 AND 56 THEN "lft" + 49 - 55 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 49 AND 54 THEN "rgt" + 56 - 54 WHEN "rgt" BETWEEN 55 AND 56 THEN "rgt" + 49 - 55 ELSE "rgt" END, "parent_id" = CASE WHEN id = 28 THEN 26 ELSE "parent_id" END [0m
+  [4;35;1mArea Load (0.5ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 26) [0m
+  [4;36;1mArea Load (0.5ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 28) [0m
+  [4;35;1mArea Load (1.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 26) [0m
+  [4;36;1mArea Load (1.2ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."parent_id" = 26) ORDER BY "lft"[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT max("areas".rgt) AS max_rgt FROM "areas" [0m
+  [4;36;1mArea Create (0.5ms)[0m   [0;1mINSERT INTO "areas" ("created_at", "nombre", "updated_at", "nivel_id", "lft", "tipo_id", "parent_id", "rgt", "activo") VALUES('2009-07-08 20:58:57', 'Unidad de Prevencion y Control Socio Ambiental', '2009-07-08 20:58:57', NULL, 57, NULL, NULL, 58, 't')[0m
+  [4;35;1mArea Load (0.8ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 28) ORDER BY "lft"[0m
+  [4;36;1mArea Load (0.4ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 29) [0m
+  [4;35;1mArea Update (0.8ms)[0m   [0mUPDATE "areas" SET "lft" = CASE WHEN "lft" BETWEEN 50 AND 56 THEN "lft" + 58 - 56 WHEN "lft" BETWEEN 57 AND 58 THEN "lft" + 50 - 57 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 50 AND 56 THEN "rgt" + 58 - 56 WHEN "rgt" BETWEEN 57 AND 58 THEN "rgt" + 50 - 57 ELSE "rgt" END, "parent_id" = CASE WHEN id = 29 THEN 28 ELSE "parent_id" END [0m
+  [4;36;1mArea Load (0.5ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 28) [0m
+  [4;35;1mArea Load (0.5ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 29) [0m
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 28) [0m
+  [4;35;1mArea Load (0.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."parent_id" = 28) ORDER BY "lft"[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT max("areas".rgt) AS max_rgt FROM "areas" [0m
+  [4;35;1mArea Create (0.5ms)[0m   [0mINSERT INTO "areas" ("created_at", "nombre", "updated_at", "nivel_id", "lft", "tipo_id", "parent_id", "rgt", "activo") VALUES('2009-07-08 21:00:15', 'Viceministro de Electricidad y Energias Alternativas', '2009-07-08 21:00:15', NULL, 59, NULL, NULL, 60, 't')[0m
+  [4;36;1mArea Load (0.8ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY "lft"[0m
+  [4;35;1mArea Load (0.4ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 30) [0m
+  [4;36;1mArea Update (0.9ms)[0m   [0;1mUPDATE "areas" SET "lft" = CASE WHEN "lft" BETWEEN 54 AND 58 THEN "lft" + 60 - 58 WHEN "lft" BETWEEN 59 AND 60 THEN "lft" + 54 - 59 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 54 AND 58 THEN "rgt" + 60 - 58 WHEN "rgt" BETWEEN 59 AND 60 THEN "rgt" + 54 - 59 ELSE "rgt" END, "parent_id" = CASE WHEN id = 30 THEN 1 ELSE "parent_id" END [0m
+  [4;35;1mArea Load (0.5ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 1) [0m
+  [4;36;1mArea Load (0.5ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 30) [0m
+  [4;35;1mArea Load (0.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) [0m
+  [4;36;1mArea Load (2.2ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."parent_id" = 1) ORDER BY "lft"[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT max("areas".rgt) AS max_rgt FROM "areas" [0m
+  [4;36;1mArea Create (0.5ms)[0m   [0;1mINSERT INTO "areas" ("created_at", "nombre", "updated_at", "nivel_id", "lft", "tipo_id", "parent_id", "rgt", "activo") VALUES('2009-07-08 21:01:12', 'Direccion General de Electricidad', '2009-07-08 21:01:12', NULL, 61, NULL, NULL, 62, 't')[0m
+  [4;35;1mArea Load (0.8ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 30) ORDER BY "lft"[0m
+  [4;36;1mArea Load (0.4ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 31) [0m
+  [4;35;1mArea Update (1.4ms)[0m   [0mUPDATE "areas" SET "lft" = CASE WHEN "lft" BETWEEN 55 AND 60 THEN "lft" + 62 - 60 WHEN "lft" BETWEEN 61 AND 62 THEN "lft" + 55 - 61 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 55 AND 60 THEN "rgt" + 62 - 60 WHEN "rgt" BETWEEN 61 AND 62 THEN "rgt" + 55 - 61 ELSE "rgt" END, "parent_id" = CASE WHEN id = 31 THEN 30 ELSE "parent_id" END [0m
+  [4;36;1mArea Load (0.6ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 30) [0m
+  [4;35;1mArea Load (0.5ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 31) [0m
+  [4;36;1mArea Load (1.3ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 30) [0m
+  [4;35;1mArea Load (1.2ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."parent_id" = 30) ORDER BY "lft"[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT max("areas".rgt) AS max_rgt FROM "areas" [0m
+  [4;35;1mArea Create (0.5ms)[0m   [0mINSERT INTO "areas" ("created_at", "nombre", "updated_at", "nivel_id", "lft", "tipo_id", "parent_id", "rgt", "activo") VALUES('2009-07-08 21:02:27', 'Unidad de Evaluacion y Normas', '2009-07-08 21:02:27', NULL, 63, NULL, NULL, 64, 't')[0m
+  [4;36;1mArea Load (1.3ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 31) ORDER BY "lft"[0m
+  [4;35;1mArea Load (0.6ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 32) [0m
+  [4;36;1mArea Update (1.5ms)[0m   [0;1mUPDATE "areas" SET "lft" = CASE WHEN "lft" BETWEEN 56 AND 62 THEN "lft" + 64 - 62 WHEN "lft" BETWEEN 63 AND 64 THEN "lft" + 56 - 63 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 56 AND 62 THEN "rgt" + 64 - 62 WHEN "rgt" BETWEEN 63 AND 64 THEN "rgt" + 56 - 63 ELSE "rgt" END, "parent_id" = CASE WHEN id = 32 THEN 31 ELSE "parent_id" END [0m
+  [4;35;1mArea Load (0.8ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 31) [0m
+  [4;36;1mArea Load (0.5ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 32) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT max("areas".rgt) AS max_rgt FROM "areas" [0m
+  [4;36;1mArea Create (0.5ms)[0m   [0;1mINSERT INTO "areas" ("created_at", "nombre", "updated_at", "nivel_id", "lft", "tipo_id", "parent_id", "rgt", "activo") VALUES('2009-07-08 21:03:27', 'Unidad de Desarrollo de Infraestructura y Electrificacion Rural', '2009-07-08 21:03:27', NULL, 65, NULL, NULL, 66, 't')[0m
+  [4;35;1mArea Load (1.3ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 31) ORDER BY "lft"[0m
+  [4;36;1mArea Load (0.5ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 33) [0m
+  [4;35;1mArea Update (0.9ms)[0m   [0mUPDATE "areas" SET "lft" = CASE WHEN "lft" BETWEEN 58 AND 64 THEN "lft" + 66 - 64 WHEN "lft" BETWEEN 65 AND 66 THEN "lft" + 58 - 65 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 58 AND 64 THEN "rgt" + 66 - 64 WHEN "rgt" BETWEEN 65 AND 66 THEN "rgt" + 58 - 65 ELSE "rgt" END, "parent_id" = CASE WHEN id = 33 THEN 31 ELSE "parent_id" END [0m
+  [4;36;1mArea Load (0.8ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 31) [0m
+  [4;35;1mArea Load (0.7ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 33) [0m
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) [0m
+  [4;35;1mArea Load (2.2ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."parent_id" = 1) ORDER BY "lft"[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT max("areas".rgt) AS max_rgt FROM "areas" [0m
+  [4;35;1mArea Create (0.5ms)[0m   [0mINSERT INTO "areas" ("created_at", "nombre", "updated_at", "nivel_id", "lft", "tipo_id", "parent_id", "rgt", "activo") VALUES('2009-07-08 21:04:24', 'Direccion General de Energias Alternativas', '2009-07-08 21:04:24', NULL, 67, NULL, NULL, 68, 't')[0m
+  [4;36;1mArea Load (0.8ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 30) ORDER BY "lft"[0m
+  [4;35;1mArea Load (0.4ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 34) [0m
+  [4;36;1mArea Update (0.9ms)[0m   [0;1mUPDATE "areas" SET "lft" = CASE WHEN "lft" BETWEEN 61 AND 66 THEN "lft" + 68 - 66 WHEN "lft" BETWEEN 67 AND 68 THEN "lft" + 61 - 67 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 61 AND 66 THEN "rgt" + 68 - 66 WHEN "rgt" BETWEEN 67 AND 68 THEN "rgt" + 61 - 67 ELSE "rgt" END, "parent_id" = CASE WHEN id = 34 THEN 30 ELSE "parent_id" END [0m
+  [4;35;1mArea Load (25.9ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 30) [0m
+  [4;36;1mArea Load (0.5ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 34) [0m
+  [4;35;1mArea Load (0.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 30) [0m
+  [4;36;1mArea Load (1.2ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."parent_id" = 30) ORDER BY "lft"[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT max("areas".rgt) AS max_rgt FROM "areas" [0m
+  [4;36;1mArea Create (0.5ms)[0m   [0;1mINSERT INTO "areas" ("created_at", "nombre", "updated_at", "nivel_id", "lft", "tipo_id", "parent_id", "rgt", "activo") VALUES('2009-07-08 21:05:34', 'Unidad de Energias Renovables Convencionales', '2009-07-08 21:05:34', NULL, 69, NULL, NULL, 70, 't')[0m
+  [4;35;1mArea Load (1.3ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 34) ORDER BY "lft"[0m
+  [4;36;1mArea Load (0.7ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 35) [0m
+  [4;35;1mArea Update (1.0ms)[0m   [0mUPDATE "areas" SET "lft" = CASE WHEN "lft" BETWEEN 62 AND 68 THEN "lft" + 70 - 68 WHEN "lft" BETWEEN 69 AND 70 THEN "lft" + 62 - 69 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 62 AND 68 THEN "rgt" + 70 - 68 WHEN "rgt" BETWEEN 69 AND 70 THEN "rgt" + 62 - 69 ELSE "rgt" END, "parent_id" = CASE WHEN id = 35 THEN 34 ELSE "parent_id" END [0m
+  [4;36;1mArea Load (0.5ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 34) [0m
+  [4;35;1mArea Load (0.5ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 35) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT max("areas".rgt) AS max_rgt FROM "areas" [0m
+  [4;35;1mArea Create (0.5ms)[0m   [0mINSERT INTO "areas" ("created_at", "nombre", "updated_at", "nivel_id", "lft", "tipo_id", "parent_id", "rgt", "activo") VALUES('2009-07-08 21:06:32', 'Unidad de Energias Renovables no Convencionales', '2009-07-08 21:06:32', NULL, 71, NULL, NULL, 72, 't')[0m
+  [4;36;1mArea Load (1.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 34) ORDER BY "lft"[0m
+  [4;35;1mArea Load (0.7ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 36) [0m
+  [4;36;1mArea Update (1.0ms)[0m   [0;1mUPDATE "areas" SET "lft" = CASE WHEN "lft" BETWEEN 64 AND 70 THEN "lft" + 72 - 70 WHEN "lft" BETWEEN 71 AND 72 THEN "lft" + 64 - 71 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 64 AND 70 THEN "rgt" + 72 - 70 WHEN "rgt" BETWEEN 71 AND 72 THEN "rgt" + 64 - 71 ELSE "rgt" END, "parent_id" = CASE WHEN id = 36 THEN 34 ELSE "parent_id" END [0m
+  [4;35;1mArea Load (0.5ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 34) [0m
+  [4;36;1mArea Load (0.5ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 36) [0m
+  [4;35;1mArea Load (0.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 30) [0m
+  [4;36;1mArea Load (1.2ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."parent_id" = 30) ORDER BY "lft"[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT max("areas".rgt) AS max_rgt FROM "areas" [0m
+  [4;36;1mArea Create (0.5ms)[0m   [0;1mINSERT INTO "areas" ("created_at", "nombre", "updated_at", "nivel_id", "lft", "tipo_id", "parent_id", "rgt", "activo") VALUES('2009-07-08 21:07:38', 'Direccion General de Control y Fiscalizacion', '2009-07-08 21:07:38', NULL, 73, NULL, NULL, 74, 't')[0m
+  [4;35;1mArea Load (0.8ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 30) ORDER BY "lft"[0m
+  [4;36;1mArea Load (0.6ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 37) [0m
+  [4;35;1mArea Update (1.6ms)[0m   [0mUPDATE "areas" SET "lft" = CASE WHEN "lft" BETWEEN 67 AND 72 THEN "lft" + 74 - 72 WHEN "lft" BETWEEN 73 AND 74 THEN "lft" + 67 - 73 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 67 AND 72 THEN "rgt" + 74 - 72 WHEN "rgt" BETWEEN 73 AND 74 THEN "rgt" + 67 - 73 ELSE "rgt" END, "parent_id" = CASE WHEN id = 37 THEN 30 ELSE "parent_id" END [0m
+  [4;36;1mArea Load (0.5ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 30) [0m
+  [4;35;1mArea Load (0.5ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 37) [0m
+  [4;36;1mArea Load (23.6ms)[0m   [0;1mSELECT nombre, parent_id, lft, rgt FROM "areas" [0m
+  [4;35;1mArea Load (8.0ms)[0m   [0mSELECT nombre, parent_id, lft, rgt FROM "areas" [0m
+  [4;36;1mArea Load (8.1ms)[0m   [0;1mSELECT nombre, parent_id, lft, rgt FROM "areas" [0m
+  [4;35;1mArea Load (21.0ms)[0m   [0mSELECT nombre, parent_id, lft, rgt FROM "areas" ORDER BY lft ASC[0m
+  [4;36;1mArea Load (7.9ms)[0m   [0;1mSELECT nombre, parent_id, lft, rgt FROM "areas" ORDER BY lft ASC[0m
+  [4;35;1mArea Load (15.2ms)[0m   [0mSELECT * FROM "areas" [0m
+  [4;36;1mArea Load (12.5ms)[0m   [0;1mSELECT * FROM "areas" [0m
+  [4;35;1mArea Load (7.6ms)[0m   [0mSELECT nombre, parent_id, lft, rgt FROM "areas" ORDER BY lft ASC[0m
+  [4;36;1mArea Load (25.0ms)[0m   [0;1mSELECT nombre, parent_id, lft, rgt FROM "areas" ORDER BY lft ASC[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != NULL) AND ("areas"."lft" <= 2 AND "areas"."rgt" >= 25)) [0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != NULL) AND ("areas"."lft" <= 3 AND "areas"."rgt" >= 4)) [0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != NULL) AND ("areas"."lft" <= 5 AND "areas"."rgt" >= 6)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != NULL) AND ("areas"."lft" <= 7 AND "areas"."rgt" >= 8)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != NULL) AND ("areas"."lft" <= 9 AND "areas"."rgt" >= 10)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != NULL) AND ("areas"."lft" <= 11 AND "areas"."rgt" >= 12)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != NULL) AND ("areas"."lft" <= 13 AND "areas"."rgt" >= 18)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != NULL) AND ("areas"."lft" <= 14 AND "areas"."rgt" >= 15)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != NULL) AND ("areas"."lft" <= 16 AND "areas"."rgt" >= 17)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != NULL) AND ("areas"."lft" <= 19 AND "areas"."rgt" >= 24)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != NULL) AND ("areas"."lft" <= 20 AND "areas"."rgt" >= 21)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != NULL) AND ("areas"."lft" <= 22 AND "areas"."rgt" >= 23)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != NULL) AND ("areas"."lft" <= 26 AND "areas"."rgt" >= 33)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != NULL) AND ("areas"."lft" <= 27 AND "areas"."rgt" >= 32)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != NULL) AND ("areas"."lft" <= 28 AND "areas"."rgt" >= 29)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != NULL) AND ("areas"."lft" <= 30 AND "areas"."rgt" >= 31)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != NULL) AND ("areas"."lft" <= 34 AND "areas"."rgt" >= 45)) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != NULL) AND ("areas"."lft" <= 35 AND "areas"."rgt" >= 38)) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != NULL) AND ("areas"."lft" <= 36 AND "areas"."rgt" >= 37)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != NULL) AND ("areas"."lft" <= 39 AND "areas"."rgt" >= 44)) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != NULL) AND ("areas"."lft" <= 40 AND "areas"."rgt" >= 41)) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != NULL) AND ("areas"."lft" <= 42 AND "areas"."rgt" >= 43)) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != NULL) AND ("areas"."lft" <= 46 AND "areas"."rgt" >= 53)) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != NULL) AND ("areas"."lft" <= 47 AND "areas"."rgt" >= 48)) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != NULL) AND ("areas"."lft" <= 49 AND "areas"."rgt" >= 52)) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != NULL) AND ("areas"."lft" <= 50 AND "areas"."rgt" >= 51)) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != NULL) AND ("areas"."lft" <= 54 AND "areas"."rgt" >= 69)) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != NULL) AND ("areas"."lft" <= 55 AND "areas"."rgt" >= 60)) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != NULL) AND ("areas"."lft" <= 56 AND "areas"."rgt" >= 57)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != NULL) AND ("areas"."lft" <= 58 AND "areas"."rgt" >= 59)) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != NULL) AND ("areas"."lft" <= 61 AND "areas"."rgt" >= 66)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != NULL) AND ("areas"."lft" <= 62 AND "areas"."rgt" >= 63)) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != NULL) AND ("areas"."lft" <= 64 AND "areas"."rgt" >= 65)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != NULL) AND ("areas"."lft" <= 67 AND "areas"."rgt" >= 68)) [0m
+  [4;35;1mArea Load (1.3ms)[0m   [0mSELECT * FROM "areas" ORDER BY areas.id DESC LIMIT 1[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 37) AND ("areas"."lft" <= 67 AND "areas"."rgt" >= 68)) [0m
+  [4;35;1mArea Load (1.2ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 2) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 2) AND ("areas"."lft" <= 26 AND "areas"."rgt" >= 33)) [0m
+  [4;35;1mArea Load (0.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 2) [0m
+  [4;36;1mArea Load (12.5ms)[0m   [0;1mSELECT * FROM "areas" [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 2) AND ("areas"."lft" <= 26 AND "areas"."rgt" >= 33)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 3) AND ("areas"."lft" <= 27 AND "areas"."rgt" >= 32)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 4) AND ("areas"."lft" <= 30 AND "areas"."rgt" >= 31)) [0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 5) AND ("areas"."lft" <= 28 AND "areas"."rgt" >= 29)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 6) AND ("areas"."lft" <= 2 AND "areas"."rgt" >= 25)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 7) AND ("areas"."lft" <= 3 AND "areas"."rgt" >= 4)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 9) AND ("areas"."lft" <= 5 AND "areas"."rgt" >= 6)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 10) AND ("areas"."lft" <= 7 AND "areas"."rgt" >= 8)) [0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 11) AND ("areas"."lft" <= 9 AND "areas"."rgt" >= 10)) [0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 12) AND ("areas"."lft" <= 11 AND "areas"."rgt" >= 12)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 13) AND ("areas"."lft" <= 13 AND "areas"."rgt" >= 18)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 14) AND ("areas"."lft" <= 14 AND "areas"."rgt" >= 15)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 15) AND ("areas"."lft" <= 16 AND "areas"."rgt" >= 17)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 16) AND ("areas"."lft" <= 19 AND "areas"."rgt" >= 24)) [0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 17) AND ("areas"."lft" <= 20 AND "areas"."rgt" >= 21)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 18) AND ("areas"."lft" <= 22 AND "areas"."rgt" >= 23)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 20) AND ("areas"."lft" <= 34 AND "areas"."rgt" >= 45)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 21) AND ("areas"."lft" <= 35 AND "areas"."rgt" >= 38)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 22) AND ("areas"."lft" <= 36 AND "areas"."rgt" >= 37)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 23) AND ("areas"."lft" <= 39 AND "areas"."rgt" >= 44)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 24) AND ("areas"."lft" <= 40 AND "areas"."rgt" >= 41)) [0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 25) AND ("areas"."lft" <= 42 AND "areas"."rgt" >= 43)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 26) AND ("areas"."lft" <= 46 AND "areas"."rgt" >= 53)) [0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 27) AND ("areas"."lft" <= 47 AND "areas"."rgt" >= 48)) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 28) AND ("areas"."lft" <= 49 AND "areas"."rgt" >= 52)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 29) AND ("areas"."lft" <= 50 AND "areas"."rgt" >= 51)) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 30) AND ("areas"."lft" <= 54 AND "areas"."rgt" >= 69)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 31) AND ("areas"."lft" <= 55 AND "areas"."rgt" >= 60)) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 32) AND ("areas"."lft" <= 56 AND "areas"."rgt" >= 57)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 33) AND ("areas"."lft" <= 58 AND "areas"."rgt" >= 59)) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 34) AND ("areas"."lft" <= 61 AND "areas"."rgt" >= 66)) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 35) AND ("areas"."lft" <= 62 AND "areas"."rgt" >= 63)) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 36) AND ("areas"."lft" <= 64 AND "areas"."rgt" >= 65)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 37) AND ("areas"."lft" <= 67 AND "areas"."rgt" >= 68)) [0m
+  [4;35;1mArea Load (12.2ms)[0m   [0mSELECT * FROM "areas" [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 2) AND ("areas"."lft" <= 26 AND "areas"."rgt" >= 33)) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 3) AND ("areas"."lft" <= 27 AND "areas"."rgt" >= 32)) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 4) AND ("areas"."lft" <= 30 AND "areas"."rgt" >= 31)) [0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 5) AND ("areas"."lft" <= 28 AND "areas"."rgt" >= 29)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 6) AND ("areas"."lft" <= 2 AND "areas"."rgt" >= 25)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 7) AND ("areas"."lft" <= 3 AND "areas"."rgt" >= 4)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 9) AND ("areas"."lft" <= 5 AND "areas"."rgt" >= 6)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 10) AND ("areas"."lft" <= 7 AND "areas"."rgt" >= 8)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 11) AND ("areas"."lft" <= 9 AND "areas"."rgt" >= 10)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 12) AND ("areas"."lft" <= 11 AND "areas"."rgt" >= 12)) [0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 13) AND ("areas"."lft" <= 13 AND "areas"."rgt" >= 18)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 14) AND ("areas"."lft" <= 14 AND "areas"."rgt" >= 15)) [0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 15) AND ("areas"."lft" <= 16 AND "areas"."rgt" >= 17)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 16) AND ("areas"."lft" <= 19 AND "areas"."rgt" >= 24)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 17) AND ("areas"."lft" <= 20 AND "areas"."rgt" >= 21)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 18) AND ("areas"."lft" <= 22 AND "areas"."rgt" >= 23)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 20) AND ("areas"."lft" <= 34 AND "areas"."rgt" >= 45)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 21) AND ("areas"."lft" <= 35 AND "areas"."rgt" >= 38)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 22) AND ("areas"."lft" <= 36 AND "areas"."rgt" >= 37)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 23) AND ("areas"."lft" <= 39 AND "areas"."rgt" >= 44)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 24) AND ("areas"."lft" <= 40 AND "areas"."rgt" >= 41)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 25) AND ("areas"."lft" <= 42 AND "areas"."rgt" >= 43)) [0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 26) AND ("areas"."lft" <= 46 AND "areas"."rgt" >= 53)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 27) AND ("areas"."lft" <= 47 AND "areas"."rgt" >= 48)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 28) AND ("areas"."lft" <= 49 AND "areas"."rgt" >= 52)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 29) AND ("areas"."lft" <= 50 AND "areas"."rgt" >= 51)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 30) AND ("areas"."lft" <= 54 AND "areas"."rgt" >= 69)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 31) AND ("areas"."lft" <= 55 AND "areas"."rgt" >= 60)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 32) AND ("areas"."lft" <= 56 AND "areas"."rgt" >= 57)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 33) AND ("areas"."lft" <= 58 AND "areas"."rgt" >= 59)) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 34) AND ("areas"."lft" <= 61 AND "areas"."rgt" >= 66)) [0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 35) AND ("areas"."lft" <= 62 AND "areas"."rgt" >= 63)) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 36) AND ("areas"."lft" <= 64 AND "areas"."rgt" >= 65)) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 37) AND ("areas"."lft" <= 67 AND "areas"."rgt" >= 68)) [0m
+  [4;36;1mArea Load (13.9ms)[0m   [0;1mSELECT * FROM "areas" ORDER BY lft[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 6) AND ("areas"."lft" <= 2 AND "areas"."rgt" >= 25)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 7) AND ("areas"."lft" <= 3 AND "areas"."rgt" >= 4)) [0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 9) AND ("areas"."lft" <= 5 AND "areas"."rgt" >= 6)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 10) AND ("areas"."lft" <= 7 AND "areas"."rgt" >= 8)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 11) AND ("areas"."lft" <= 9 AND "areas"."rgt" >= 10)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 12) AND ("areas"."lft" <= 11 AND "areas"."rgt" >= 12)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 13) AND ("areas"."lft" <= 13 AND "areas"."rgt" >= 18)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 14) AND ("areas"."lft" <= 14 AND "areas"."rgt" >= 15)) [0m
+  [4;35;1mSQL (5.4ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 15) AND ("areas"."lft" <= 16 AND "areas"."rgt" >= 17)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 16) AND ("areas"."lft" <= 19 AND "areas"."rgt" >= 24)) [0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 17) AND ("areas"."lft" <= 20 AND "areas"."rgt" >= 21)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 18) AND ("areas"."lft" <= 22 AND "areas"."rgt" >= 23)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 2) AND ("areas"."lft" <= 26 AND "areas"."rgt" >= 33)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 3) AND ("areas"."lft" <= 27 AND "areas"."rgt" >= 32)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 5) AND ("areas"."lft" <= 28 AND "areas"."rgt" >= 29)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 4) AND ("areas"."lft" <= 30 AND "areas"."rgt" >= 31)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 20) AND ("areas"."lft" <= 34 AND "areas"."rgt" >= 45)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 21) AND ("areas"."lft" <= 35 AND "areas"."rgt" >= 38)) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 22) AND ("areas"."lft" <= 36 AND "areas"."rgt" >= 37)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 23) AND ("areas"."lft" <= 39 AND "areas"."rgt" >= 44)) [0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 24) AND ("areas"."lft" <= 40 AND "areas"."rgt" >= 41)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 25) AND ("areas"."lft" <= 42 AND "areas"."rgt" >= 43)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 26) AND ("areas"."lft" <= 46 AND "areas"."rgt" >= 53)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 27) AND ("areas"."lft" <= 47 AND "areas"."rgt" >= 48)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 28) AND ("areas"."lft" <= 49 AND "areas"."rgt" >= 52)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 29) AND ("areas"."lft" <= 50 AND "areas"."rgt" >= 51)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 30) AND ("areas"."lft" <= 54 AND "areas"."rgt" >= 69)) [0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 31) AND ("areas"."lft" <= 55 AND "areas"."rgt" >= 60)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 32) AND ("areas"."lft" <= 56 AND "areas"."rgt" >= 57)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 33) AND ("areas"."lft" <= 58 AND "areas"."rgt" >= 59)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 34) AND ("areas"."lft" <= 61 AND "areas"."rgt" >= 66)) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 35) AND ("areas"."lft" <= 62 AND "areas"."rgt" >= 63)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 36) AND ("areas"."lft" <= 64 AND "areas"."rgt" >= 65)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 37) AND ("areas"."lft" <= 67 AND "areas"."rgt" >= 68)) [0m
+  [4;35;1mArea Load (0.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."nombre" = 'Dir') LIMIT 1[0m
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."nombre" = 'Dir') LIMIT 1[0m
+  [4;35;1mArea Load (0.4ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."parent_id" = 7) ORDER BY "lft"[0m
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."nombre" = 'Dir') LIMIT 1[0m
+  [4;35;1mArea Load (3.3ms)[0m   [0mSELECT * FROM "areas" WHERE (("areas".id != 7) AND ("areas"."parent_id" = 6)) ORDER BY "lft"[0m
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 9) [0m
+  [4;35;1mArea Load (0.8ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 7) ORDER BY "lft"[0m
+  [4;36;1mArea Load (0.4ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 9) [0m
+  [4;35;1mArea Update (47.2ms)[0m   [0mUPDATE "areas" SET "lft" = CASE WHEN "lft" BETWEEN 4 AND 4 THEN "lft" + 6 - 4 WHEN "lft" BETWEEN 5 AND 6 THEN "lft" + 4 - 5 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 4 AND 4 THEN "rgt" + 6 - 4 WHEN "rgt" BETWEEN 5 AND 6 THEN "rgt" + 4 - 5 ELSE "rgt" END, "parent_id" = CASE WHEN id = 9 THEN 7 ELSE "parent_id" END [0m
+  [4;36;1mArea Load (0.8ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 7) [0m
+  [4;35;1mArea Load (0.7ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 9) [0m
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 10) [0m
+  [4;35;1mArea Load (0.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 7) ORDER BY "lft"[0m
+  [4;36;1mArea Load (0.5ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 10) [0m
+  [4;35;1mArea Update (1.1ms)[0m   [0mUPDATE "areas" SET "lft" = CASE WHEN "lft" BETWEEN 6 AND 6 THEN "lft" + 8 - 6 WHEN "lft" BETWEEN 7 AND 8 THEN "lft" + 6 - 7 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 6 AND 6 THEN "rgt" + 8 - 6 WHEN "rgt" BETWEEN 7 AND 8 THEN "rgt" + 6 - 7 ELSE "rgt" END, "parent_id" = CASE WHEN id = 10 THEN 7 ELSE "parent_id" END [0m
+  [4;36;1mArea Load (0.7ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 7) [0m
+  [4;35;1mArea Load (0.5ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 10) [0m
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 11) [0m
+  [4;35;1mArea Load (0.8ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 7) ORDER BY "lft"[0m
+  [4;36;1mArea Load (0.6ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 11) [0m
+  [4;35;1mArea Update (1.0ms)[0m   [0mUPDATE "areas" SET "lft" = CASE WHEN "lft" BETWEEN 8 AND 8 THEN "lft" + 10 - 8 WHEN "lft" BETWEEN 9 AND 10 THEN "lft" + 8 - 9 ELSE "lft" END, "rgt" = CASE WHEN "rgt" BETWEEN 8 AND 8 THEN "rgt" + 10 - 8 WHEN "rgt" BETWEEN 9 AND 10 THEN "rgt" + 8 - 9 ELSE "rgt" END, "parent_id" = CASE WHEN id = 11 THEN 7 ELSE "parent_id" END [0m
+  [4;36;1mArea Load (0.6ms)[0m   [0;1mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 7) [0m
+  [4;35;1mArea Load (0.5ms)[0m   [0mSELECT "lft", "rgt", "parent_id" FROM "areas" WHERE ("areas"."id" = 11) [0m
+  [4;36;1mArea Load (12.9ms)[0m   [0;1mSELECT * FROM "areas" [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 2) AND ("areas"."lft" <= 26 AND "areas"."rgt" >= 33)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 3) AND ("areas"."lft" <= 27 AND "areas"."rgt" >= 32)) [0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 4) AND ("areas"."lft" <= 30 AND "areas"."rgt" >= 31)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 5) AND ("areas"."lft" <= 28 AND "areas"."rgt" >= 29)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 6) AND ("areas"."lft" <= 2 AND "areas"."rgt" >= 25)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 7) AND ("areas"."lft" <= 3 AND "areas"."rgt" >= 10)) [0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 9) AND ("areas"."lft" <= 4 AND "areas"."rgt" >= 5)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 10) AND ("areas"."lft" <= 6 AND "areas"."rgt" >= 7)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 11) AND ("areas"."lft" <= 8 AND "areas"."rgt" >= 9)) [0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 12) AND ("areas"."lft" <= 11 AND "areas"."rgt" >= 12)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 13) AND ("areas"."lft" <= 13 AND "areas"."rgt" >= 18)) [0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 14) AND ("areas"."lft" <= 14 AND "areas"."rgt" >= 15)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 15) AND ("areas"."lft" <= 16 AND "areas"."rgt" >= 17)) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 16) AND ("areas"."lft" <= 19 AND "areas"."rgt" >= 24)) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 17) AND ("areas"."lft" <= 20 AND "areas"."rgt" >= 21)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 18) AND ("areas"."lft" <= 22 AND "areas"."rgt" >= 23)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 20) AND ("areas"."lft" <= 34 AND "areas"."rgt" >= 45)) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 21) AND ("areas"."lft" <= 35 AND "areas"."rgt" >= 38)) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 22) AND ("areas"."lft" <= 36 AND "areas"."rgt" >= 37)) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 23) AND ("areas"."lft" <= 39 AND "areas"."rgt" >= 44)) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 24) AND ("areas"."lft" <= 40 AND "areas"."rgt" >= 41)) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 25) AND ("areas"."lft" <= 42 AND "areas"."rgt" >= 43)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 26) AND ("areas"."lft" <= 46 AND "areas"."rgt" >= 53)) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 27) AND ("areas"."lft" <= 47 AND "areas"."rgt" >= 48)) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 28) AND ("areas"."lft" <= 49 AND "areas"."rgt" >= 52)) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 29) AND ("areas"."lft" <= 50 AND "areas"."rgt" >= 51)) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 30) AND ("areas"."lft" <= 54 AND "areas"."rgt" >= 69)) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 31) AND ("areas"."lft" <= 55 AND "areas"."rgt" >= 60)) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 32) AND ("areas"."lft" <= 56 AND "areas"."rgt" >= 57)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 33) AND ("areas"."lft" <= 58 AND "areas"."rgt" >= 59)) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 34) AND ("areas"."lft" <= 61 AND "areas"."rgt" >= 66)) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 35) AND ("areas"."lft" <= 62 AND "areas"."rgt" >= 63)) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 36) AND ("areas"."lft" <= 64 AND "areas"."rgt" >= 65)) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 37) AND ("areas"."lft" <= 67 AND "areas"."rgt" >= 68)) [0m
+  [4;35;1mArea Load (12.2ms)[0m   [0mSELECT * FROM "areas" [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 2) AND ("areas"."lft" <= 26 AND "areas"."rgt" >= 33)) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 3) AND ("areas"."lft" <= 27 AND "areas"."rgt" >= 32)) [0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 4) AND ("areas"."lft" <= 30 AND "areas"."rgt" >= 31)) [0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 5) AND ("areas"."lft" <= 28 AND "areas"."rgt" >= 29)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 6) AND ("areas"."lft" <= 2 AND "areas"."rgt" >= 25)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 7) AND ("areas"."lft" <= 3 AND "areas"."rgt" >= 10)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 9) AND ("areas"."lft" <= 4 AND "areas"."rgt" >= 5)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 10) AND ("areas"."lft" <= 6 AND "areas"."rgt" >= 7)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 11) AND ("areas"."lft" <= 8 AND "areas"."rgt" >= 9)) [0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 12) AND ("areas"."lft" <= 11 AND "areas"."rgt" >= 12)) [0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 13) AND ("areas"."lft" <= 13 AND "areas"."rgt" >= 18)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 14) AND ("areas"."lft" <= 14 AND "areas"."rgt" >= 15)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 15) AND ("areas"."lft" <= 16 AND "areas"."rgt" >= 17)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 16) AND ("areas"."lft" <= 19 AND "areas"."rgt" >= 24)) [0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 17) AND ("areas"."lft" <= 20 AND "areas"."rgt" >= 21)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 18) AND ("areas"."lft" <= 22 AND "areas"."rgt" >= 23)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 20) AND ("areas"."lft" <= 34 AND "areas"."rgt" >= 45)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 21) AND ("areas"."lft" <= 35 AND "areas"."rgt" >= 38)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 22) AND ("areas"."lft" <= 36 AND "areas"."rgt" >= 37)) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 23) AND ("areas"."lft" <= 39 AND "areas"."rgt" >= 44)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 24) AND ("areas"."lft" <= 40 AND "areas"."rgt" >= 41)) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 25) AND ("areas"."lft" <= 42 AND "areas"."rgt" >= 43)) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 26) AND ("areas"."lft" <= 46 AND "areas"."rgt" >= 53)) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 27) AND ("areas"."lft" <= 47 AND "areas"."rgt" >= 48)) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 28) AND ("areas"."lft" <= 49 AND "areas"."rgt" >= 52)) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 29) AND ("areas"."lft" <= 50 AND "areas"."rgt" >= 51)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 30) AND ("areas"."lft" <= 54 AND "areas"."rgt" >= 69)) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 31) AND ("areas"."lft" <= 55 AND "areas"."rgt" >= 60)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 32) AND ("areas"."lft" <= 56 AND "areas"."rgt" >= 57)) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 33) AND ("areas"."lft" <= 58 AND "areas"."rgt" >= 59)) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 34) AND ("areas"."lft" <= 61 AND "areas"."rgt" >= 66)) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 35) AND ("areas"."lft" <= 62 AND "areas"."rgt" >= 63)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 36) AND ("areas"."lft" <= 64 AND "areas"."rgt" >= 65)) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 37) AND ("areas"."lft" <= 67 AND "areas"."rgt" >= 68)) [0m
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."nombre" = 'Unidad de Comunicacion Social') LIMIT 1[0m
+  [4;35;1mArea Load (1.2ms)[0m   [0mSELECT * FROM "areas" WHERE (nombre = 'Unidad de Comunicacion Social') [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 9) AND ("areas"."lft" <= 4 AND "areas"."rgt" >= 5)) [0m
+  [4;35;1mArea Delete all (0.5ms)[0m   [0mDELETE FROM "areas" WHERE ("lft" > 71 AND "rgt" < 72) [0m
+  [4;36;1mArea Update (0.3ms)[0m   [0;1mUPDATE "areas" SET "lft" = ("lft" - 2) WHERE ("lft" > 72) [0m
+  [4;35;1mArea Update (0.2ms)[0m   [0mUPDATE "areas" SET "rgt" = ("rgt" - 2) WHERE ("rgt" > 72) [0m
+  [4;36;1mArea Destroy (0.2ms)[0m   [0;1mDELETE FROM "areas" WHERE "id" = 8[0m
+  [4;35;1mArea Load (1.2ms)[0m   [0mSELECT * FROM "areas" WHERE (nombre = ' Viceministro de Industrializacion, Comercializacion, Transporte y Almacenaje') [0m
+  [4;36;1mArea Delete all (0.5ms)[0m   [0;1mDELETE FROM "areas" WHERE ("lft" > 71 AND "rgt" < 72) [0m
+  [4;35;1mArea Update (0.2ms)[0m   [0mUPDATE "areas" SET "lft" = ("lft" - 2) WHERE ("lft" > 72) [0m
+  [4;36;1mArea Update (0.2ms)[0m   [0;1mUPDATE "areas" SET "rgt" = ("rgt" - 2) WHERE ("rgt" > 72) [0m
+  [4;35;1mArea Destroy (0.2ms)[0m   [0mDELETE FROM "areas" WHERE "id" = 19[0m
+  [4;36;1mArea Load (12.6ms)[0m   [0;1mSELECT * FROM "areas" ORDER BY lft[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 6) AND ("areas"."lft" <= 2 AND "areas"."rgt" >= 25)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 7) AND ("areas"."lft" <= 3 AND "areas"."rgt" >= 10)) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 9) AND ("areas"."lft" <= 4 AND "areas"."rgt" >= 5)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 10) AND ("areas"."lft" <= 6 AND "areas"."rgt" >= 7)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 11) AND ("areas"."lft" <= 8 AND "areas"."rgt" >= 9)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 12) AND ("areas"."lft" <= 11 AND "areas"."rgt" >= 12)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 13) AND ("areas"."lft" <= 13 AND "areas"."rgt" >= 18)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 14) AND ("areas"."lft" <= 14 AND "areas"."rgt" >= 15)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 15) AND ("areas"."lft" <= 16 AND "areas"."rgt" >= 17)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 16) AND ("areas"."lft" <= 19 AND "areas"."rgt" >= 24)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 17) AND ("areas"."lft" <= 20 AND "areas"."rgt" >= 21)) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 18) AND ("areas"."lft" <= 22 AND "areas"."rgt" >= 23)) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 2) AND ("areas"."lft" <= 26 AND "areas"."rgt" >= 33)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 3) AND ("areas"."lft" <= 27 AND "areas"."rgt" >= 32)) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 5) AND ("areas"."lft" <= 28 AND "areas"."rgt" >= 29)) [0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 4) AND ("areas"."lft" <= 30 AND "areas"."rgt" >= 31)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 20) AND ("areas"."lft" <= 34 AND "areas"."rgt" >= 45)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 21) AND ("areas"."lft" <= 35 AND "areas"."rgt" >= 38)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 22) AND ("areas"."lft" <= 36 AND "areas"."rgt" >= 37)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 23) AND ("areas"."lft" <= 39 AND "areas"."rgt" >= 44)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 24) AND ("areas"."lft" <= 40 AND "areas"."rgt" >= 41)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 25) AND ("areas"."lft" <= 42 AND "areas"."rgt" >= 43)) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 26) AND ("areas"."lft" <= 46 AND "areas"."rgt" >= 53)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 27) AND ("areas"."lft" <= 47 AND "areas"."rgt" >= 48)) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 28) AND ("areas"."lft" <= 49 AND "areas"."rgt" >= 52)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 29) AND ("areas"."lft" <= 50 AND "areas"."rgt" >= 51)) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 30) AND ("areas"."lft" <= 54 AND "areas"."rgt" >= 69)) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 31) AND ("areas"."lft" <= 55 AND "areas"."rgt" >= 60)) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 32) AND ("areas"."lft" <= 56 AND "areas"."rgt" >= 57)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 33) AND ("areas"."lft" <= 58 AND "areas"."rgt" >= 59)) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 34) AND ("areas"."lft" <= 61 AND "areas"."rgt" >= 66)) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 35) AND ("areas"."lft" <= 62 AND "areas"."rgt" >= 63)) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 36) AND ("areas"."lft" <= 64 AND "areas"."rgt" >= 65)) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 37) AND ("areas"."lft" <= 67 AND "areas"."rgt" >= 68)) [0m
+  [4;35;1mArea Load (11.9ms)[0m   [0mSELECT * FROM "areas" ORDER BY lft[0m
+  [4;36;1mArea Load (12.0ms)[0m   [0;1mSELECT * FROM "areas" ORDER BY lft[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 6) AND ("areas"."lft" <= 2 AND "areas"."rgt" >= 25)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 7) AND ("areas"."lft" <= 3 AND "areas"."rgt" >= 10)) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 9) AND ("areas"."lft" <= 4 AND "areas"."rgt" >= 5)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 10) AND ("areas"."lft" <= 6 AND "areas"."rgt" >= 7)) [0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 11) AND ("areas"."lft" <= 8 AND "areas"."rgt" >= 9)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 12) AND ("areas"."lft" <= 11 AND "areas"."rgt" >= 12)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 13) AND ("areas"."lft" <= 13 AND "areas"."rgt" >= 18)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 14) AND ("areas"."lft" <= 14 AND "areas"."rgt" >= 15)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 15) AND ("areas"."lft" <= 16 AND "areas"."rgt" >= 17)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 16) AND ("areas"."lft" <= 19 AND "areas"."rgt" >= 24)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 17) AND ("areas"."lft" <= 20 AND "areas"."rgt" >= 21)) [0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 18) AND ("areas"."lft" <= 22 AND "areas"."rgt" >= 23)) [0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 2) AND ("areas"."lft" <= 26 AND "areas"."rgt" >= 33)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 3) AND ("areas"."lft" <= 27 AND "areas"."rgt" >= 32)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 5) AND ("areas"."lft" <= 28 AND "areas"."rgt" >= 29)) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 4) AND ("areas"."lft" <= 30 AND "areas"."rgt" >= 31)) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 20) AND ("areas"."lft" <= 34 AND "areas"."rgt" >= 45)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 21) AND ("areas"."lft" <= 35 AND "areas"."rgt" >= 38)) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 22) AND ("areas"."lft" <= 36 AND "areas"."rgt" >= 37)) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 23) AND ("areas"."lft" <= 39 AND "areas"."rgt" >= 44)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 24) AND ("areas"."lft" <= 40 AND "areas"."rgt" >= 41)) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 25) AND ("areas"."lft" <= 42 AND "areas"."rgt" >= 43)) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 26) AND ("areas"."lft" <= 46 AND "areas"."rgt" >= 53)) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 27) AND ("areas"."lft" <= 47 AND "areas"."rgt" >= 48)) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 28) AND ("areas"."lft" <= 49 AND "areas"."rgt" >= 52)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 29) AND ("areas"."lft" <= 50 AND "areas"."rgt" >= 51)) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 30) AND ("areas"."lft" <= 54 AND "areas"."rgt" >= 69)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 31) AND ("areas"."lft" <= 55 AND "areas"."rgt" >= 60)) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 32) AND ("areas"."lft" <= 56 AND "areas"."rgt" >= 57)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 33) AND ("areas"."lft" <= 58 AND "areas"."rgt" >= 59)) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 34) AND ("areas"."lft" <= 61 AND "areas"."rgt" >= 66)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 35) AND ("areas"."lft" <= 62 AND "areas"."rgt" >= 63)) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 36) AND ("areas"."lft" <= 64 AND "areas"."rgt" >= 65)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 37) AND ("areas"."lft" <= 67 AND "areas"."rgt" >= 68)) [0m
+  [4;35;1mArea Load (15.8ms)[0m   [0mSELECT * FROM "areas" ORDER BY lft[0m
+  [4;36;1mArea Update (0.8ms)[0m   [0;1mUPDATE "areas" SET "updated_at" = '2009-07-08 21:29:04', "nombre" = 'Unidad de Gestion Juridica' WHERE "id" = 15[0m
+  [4;35;1mArea Update (0.6ms)[0m   [0mUPDATE "areas" SET "updated_at" = '2009-07-08 21:29:04', "nombre" = 'Viceministro de Industrializacion, Comercializacion, Transporte y Almacenaje' WHERE "id" = 20[0m
+  [4;36;1mArea Load (12.5ms)[0m   [0;1mSELECT * FROM "areas" ORDER BY lft[0m
+  [4;35;1mSQL (38.0ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 6) AND ("areas"."lft" <= 2 AND "areas"."rgt" >= 25)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 7) AND ("areas"."lft" <= 3 AND "areas"."rgt" >= 10)) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 9) AND ("areas"."lft" <= 4 AND "areas"."rgt" >= 5)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 10) AND ("areas"."lft" <= 6 AND "areas"."rgt" >= 7)) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 11) AND ("areas"."lft" <= 8 AND "areas"."rgt" >= 9)) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 12) AND ("areas"."lft" <= 11 AND "areas"."rgt" >= 12)) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 13) AND ("areas"."lft" <= 13 AND "areas"."rgt" >= 18)) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 14) AND ("areas"."lft" <= 14 AND "areas"."rgt" >= 15)) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 15) AND ("areas"."lft" <= 16 AND "areas"."rgt" >= 17)) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 16) AND ("areas"."lft" <= 19 AND "areas"."rgt" >= 24)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 17) AND ("areas"."lft" <= 20 AND "areas"."rgt" >= 21)) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 18) AND ("areas"."lft" <= 22 AND "areas"."rgt" >= 23)) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 2) AND ("areas"."lft" <= 26 AND "areas"."rgt" >= 33)) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 3) AND ("areas"."lft" <= 27 AND "areas"."rgt" >= 32)) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 5) AND ("areas"."lft" <= 28 AND "areas"."rgt" >= 29)) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 4) AND ("areas"."lft" <= 30 AND "areas"."rgt" >= 31)) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 20) AND ("areas"."lft" <= 34 AND "areas"."rgt" >= 45)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 21) AND ("areas"."lft" <= 35 AND "areas"."rgt" >= 38)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 22) AND ("areas"."lft" <= 36 AND "areas"."rgt" >= 37)) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 23) AND ("areas"."lft" <= 39 AND "areas"."rgt" >= 44)) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 24) AND ("areas"."lft" <= 40 AND "areas"."rgt" >= 41)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 25) AND ("areas"."lft" <= 42 AND "areas"."rgt" >= 43)) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 26) AND ("areas"."lft" <= 46 AND "areas"."rgt" >= 53)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 27) AND ("areas"."lft" <= 47 AND "areas"."rgt" >= 48)) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 28) AND ("areas"."lft" <= 49 AND "areas"."rgt" >= 52)) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 29) AND ("areas"."lft" <= 50 AND "areas"."rgt" >= 51)) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 30) AND ("areas"."lft" <= 54 AND "areas"."rgt" >= 69)) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 31) AND ("areas"."lft" <= 55 AND "areas"."rgt" >= 60)) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 32) AND ("areas"."lft" <= 56 AND "areas"."rgt" >= 57)) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 33) AND ("areas"."lft" <= 58 AND "areas"."rgt" >= 59)) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 34) AND ("areas"."lft" <= 61 AND "areas"."rgt" >= 66)) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 35) AND ("areas"."lft" <= 62 AND "areas"."rgt" >= 63)) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 36) AND ("areas"."lft" <= 64 AND "areas"."rgt" >= 65)) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "areas" WHERE (("areas".id != 37) AND ("areas"."lft" <= 67 AND "areas"."rgt" >= 68)) [0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-08 17:31:53) [GET]
+
+ActionController::RoutingError (No route matches "/unidades" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AreasController#index (for 127.0.0.1 at 2009-07-08 17:32:04) [GET]
+  [4;36;1mArea Load (21.7ms)[0m   [0;1mSELECT * FROM "areas" [0m
+Rendering template within layouts/areas
+Rendering areas/index
+Completed in 273ms (View: 224, DB: 22) | 200 OK [http://localhost/areas]
+
+
+Processing AreasController#edit (for 127.0.0.1 at 2009-07-08 17:32:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mArea Load (1.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) [0m
+Rendering template within layouts/areas
+Rendering areas/edit
+Completed in 57ms (View: 34, DB: 1) | 200 OK [http://localhost/areas/1/edit]
+
+
+Processing AreasController#new (for 127.0.0.1 at 2009-07-08 17:32:14) [GET]
+Rendering template within layouts/areas
+Rendering areas/new
+  [4;36;1mTipo Load (0.4ms)[0m   [0;1mSELECT * FROM "tipos" [0m
+  [4;35;1mNivel Load (0.2ms)[0m   [0mSELECT * FROM "niveles" [0m
+Completed in 132ms (View: 105, DB: 1) | 200 OK [http://localhost/areas/new]
+
+
+Processing TiposController#index (for 127.0.0.1 at 2009-07-08 17:32:20) [GET]
+  [4;36;1mTipo Load (1.0ms)[0m   [0;1mSELECT * FROM "tipos" [0m
+Rendering template within layouts/tipos
+Rendering tipos/index
+Completed in 42ms (View: 25, DB: 1) | 200 OK [http://localhost/tipos]
+
+
+Processing TiposController#new (for 127.0.0.1 at 2009-07-08 17:32:22) [GET]
+Rendering template within layouts/tipos
+Rendering tipos/new
+Completed in 54ms (View: 40, DB: 0) | 200 OK [http://localhost/tipos/new]
+
+
+Processing NivelesController#index (for 127.0.0.1 at 2009-07-08 17:32:42) [GET]
+  [4;35;1mNivel Load (1.0ms)[0m   [0mSELECT * FROM "niveles" [0m
+Rendering template within layouts/niveles
+Rendering niveles/index
+Completed in 41ms (View: 25, DB: 1) | 200 OK [http://localhost/niveles]
+
+
+Processing NivelesController#new (for 127.0.0.1 at 2009-07-08 17:32:44) [GET]
+Rendering template within layouts/niveles
+Rendering niveles/new
+Completed in 33ms (View: 15, DB: 0) | 200 OK [http://localhost/niveles/new]
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-08 17:33:07) [GET]
+  [4;36;1mFormulario Load (2.0ms)[0m   [0;1mSELECT * FROM "formularios" [0m
+Rendering template within layouts/formularios
+Rendering formularios/index
+Completed in 55ms (View: 37, DB: 2) | 200 OK [http://localhost/formularios]
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2009-07-08 17:33:10) [GET]
+Rendering template within layouts/formularios
+Rendering formularios/new
+Completed in 286ms (View: 262, DB: 0) | 200 OK [http://localhost/formularios/new]
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2009-07-08 18:13:07) [GET]
+Rendering template within layouts/formularios
+Rendering formularios/new
+Completed in 355ms (View: 270, DB: 0) | 200 OK [http://localhost/formularios/new]
+
+
+Processing NivelesController#index (for 127.0.0.1 at 2009-07-08 18:13:35) [GET]
+  [4;36;1mNivel Load (1.0ms)[0m   [0;1mSELECT * FROM "niveles" [0m
+Rendering template within layouts/niveles
+Rendering niveles/index
+Completed in 44ms (View: 24, DB: 1) | 200 OK [http://localhost/niveles]
+
+
+Processing AreasController#index (for 192.168.10.107 at 2009-07-08 18:25:25) [GET]
+  [4;35;1mArea Load (20.2ms)[0m   [0mSELECT * FROM "areas" [0m
+Rendering template within layouts/areas
+Rendering areas/index
+Completed in 644ms (View: 544, DB: 20) | 200 OK [http://192.168.10.40/areas]
+
+
+Processing FormulariosController#index (for 192.168.10.107 at 2009-07-08 18:26:07) [GET]
+  [4;36;1mFormulario Load (0.9ms)[0m   [0;1mSELECT * FROM "formularios" [0m
+Rendering template within layouts/formularios
+Rendering formularios/index
+Completed in 28ms (View: 11, DB: 1) | 200 OK [http://192.168.10.40/formularios]
+
+
+Processing FormulariosController#new (for 192.168.10.107 at 2009-07-08 18:26:11) [GET]
+Rendering template within layouts/formularios
+Rendering formularios/new
+Completed in 85ms (View: 60, DB: 0) | 200 OK [http://192.168.10.40/formularios/new]
+
+
+Processing NivelesController#index (for 127.0.0.1 at 2009-07-08 18:55:34) [GET]
+  [4;35;1mNivel Load (24.5ms)[0m   [0mSELECT * FROM "niveles" [0m
+Rendering template within layouts/niveles
+Rendering niveles/index
+Completed in 331ms (View: 231, DB: 24) | 200 OK [http://localhost/niveles]
+
+
+Processing NivelesController#new (for 127.0.0.1 at 2009-07-08 18:55:48) [GET]
+Rendering template within layouts/niveles
+Rendering niveles/new
+Completed in 155ms (View: 131, DB: 0) | 200 OK [http://localhost/niveles/new]
+
+
+Processing NivelesController#index (for 127.0.0.1 at 2009-07-08 18:55:52) [GET]
+  [4;36;1mNivel Load (63.0ms)[0m   [0;1mSELECT * FROM "niveles" [0m
+Rendering template within layouts/niveles
+Rendering niveles/index
+Completed in 145ms (View: 3, DB: 63) | 200 OK [http://localhost/niveles]

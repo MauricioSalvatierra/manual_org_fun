@@ -1,0 +1,48 @@
+<h1>Editing formulario</h1>
+
+<% form_for(@formulario) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :area_id %><br />
+    <%= f.text_field :area_id %>
+  </p>
+  <p>
+    <%= f.label :usuario_id %><br />
+    <%= f.text_field :usuario_id %>
+  </p>
+  <p>
+    <%= f.label :objectivo_area_funcional %><br />
+    <%= f.text_area :objectivo_area_funcional %>
+  </p>
+  <p>
+    <%= f.label :descripcion_funcion_principal %><br />
+    <%= f.text_area :descripcion_funcion_principal %>
+  </p>
+  <p>
+    <%= f.label :descripcion_funciones_especificas %><br />
+    <%= f.text_area :descripcion_funciones_especificas %>
+  </p>
+  <p>
+    <%= f.label :relaciones_coordinacion_interna %><br />
+    <%= f.text_area :relaciones_coordinacion_interna %>
+  </p>
+  <p>
+    <%= f.label :relacionamiento_interinstitucional %><br />
+    <%= f.text_area :relacionamiento_interinstitucional %>
+  </p>
+  <p>
+    <%= f.label :fecha_aprovacion %><br />
+    <%= f.date_select :fecha_aprovacion %>
+  </p>
+  <p>
+    <%= f.label :fecha_actualizacion %><br />
+    <%= f.date_select :fecha_actualizacion %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @formulario %> |
+<%= link_to 'Back', formularios_path %>

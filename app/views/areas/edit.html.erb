@@ -1,0 +1,36 @@
+<h1>Editing area</h1>
+
+<% form_for(@area) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :parent_id %><br />
+    <%= f.text_field :parent_id %>
+  </p>
+  <p>
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </p>
+  <p>
+    <%= f.label :tipo_id %><br />
+    <%= f.text_field :tipo_id %>
+  </p>
+  <p>
+    <%= f.label :nivel_id %><br />
+    <%= f.text_field :nivel_id %>
+  </p>
+  <p>
+    <%= f.label :lft %><br />
+    <%= f.text_field :lft %>
+  </p>
+  <p>
+    <%= f.label :rgt %><br />
+    <%= f.text_field :rgt %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @area %> |
+<%= link_to 'Back', areas_path %>
