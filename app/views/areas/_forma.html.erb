@@ -1,0 +1,22 @@
+<% form_for(@area) do |f| %>
+  <%= f.error_messages %>
+  <input type="hidden" name="page" value="<%= @page %>" />
+ 
+  <p>
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </p>
+  <p>
+    <%= f.label :tipo_id, 'Tipo AF'%><br />
+    <%= f.select :tipo_id, Tipo.all.map{|v| [v, v.id]}, :include_blank => true  %>
+   
+  </p>
+  <p>
+    <%= f.label :nivel_id, 'Nivel'%><br />
+    <%= f.select :nivel_id, Nivel.all.map{|v| [v, v.id]}, :include_blank => true  %>
+   
+  </p>
+ 
+    <%= f.submit 'Salvar' , :class => 'ui-corner-all' %>
+  </p>
+<% end %>

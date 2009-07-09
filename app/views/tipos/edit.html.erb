@@ -1,16 +1,4 @@
-<h1>Editing tipo</h1>
-
-<% form_for(@tipo) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :nombre %><br />
-    <%= f.text_field :nombre %>
-  </p>
-  <p>
-    <%= f.submit 'Update' %>
-  </p>
-<% end %>
-
-<%= link_to 'Show', @tipo %> |
-<%= link_to 'Back', tipos_path %>
+<h1>Editar Tipo</h1>
+<%= render :partial => "forma" %>
+<%= link_to 'Ver', tipo_path(@tipo,:page => @page) %> |
+<%= link_to 'Listar', tipos_path(:page => @page) %>

@@ -1,4 +1,4 @@
-<h1>Listing tipos</h1>
+<h1>Lista de Tipos</h1>
 
 <table>
   <tr>
@@ -8,13 +8,14 @@
 <% @tipos.each do |tipo| %>
   <tr>
     <td><%=h tipo.nombre %></td>
-    <td><%= link_to 'Show', tipo %></td>
-    <td><%= link_to 'Edit', edit_tipo_path(tipo) %></td>
-    <td><%= link_to 'Destroy', tipo, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Ver', tipo_path(tipo, :page => @page) %></td>
+    <td><%= link_to 'Editar', edit_tipo_path(tipo,:page => @page) %></td>
+    <td><%= link_to 'Eliminar', tipo, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New tipo', new_tipo_path %>
+<%= link_to 'Nuevo Tipo', new_tipo_path %>
+<%= will_paginate @tipos %>

@@ -2,7 +2,7 @@ class AreasController < ApplicationController
   # GET /areas
   # GET /areas.xml
   def index
-    @areas = Area.all
+    @areas = Area.paginate(:page => @page)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -45,7 +45,7 @@ class AreasController < ApplicationController
     respond_to do |format|
       if @area.save
         flash[:notice] = 'Area was successfully created.'
-        format.html { redirect_to(@area) }
+        format.html { redirect_to("/areas/#{@area.id}?page=#{params[:page]}" ) }
         format.xml  { render :xml => @area, :status => :created, :location => @area }
       else
         format.html { render :action => "new" }
@@ -62,7 +62,7 @@ class AreasController < ApplicationController
     respond_to do |format|
       if @area.update_attributes(params[:area])
         flash[:notice] = 'Area was successfully updated.'
-        format.html { redirect_to(@area) }
+        format.html { redirect_to("/areas/#{@area.id}?page=#{params[:page]}" ) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

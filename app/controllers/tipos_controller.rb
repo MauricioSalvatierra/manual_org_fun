@@ -2,7 +2,8 @@ class TiposController < ApplicationController
   # GET /tipos
   # GET /tipos.xml
   def index
-    @tipos = Tipo.all
+    @tipos = Tipo.all.paginate(:page => @page)
+    #@tipos = Tipo.all
 
     respond_to do |format|
       format.html # index.html.erb

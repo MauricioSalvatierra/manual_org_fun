@@ -1,16 +1,6 @@
-<h1>Editing nivel</h1>
+<h1>Editar Nivel</h1>
 
-<% form_for(@nivel) do |f| %>
-  <%= f.error_messages %>
+<%= render :partial => "forma" %>
 
-  <p>
-    <%= f.label :nombre %><br />
-    <%= f.text_field :nombre %>
-  </p>
-  <p>
-    <%= f.submit 'Update' %>
-  </p>
-<% end %>
-
-<%= link_to 'Show', @nivel %> |
-<%= link_to 'Back', niveles_path %>
+<%= link_to 'Ver', nivel_path(@nivel,:page => @page) %> |
+<%= link_to 'Atras', niveles_path(:page => @page) %>

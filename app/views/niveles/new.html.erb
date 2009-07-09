@@ -1,15 +1,6 @@
-<h1>New nivel</h1>
+<h1>Nuevo Nivel</h1>
 
-<% form_for(@nivel) do |f| %>
-  <%= f.error_messages %>
 
-  <p>
-    <%= f.label :nombre %><br />
-    <%= f.text_field :nombre %>
-  </p>
-  <p>
-    <%= f.submit 'Create' %>
-  </p>
-<% end %>
+<%= render :partial => "forma" %>
 
-<%= link_to 'Back', niveles_path %>
+<%= link_to 'Listado', niveles_path(:page => @page) %>

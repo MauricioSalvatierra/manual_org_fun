@@ -2,7 +2,8 @@ class NivelesController < ApplicationController
   # GET /niveles
   # GET /niveles.xml
   def index
-    @niveles = Nivel.all
+    @niveles = Nivel.paginate(:page => @page)
+    #@niveles = Nivel.all
 
     respond_to do |format|
       format.html # index.html.erb
