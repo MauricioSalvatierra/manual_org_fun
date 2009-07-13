@@ -1,4 +1,4 @@
 <h1>Editar Formulario</h1>
 <%= render :partial => "forma" %>
-<%= link_to 'Ver', @formulario %> |
-<%= link_to 'Listar', formularios_path %>
+<%= link_to 'Ver', formulario_path(@formulario, :page => @page) %> |
+<%= link_to 'Listar', formularios_path (:page => @page)%>

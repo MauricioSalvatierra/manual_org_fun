@@ -404,3 +404,50 @@
 .ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
 .ui-tabs .ui-tabs-panel { padding: 1em 1.4em; display: block; border-width: 0; background: none; }
 .ui-tabs .ui-tabs-hide { display: none !important; }
+/*menu */
+ul#navigation{
+  height: 28px;
+  list-style: none;
+  padding: 0px; margin: 0px;
+  background: #F6F6F6;
+}
+
+ul#navigation li{ display: inline; float: left;}
+
+ul#navigation li a{
+  display: block;
+  text-decoration: #1C94C4;
+  font-weight: bold;
+  font-size: #1C94C4;
+  padding: 5px 7px;
+  border-right: 1px solid #CCCCCC;
+}
+ul#navigation li a:hover{
+  background: #F6F6F6 url(images/ui-bg_glass_100_f6f6f6_1x400.png) repeat-x scroll 50% 50%;
+}
+table {
+border-collapse:collapse;
+}
+th, td {
+border:1px solid #8F8F8F;
+padding:3px 4px;
+}
+tr.rowdel {
+background:#6F6F6F none repeat scroll 0 0;
+}
+/*flashNotice {*/
+/*color:#F58F17;*/
+/*font-size:1.8em;*/
+/*font-weight:bold;*/
+/*text-decoration:underline;*/
+/*}*/
+/*a:hover {*/
+/*color:#3FB2FF;*/
+/*text-decoration:none;*/
+/*}*/
+/*a {*/
+/*color:#F58F17;*/
+/*text-decoration:underline;*/
+/*}*/
+
+

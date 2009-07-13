@@ -1,16 +1,16 @@
-<h1>Listing formularios</h1>
+<h1>Listar Formularios</h1>
 
 <table>
   <tr>
-    <th>Area</th>
-    <th>Usuario</th>
-    <th>Objectivo area funcional</th>
-    <th>Descripcion funcion principal</th>
-    <th>Descripcion funciones especificas</th>
-    <th>Relaciones coordinacion interna</th>
-    <th>Relacionamiento interinstitucional</th>
-    <th>Fecha aprovacion</th>
-    <th>Fecha actualizacion</th>
+    <th class="ui-state-default">Area</th>
+    <th class="ui-state-default">Usuario</th>
+    <th class="ui-state-default">Objectivo area funcional</th>
+    <th class="ui-state-default">Descripcion funcion principal</th>
+    <th class="ui-state-default">Descripcion funciones especificas</th>
+    <th class="ui-state-default">Relaciones coordinacion interna</th>
+    <th class="ui-state-default">Relacionamiento interinstitucional</th>
+    <th class="ui-state-default">Fecha aprovacion</th>
+    <th class="ui-state-default">Fecha actualizacion</th>
   </tr>
 
 <% @formularios.each do |formulario| %>
@@ -24,13 +24,15 @@
     <td><%=h formulario.relacionamiento_interinstitucional %></td>
     <td><%=h formulario.fecha_aprovacion %></td>
     <td><%=h formulario.fecha_actualizacion %></td>
-    <td><%= link_to 'Show', formulario %></td>
-    <td><%= link_to 'Edit', edit_formulario_path(formulario) %></td>
-    <td><%= link_to 'Destroy', formulario, :confirm => 'Are you sure?', :method => :delete %></td>
+    
+    <td><%= link_to 'Ver', formulario_path(formulario, page => @page) %></td>
+    <td><%= link_to 'Editar', edit_formulario_path(formulario, page => @page) %></td>
+    <td><%= link_to 'Eliminar', formulario, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New formulario', new_formulario_path %>
+<%= link_to 'Nuevo Formulario', new_formulario_path %>
+<%= will_paginate @areas %>

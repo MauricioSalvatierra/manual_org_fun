@@ -44,5 +44,5 @@
 </p>
 
 
-<%= link_to 'Edit', edit_formulario_path(@formulario) %> |
-<%= link_to 'Back', formularios_path %>
+<%= link_to 'Editar', edit_formulario_path(@formulario,(:page => @page)) %> |
+<%= link_to 'Listar', formularios_path(:page => @page) %>

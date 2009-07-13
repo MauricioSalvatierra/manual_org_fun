@@ -2,7 +2,8 @@ class FormulariosController < ApplicationController
   # GET /formularios
   # GET /formularios.xml
   def index
-    @formularios = Formulario.all
+    @formularios = Formulario.paginate(:page => @page)
+    #@formularios = Formulario.all
 
     respond_to do |format|
       format.html # index.html.erb

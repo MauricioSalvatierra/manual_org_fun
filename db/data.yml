@@ -1,5 +1,51 @@
 
 --- 
+tipos: 
+  columns: 
+  - id
+  - nombre
+  - created_at
+  - updated_at
+  records: 
+  - - "1"
+    - Sustantiva
+    - 2009-07-09 15:53:30
+    - 2009-07-09 15:53:30
+  - - "2"
+    - Asesoramiento
+    - 2009-07-09 15:55:33
+    - 2009-07-09 15:55:33
+  - - "3"
+    - Apoyo
+    - 2009-07-09 15:55:54
+    - 2009-07-09 15:55:54
+
+--- 
+niveles: 
+  columns: 
+  - id
+  - nombre
+  - created_at
+  - updated_at
+  records: 
+  - - "1"
+    - Normativo
+    - 2009-07-09 15:56:36
+    - 2009-07-09 15:56:36
+  - - "2"
+    - Operativo
+    - 2009-07-09 15:57:29
+    - 2009-07-09 15:57:29
+  - - "3"
+    - Planificacion y Coordinacion
+    - 2009-07-09 15:58:33
+    - 2009-07-09 15:58:33
+  - - "4"
+    - Ejecutivo
+    - 2009-07-09 15:59:11
+    - 2009-07-09 15:59:11
+
+--- 
 areas: 
   columns: 
   - id
@@ -16,53 +62,53 @@ areas:
   - - "1"
     - 
     - Despacho Ministro
-    - 
-    - 
+    - "1"
+    - "1"
     - "1"
     - "70"
     - true
     - 2009-07-08 20:12:55
-    - 2009-07-08 20:35:57
+    - 2009-07-09 16:23:02
   - - "2"
     - "1"
     - Viceministro de Exploracion y Explotacion de Hidrocarburos
-    - 
-    - 
+    - "1"
+    - "3"
     - "26"
     - "33"
     - true
     - 2009-07-08 20:15:25
-    - 2009-07-08 20:35:57
+    - 2009-07-09 20:56:37
   - - "3"
     - "2"
     - Direccion General de Exploracion y Explotacion de Hidrocarburos
-    - 
-    - 
+    - "1"
+    - "4"
     - "27"
     - "32"
     - true
     - 2009-07-08 20:18:56
-    - 2009-07-08 20:35:57
+    - 2009-07-09 20:57:22
   - - "4"
     - "3"
     - Unidad de Explotacion
-    - 
-    - 
+    - "1"
+    - "2"
     - "30"
     - "31"
     - true
     - 2009-07-08 20:19:43
-    - 2009-07-08 20:35:57
+    - 2009-07-09 20:57:53
   - - "5"
     - "3"
     - Unidad de Exploracion
-    - 
-    - 
+    - "1"
+    - "2"
     - "28"
     - "29"
     - true
     - 2009-07-08 20:20:17
-    - 2009-07-08 20:35:57
+    - 2009-07-09 20:57:38
   - - "6"
     - "1"
     - VM
@@ -86,280 +132,280 @@ areas:
   - - "9"
     - "7"
     - Unidad de Comunicacion Social
-    - 
-    - 
+    - "2"
+    - "2"
     - "4"
     - "5"
     - true
     - 2009-07-08 20:33:21
-    - 2009-07-08 20:33:21
+    - 2009-07-09 20:44:14
   - - "10"
     - "7"
     - Unidad de Auditoria Interna
-    - 
-    - 
+    - "2"
+    - "2"
     - "6"
     - "7"
     - true
     - 2009-07-08 20:33:50
-    - 2009-07-08 20:33:50
+    - 2009-07-09 20:44:47
   - - "11"
     - "7"
     - Unidad de Transparencia
-    - 
-    - 
+    - "2"
+    - "2"
     - "8"
     - "9"
     - true
     - 2009-07-08 20:34:08
-    - 2009-07-08 20:34:08
+    - 2009-07-09 20:45:10
   - - "12"
     - "6"
     - Direccion de Planificacion
-    - 
-    - 
+    - "2"
+    - "2"
     - "11"
     - "12"
     - true
     - 2009-07-08 20:40:15
-    - 2009-07-08 20:40:15
+    - 2009-07-09 20:47:12
   - - "13"
     - "6"
     - Direccion General de Asuntos Juridicos
-    - 
-    - 
+    - "2"
+    - "2"
     - "13"
     - "18"
     - true
     - 2009-07-08 20:40:54
-    - 2009-07-08 20:40:54
+    - 2009-07-09 20:51:30
   - - "14"
     - "13"
     - Unidad de Analisis Juridico
-    - 
-    - 
+    - "2"
+    - "2"
     - "14"
     - "15"
     - true
     - 2009-07-08 20:44:28
-    - 2009-07-08 20:44:28
+    - 2009-07-09 20:51:43
   - - "15"
     - "13"
     - Unidad de Gestion Juridica
-    - 
-    - 
+    - "2"
+    - "2"
     - "16"
     - "17"
     - true
     - 2009-07-08 20:45:47
-    - 2009-07-08 21:29:04
+    - 2009-07-09 20:52:00
   - - "16"
     - "6"
     - Direccion General de Asuntos Administrativos
-    - 
-    - 
+    - "3"
+    - "2"
     - "19"
     - "24"
     - true
     - 2009-07-08 20:46:25
-    - 2009-07-08 20:46:25
+    - 2009-07-09 20:55:15
   - - "17"
     - "16"
     - Unidad Financiera
-    - 
-    - 
+    - "3"
+    - "2"
     - "20"
     - "21"
     - true
     - 2009-07-08 20:47:19
-    - 2009-07-08 20:47:19
+    - 2009-07-09 20:55:34
   - - "18"
     - "16"
     - Unidad Recursos Humanos y Administrativos
-    - 
-    - 
+    - "3"
+    - "2"
     - "22"
     - "23"
     - true
     - 2009-07-08 20:47:42
-    - 2009-07-08 20:47:42
+    - 2009-07-09 20:55:46
   - - "20"
     - "1"
     - Viceministro de Industrializacion, Comercializacion, Transporte y Almacenaje
-    - 
-    - 
+    - "1"
+    - "3"
     - "34"
     - "45"
     - true
     - 2009-07-08 20:51:35
-    - 2009-07-08 21:29:04
+    - 2009-07-09 20:58:42
   - - "21"
     - "20"
     - Direccion General de Industrializacion y Refinacion
-    - 
-    - 
+    - "1"
+    - "4"
     - "35"
     - "38"
     - true
     - 2009-07-08 20:52:46
-    - 2009-07-08 20:52:46
+    - 2009-07-09 20:58:59
   - - "22"
     - "21"
     - Unidad de Industrializacion y Refinacion
-    - 
-    - 
+    - "1"
+    - "2"
     - "36"
     - "37"
     - true
     - 2009-07-08 20:53:33
-    - 2009-07-08 20:53:33
+    - 2009-07-09 20:59:50
   - - "23"
     - "20"
     - Direccion General de Comercializacion, transporte y Almacenaje
-    - 
-    - 
+    - "1"
+    - "4"
     - "39"
     - "44"
     - true
     - 2009-07-08 20:54:08
-    - 2009-07-08 20:54:08
+    - 2009-07-09 21:00:07
   - - "24"
     - "23"
     - Unidad de Comercializacion de Hidrocarburos
-    - 
-    - 
+    - "1"
+    - "2"
     - "40"
     - "41"
     - true
     - 2009-07-08 20:54:52
-    - 2009-07-08 20:54:52
+    - 2009-07-09 21:00:36
   - - "25"
     - "23"
     - Unidad de Transporte, Almacenaje y Distribucion de Gas por Redes
-    - 
-    - 
+    - "1"
+    - "2"
     - "42"
     - "43"
     - true
     - 2009-07-08 20:55:34
-    - 2009-07-08 20:55:34
+    - 2009-07-09 21:01:07
   - - "26"
     - "1"
     - Viceministro de Desarrollo Energetico
-    - 
-    - 
+    - "1"
+    - "3"
     - "46"
     - "53"
     - true
     - 2009-07-08 20:56:29
-    - 2009-07-08 20:56:29
+    - 2009-07-09 21:01:55
   - - "27"
     - "26"
     - Direccion General de Planificacion e Integracion Energetica
-    - 
-    - 
+    - "1"
+    - "4"
     - "47"
     - "48"
     - true
     - 2009-07-08 20:57:19
-    - 2009-07-08 20:57:19
+    - 2009-07-09 21:05:32
   - - "28"
     - "26"
     - Direccion General de Gestion Socio Ambiental
-    - 
-    - 
+    - "1"
+    - "4"
     - "49"
     - "52"
     - true
     - 2009-07-08 20:58:04
-    - 2009-07-08 20:58:04
+    - 2009-07-09 21:05:59
   - - "29"
     - "28"
     - Unidad de Prevencion y Control Socio Ambiental
-    - 
-    - 
+    - "1"
+    - "2"
     - "50"
     - "51"
     - true
     - 2009-07-08 20:58:57
-    - 2009-07-08 20:58:57
+    - 2009-07-09 21:06:49
   - - "30"
     - "1"
     - Viceministro de Electricidad y Energias Alternativas
-    - 
-    - 
+    - "1"
+    - "3"
     - "54"
     - "69"
     - true
     - 2009-07-08 21:00:15
-    - 2009-07-08 21:00:15
+    - 2009-07-09 21:07:21
   - - "31"
     - "30"
     - Direccion General de Electricidad
-    - 
-    - 
+    - "1"
+    - "4"
     - "55"
     - "60"
     - true
     - 2009-07-08 21:01:12
-    - 2009-07-08 21:01:12
+    - 2009-07-09 21:07:48
   - - "32"
     - "31"
     - Unidad de Evaluacion y Normas
-    - 
-    - 
+    - "1"
+    - "2"
     - "56"
     - "57"
     - true
     - 2009-07-08 21:02:27
-    - 2009-07-08 21:02:27
+    - 2009-07-09 21:08:13
   - - "33"
     - "31"
     - Unidad de Desarrollo de Infraestructura y Electrificacion Rural
-    - 
-    - 
+    - "1"
+    - "2"
     - "58"
     - "59"
     - true
     - 2009-07-08 21:03:27
-    - 2009-07-08 21:03:27
+    - 2009-07-09 21:08:48
   - - "34"
     - "30"
     - Direccion General de Energias Alternativas
-    - 
-    - 
+    - "1"
+    - "4"
     - "61"
     - "66"
     - true
     - 2009-07-08 21:04:24
-    - 2009-07-08 21:04:24
+    - 2009-07-09 21:11:44
   - - "35"
     - "34"
     - Unidad de Energias Renovables Convencionales
-    - 
-    - 
+    - "1"
+    - "2"
     - "62"
     - "63"
     - true
     - 2009-07-08 21:05:34
-    - 2009-07-08 21:05:34
+    - 2009-07-09 21:17:22
   - - "36"
     - "34"
     - Unidad de Energias Renovables no Convencionales
-    - 
-    - 
+    - "1"
+    - "2"
     - "64"
     - "65"
     - true
     - 2009-07-08 21:06:32
-    - 2009-07-08 21:06:32
+    - 2009-07-09 21:18:16
   - - "37"
     - "30"
     - Direccion General de Control y Fiscalizacion
-    - 
-    - 
+    - "1"
+    - "4"
     - "67"
     - "68"
     - true
     - 2009-07-08 21:07:38
-    - 2009-07-08 21:07:38
+    - 2009-07-09 21:30:01

@@ -12,11 +12,33 @@
 
 
 </head>
+<!--<body>-->
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  </head>-->
 <body>
+<ul id="navigation">
+  <li><a href="/tipos">Tipos</a></li>
+  <li><a href="/niveles">Niveles</a></li>
+  <li><a href="/areas">Areas</a></li>
+  <li><a href="/formularios">Formularios</a></li>
+  <!--<li><a href="/items">Items</a></li>-->
+</ul>
+<div id="cont">
+  <div id="flashNotice"><%= flash[:notice] %></div>
 
-<p style="color: green"><%= flash[:notice] %></p>
-
-<%= yield %>
+  <%= yield %>
+</div>
 
 </body>
+  
+  
+  
+
+<!--<p style="color: green"><%= flash[:notice] %></p>-->
+<!---->
+<!--<%= yield %>-->
+<!---->
+<!--</body>-->
 </html>

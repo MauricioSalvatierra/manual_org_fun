@@ -8,5 +8,5 @@
 #   inflect.irregular 'person', 'people'
 #   inflect.uncountable %w( fish sheep )
   inflect.plural /^([a-z_]+)([^aeiou])$/i, '\1\2es'
-  inflect.singular /^([a-z_]+)(es)$/, '\1'
+  inflect.singular /^([a-z_]+)(es)$/i, '\1'
  end

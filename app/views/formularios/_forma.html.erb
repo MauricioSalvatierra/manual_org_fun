@@ -1,43 +1,64 @@
+<% @areas = Area.all(:include => [:nivel, :tipo]) %>
+
 <% form_for(@formulario) do |f| %>
   <%= f.error_messages %>
 
   <p>
-    <%= f.label :area_id %><br />
-    <%= f.text_field :area_id %>
+    <%= f.label :area_id, 'AREA:' %>
+    <%= f.select :area_id, @areas.map{|v| [v, v.id]}, :include_blank => true %>
   </p>
-  <p>
-    <%= f.label :usuario_id %><br />
-    <%= f.text_field :usuario_id %>
-  </p>
+  <div id="descripcion">
+  </div>
+  
   <p>
     <%= f.label :objectivo_area_funcional %><br />
-    <%= f.text_area :objectivo_area_funcional %>
+    <%= f.text_area :objectivo_area_funcional, :size => "100x20" %>
   </p>
   <p>
     <%= f.label :descripcion_funcion_principal %><br />
-    <%= f.text_area :descripcion_funcion_principal %>
+    <%= f.text_area :descripcion_funcion_principal, :size => "100x20" %>
   </p>
   <p>
     <%= f.label :descripcion_funciones_especificas %><br />
-    <%= f.text_area :descripcion_funciones_especificas %>
+    <%= f.text_area :descripcion_funciones_especificas, :size => "100x20" %>
   </p>
   <p>
     <%= f.label :relaciones_coordinacion_interna %><br />
-    <%= f.text_area :relaciones_coordinacion_interna %>
+    <%= f.text_area :relaciones_coordinacion_interna, :size => "100x20" %>
   </p>
   <p>
     <%= f.label :relacionamiento_interinstitucional %><br />
-    <%= f.text_area :relacionamiento_interinstitucional %>
+    <%= f.text_area :relacionamiento_interinstitucional, :size => "100x20" %>
   </p>
+  
   <p>
     <%= f.label :fecha_aprovacion %><br />
-    <%= f.date_select :fecha_aprovacion %>
+    <%= f.date_select :"fecha_aprovacion", :order =>[:day, :month, :year], :use_month_numbers => true %>
   </p>
   <p>
     <%= f.label :fecha_actualizacion %><br />
-    <%= f.date_select :fecha_actualizacion %>
+    <%= f.date_select( "fecha_actualizacion",:order =>[:day, :month, :year], :use_month_numbers => true, :start_year => 2009)%>
   </p>
   <p>
-    <%= f.submit 'Create' %>
+    <%= f.submit 'Salvar' %>
   </p>
 <% end %>
+
+<script type="text/javascript">
+
+
+$(document).ready(function(){
+  $('#formulario_area_id').change(function(){
+    $.get('/areas/'+$(this).val() +'/seleccionar', function(data){
+        $('#descripcion').html(data);
+      });
+  });
+	
+	// Cuando se inicializa la pantalla
+  setTipo($('#formulario_area_id').val());
+	setNivel($('#formulario_area_id').val());
+  setNivel_superior($('#formulario_area_id').val());
+});
+
+</script>
+ 
