@@ -7,7 +7,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resource :sessions
 
-  map.resources :formularios, :member => {:print => :get}
+  map.resources :formularios, :member => {:print => :get}, :collection => {:busqueda => :post}
 
   map.resources :areas, :member => {:seleccionar => :get}
 
