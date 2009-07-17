@@ -9,4 +9,6 @@
 #   inflect.uncountable %w( fish sheep )
   inflect.plural /^([a-z_]+)([^aeiou])$/i, '\1\2es'
   inflect.singular /^([a-z_]+)(es)$/i, '\1'
+  inflect.irregular 'user', 'users'
+  inflect.irregular 'session', 'sessions'
  end

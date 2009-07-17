@@ -1,48 +1,112 @@
-<p>
-  <b>Area:</b>
-  <%=h @formulario.area_id %>
-</p>
+<%= link_to('Imprimir', print_formulario_path(@formulario), :target => '_blank' )%>
 
-<p>
-  <b>Usuario:</b>
-  <%=h @formulario.usuario_id %>
-</p>
+<style>
+#formulario_area_id{ width: 300px}
+#tableForm{width:800px}
+label{font-weight:bold}
+</style>
 
-<p>
-  <b>Objectivo area funcional:</b>
-  <%=h @formulario.objectivo_area_funcional %>
-</p>
+<table id="tableForm">
 
-<p>
-  <b>Descripcion funcion principal:</b>
-  <%=h @formulario.descripcion_funcion_principal %>
-</p>
+<tr>
+  <td>
+    <label>AREA:</label>
+  </td>
+  <td>
+    <%= @formulario.area %>
+  </td>
+</tr>
 
-<p>
-  <b>Descripcion funciones especificas:</b>
-  <%=h @formulario.descripcion_funciones_especificas %>
-</p>
+<tr>
+  <td>
+    <label>NIVEL JERARQUICO:</label>
+  </td>
+  <td id="td_nivel">
+  <%= @formulario.area.nivel %>
+  </td>
+</tr>
+<tr>
+  <td>
+    <label>NOMBRE DEL AREA FUNCIONAL INMEDIATO SUPERIOR:</label>
+  </td>
+  <td id="td_parent">
+    <%= @formulario.area.buscar_parent %>
+  </td>
+</tr>
 
-<p>
-  <b>Relaciones coordinacion interna:</b>
-  <%=h @formulario.relaciones_coordinacion_interna %>
-</p>
+<tr>
+  <td>
+    <label>AREAS DEPENDIENTES:</label> 
+  </td>
+  <td id="td_areas_dependientes" style="height:150px">
+    <div style="overflow:auto;height:150px" ><%= @formulario.area.all_children.map{|v| v.nombre}.join("<br/>") %></div>
+  </td>
+</tr>
 
-<p>
-  <b>Relacionamiento interinstitucional:</b>
-  <%=h @formulario.relacionamiento_interinstitucional %>
-</p>
+<tr>
+  <td colspan="2">
+    <label>OBJETICO AREA FUNCIONAL</label>
+  </td>
+</tr>
+<tr>
+  <td colspan="2">
+    <%= @formulario.objectivo_area_funcional %>
+  </td>
+</tr>
 
-<p>
-  <b>Fecha aprovacion:</b>
-  <%=h @formulario.fecha_aprovacion %>
-</p>
+<tr>
+  <td colspan="2">
+    <label>DESCRIPCION DE LA FUNCION PRINCIPAL</label>
+  </td>
+</tr>
+<tr>
+  <td colspan="2">
+    <%= @formulario.descripcion_funcion_principal %>
+  </td>
+</tr>
 
-<p>
-  <b>Fecha actualizacion:</b>
-  <%=h @formulario.fecha_actualizacion %>
-</p>
+<tr>
+  <td colspan="2">
+    <label>DESCRIPCION DE LA FUNCIONES ESPECIFICAS</label>
+  </td>
+</tr>
+<tr>
+  <td colspan="2">
+    <%= @formulario.descripcion_funciones_especificas %>
+  </td>
+</tr>
 
+<tr>
+  <td colspan="2">
+    <label>RESULTADOS OBTENIDOS</label>
+  <td>
+</tr>
+<tr>
+  <td colspan="2">
+    <%= @formulario.principales_resultados %>
+  </td>
+</tr>
 
-<%= link_to 'Editar', edit_formulario_path(@formulario,(:page => @page)) %> |
-<%= link_to 'Listar', formularios_path(:page => @page) %>
+<tr>
+  <td>
+    <label>TIPO DEL AREA FUNCIONAL</label>
+  </td>
+  <td id="td_tipo"><%= @formulario.area.tipo %></td>
+</tr>
+
+<tr>
+  <td>
+    <label class="bordeb">RELACIONES DE COORDINACION INTERNA</label>
+    <%= @formulario.relaciones_coordinacion_interna %>
+  </td>
+
+  <td>
+    <label class="bordeb">RELACIONAMIENTO INTERINSTITUCIONAL</label>
+    <%= @formulario.relacionamiento_interinstitucional %>
+  </td>
+</tr>
+
+</table>
+
+<%= link_to 'Editar', edit_formulario_path(@formulario) %> |
+<%= link_to 'Listar', formularios_path() %>

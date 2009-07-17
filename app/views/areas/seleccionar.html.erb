@@ -1,26 +1,6 @@
-<p>
-    <label>NIVEL JERARQUICO:</label>
-    <span id="nivel_span"> <%= @area.nivel.nombre %> </span>
-    <span id="tipo_span"></span> <%=  @area.tipo.nombre  %></span>
-  </p>
-  <%= @area.activo %>
-<% if @area.parent %>
-  <p>
-    <label>NOMBRE DEL AREA FUNCIONAL INMEDITA SUPERIOR:</label>
-    <span id="nivel_superior_span"><%= @area.parent.nombre %></span>
-  </p>
-  <%else%>
- <p>
-    <label>NOMBRE DEL AREA FUNCIONAL INMEDITA SUPERIOR:</label>
-    <span id="nivel_superior_span">Despacho del Ministro</span>
-  </p>
-  <% end %>
-  <p>
-    <label>AREAS DEPENDIENTES:</label>
-    
-    
-    <% @area.all_children.each do |c| %>
-    <%= c.nombre %> <br>
-    <% end %>
-  </p>
-
+{
+  areas_dependientes: <%= @area.all_children(:conditions => {:activo => true}).inject([]){|arr, v| arr << v.nombre}.to_json %>,
+  parent: '<%= @area.buscar_parent %>',
+  nivel: '<%= @area.nivel %>',
+  tipo: '<%= @area.tipo %>'
+}

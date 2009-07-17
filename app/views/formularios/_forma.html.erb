@@ -1,64 +1,142 @@
-<% @areas = Area.all(:include => [:nivel, :tipo]) %>
+<% @areas = Area.all(:include => [:nivel, :tipo], :conditions => {:activo => true}) %>
+
+<style>
+#formulario_area_id{ width: 300px}
+#tableForm{width:800px}
+
+</style>
+<table id="tableForm">
 
 <% form_for(@formulario) do |f| %>
-  <%= f.error_messages %>
+<tr>
+  <td colspan="2"><%= f.error_messages %></td>
+</tr>
 
-  <p>
+<tr>
+  <td>
     <%= f.label :area_id, 'AREA:' %>
+  </td>
+  <td>
     <%= f.select :area_id, @areas.map{|v| [v, v.id]}, :include_blank => true %>
-  </p>
-  <div id="descripcion">
-  </div>
-  
-  <p>
-    <%= f.label :objectivo_area_funcional %><br />
-    <%= f.text_area :objectivo_area_funcional, :size => "100x20" %>
-  </p>
-  <p>
-    <%= f.label :descripcion_funcion_principal %><br />
-    <%= f.text_area :descripcion_funcion_principal, :size => "100x20" %>
-  </p>
-  <p>
-    <%= f.label :descripcion_funciones_especificas %><br />
-    <%= f.text_area :descripcion_funciones_especificas, :size => "100x20" %>
-  </p>
-  <p>
-    <%= f.label :relaciones_coordinacion_interna %><br />
-    <%= f.text_area :relaciones_coordinacion_interna, :size => "100x20" %>
-  </p>
-  <p>
-    <%= f.label :relacionamiento_interinstitucional %><br />
-    <%= f.text_area :relacionamiento_interinstitucional, :size => "100x20" %>
-  </p>
-  
-  <p>
-    <%= f.label :fecha_aprovacion %><br />
-    <%= f.date_select :"fecha_aprovacion", :order =>[:day, :month, :year], :use_month_numbers => true %>
-  </p>
-  <p>
-    <%= f.label :fecha_actualizacion %><br />
-    <%= f.date_select( "fecha_actualizacion",:order =>[:day, :month, :year], :use_month_numbers => true, :start_year => 2009)%>
-  </p>
-  <p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <label>NIVEL JERARQUICO:</label>
+  </td>
+  <td id="td_nivel">
+  </td>
+</tr>
+<tr>
+  <td>
+    <label>NOMBRE DEL AREA FUNCIONAL INMEDIATO SUPERIOR:</label>
+  </td>
+  <td id="td_parent">
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <label>AREAS DEPENDIENTES:</label> 
+  </td>
+  <td id="td_areas_dependientes" style="height:150px"><div style="overflow:auto;height:150px" ></div>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <label>OBJETIVO AREA FUNCIONAL</label>
+  </td>
+</tr>
+<tr>
+  <td colspan="2">
+    <%= f.text_area :objectivo_area_funcional, :size => "100x7" %>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <label>DESCRIPCION DE LA FUNCION PRINCIPAL</label>
+  </td>
+</tr>
+<tr>
+  <td colspan="2">
+    <%= f.text_area :descripcion_funcion_principal, :size => "100x7"  %>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <label>DESCRIPCION DE LA FUNCIONES ESPECIFICAS</label>
+  </td>
+</tr>
+<tr>
+  <td colspan="2">
+    <%= f.text_area :descripcion_funciones_especificas, :size => "100x7"  %>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <label>RESULTADOS OBTENIDOS</label>
+  <td>
+</tr>
+<tr>
+  <td colspan="2">
+    <%= f.text_area :principales_resultados, :size => "100x7" %>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <label>TIPO DEL AREA FUNCIONAL</label>
+  </td>
+  <td id="td_tipo"></td>
+</tr>
+
+<tr>
+  <td>
+    <div class="borde_b">RELACIONES DE COORDINACION INTERNA</div>
+    <%= f.text_area :relaciones_coordinacion_interna, :size => "50x6" %>
+  </td>
+
+  <td>
+    <div class="borde_b">RELACIONAMIENTO INTERINSTITUCIONAL</div>
+    <%= f.text_area :relacionamiento_interinstitucional, :size => "50x6" %>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">ACTUALIUZACION</td>
+</tr>
+<tr>
+  <td colspan="2" class="center">
     <%= f.submit 'Salvar' %>
-  </p>
+  </td>
+</tr>
 <% end %>
+</table>
 
 <script type="text/javascript">
+function buscarDatos() {
+  var valor = $('#formulario_area_id').val();
+  if(valor > 0) {
+    var url = '<%= url_for :controller => 'areas' %>/' + valor + '/seleccionar';
+    $.getJSON(url, function(data) {
+      $('#td_areas_dependientes>div').html( data.areas_dependientes.join("<br/>") );
+      $('#td_parent').html(data.parent);
+      $('#td_nivel').html(data.nivel);
+      $('#td_tipo').html(data.tipo);
+    });
+  }
+}
 
+$(document).ready(function() {
 
-$(document).ready(function(){
-  $('#formulario_area_id').change(function(){
-    $.get('/areas/'+$(this).val() +'/seleccionar', function(data){
-        $('#descripcion').html(data);
-      });
+  $('#formulario_area_id').change(function() {
+    buscarDatos();
   });
-	
-	// Cuando se inicializa la pantalla
-  setTipo($('#formulario_area_id').val());
-	setNivel($('#formulario_area_id').val());
-  setNivel_superior($('#formulario_area_id').val());
+  buscarDatos();
 });
-
 </script>
- 

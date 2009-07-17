@@ -3,30 +3,26 @@
 <table>
   <tr>
     <th class="ui-state-default">Area</th>
-    <th class="ui-state-default">Usuario</th>
+    
     <th class="ui-state-default">Objectivo area funcional</th>
     <th class="ui-state-default">Descripcion funcion principal</th>
     <th class="ui-state-default">Descripcion funciones especificas</th>
     <th class="ui-state-default">Relaciones coordinacion interna</th>
     <th class="ui-state-default">Relacionamiento interinstitucional</th>
-    <th class="ui-state-default">Fecha aprovacion</th>
-    <th class="ui-state-default">Fecha actualizacion</th>
   </tr>
 
 <% @formularios.each do |formulario| %>
   <tr>
-    <td><%=h formulario.area_id %></td>
-    <td><%=h formulario.usuario_id %></td>
+    <td><%=h formulario.area.nombre if formulario.area %></td>
+    
     <td><%=h formulario.objectivo_area_funcional %></td>
     <td><%=h formulario.descripcion_funcion_principal %></td>
     <td><%=h formulario.descripcion_funciones_especificas %></td>
     <td><%=h formulario.relaciones_coordinacion_interna %></td>
     <td><%=h formulario.relacionamiento_interinstitucional %></td>
-    <td><%=h formulario.fecha_aprovacion %></td>
-    <td><%=h formulario.fecha_actualizacion %></td>
     
-    <td><%= link_to 'Ver', formulario_path(formulario, page => @page) %></td>
-    <td><%= link_to 'Editar', edit_formulario_path(formulario, page => @page) %></td>
+    <td><%= link_to 'Ver', formulario_path(formulario) %></td>
+    <td><%= link_to 'Editar', edit_formulario_path(formulario) %></td>
     <td><%= link_to 'Eliminar', formulario, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>

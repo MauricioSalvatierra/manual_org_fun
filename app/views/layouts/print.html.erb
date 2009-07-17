@@ -1,0 +1,16 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title><%= yield :title %> - Manual de Organizacion y Funciones </title>
+  <%= stylesheet_link_tag "application.css", "../javascripts/jquery-ui/themes/ui-lightness/ui.all.css"%>
+</head>
+<body onload='print()'>
+  <div id="cont">
+    <div id="flashNotice"><%= flash[:notice] %></div>
+    <%= yield %>
+  </div>
+</body>
+</html>

@@ -84,7 +84,7 @@ class AreasController < ApplicationController
   end
 
   def seleccionar
-   @area = Area.find(params[:id], :include => [:nivel, :tipo])
+   @area = Area.find(params[:id], :conditions => {:activo => true}, :include => [:nivel, :tipo])
     respond_to do |format|
       format.html {render 'layout' => false}
     end

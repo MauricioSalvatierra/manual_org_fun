@@ -9,11 +9,28 @@ class Area < ActiveRecord::Base
  
 #Area.send(:with_exclusive_scope) { Area.find(:all) } 
   #default_scope permite hacer condicion al .all
-  default_scope :conditions => { :activo => true }, :order => 'lft ASC'
+  default_scope :order => 'lft ASC'#, :conditions => { :activo => true }
   def to_s
     "#{nombre}"
   end
  
+  def buscar_parent()
+    tmp = true
+    par = self
+    while tmp
+      par = par.parent
+      if par.nil?
+        tmp = false
+        break
+      end
+      if par.activo
+        tmp = false
+        break
+      end
+    end
+    par
+  end
+
   class << self
     def find_superior(id)
       tmp = true
@@ -29,12 +46,6 @@ class Area < ActiveRecord::Base
       parent
     end
   end
-  #def self.jeje
-  #  first()
-  #end
-  #
-  #def jeje
-  #  "jejeje"
-  #end
+ 
   
 end

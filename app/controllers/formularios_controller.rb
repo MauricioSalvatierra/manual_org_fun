@@ -8,13 +8,14 @@ class FormulariosController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @formularios }
+      format.print { render :layout => :print}
     end
   end
 
   # GET /formularios/1
   # GET /formularios/1.xml
   def show
-    @formulario = Formulario.find(params[:id])
+    @formulario = Formulario.find(params[:id], :include => {:area => [:tipo, :nivel]})
 
     respond_to do |format|
       format.html # show.html.erb
@@ -81,6 +82,14 @@ class FormulariosController < ApplicationController
     respond_to do |format|
       format.html { redirect_to(formularios_url) }
       format.xml  { head :ok }
+    end
+  end
+  
+  def print
+    @formulario = Formulario.find(params[:id])
+
+    respond_to do |format|
+      format.html {render :layout => 'print', :action => 'show'}
     end
   end
 end

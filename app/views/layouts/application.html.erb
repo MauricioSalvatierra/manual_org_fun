@@ -5,40 +5,19 @@
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <title><%= yield :title %> - Manual de Organizacion y Funciones </title>
-  <%= stylesheet_link_tag "application.css", "../javascripts/jquery-ui/themes/ui-lightness/ui.all.css"%>
-  <%= javascript_include_tag "jquery-1.3.2.min.js", "jquery-ui/jquery-ui-1.7.2.custom.min.js",
-  "application.js", "jquery-ui/ui/i18n/ui.datepicker-es.js", "grider.js" %>
-
-
-
+  <%= stylesheet_link_tag "style.css","application.css", "../javascripts/jquery-ui/themes/ui-lightness/ui.all.css"%>
+  <%= javascript_include_tag "jquery-1.3.2.min.js", "application.js" %>
 </head>
-<!--<body>-->
-<!--  -->
-<!--  -->
-<!--  -->
-<!--  </head>-->
 <body>
 <ul id="navigation">
-  <li><a href="/tipos">Tipos</a></li>
-  <li><a href="/niveles">Niveles</a></li>
-  <li><a href="/areas">Areas</a></li>
-  <li><a href="/formularios">Formularios</a></li>
-  <!--<li><a href="/items">Items</a></li>-->
+  <li><%= link_to('Tipos', tipos_path) %></li>
+  <li><%= link_to('Niveles', niveles_path) %></li>
+  <li><%= link_to('Areas', areas_path) %></li>
+  <li><%= link_to('Formularios', formularios_path) %></li>
 </ul>
 <div id="cont">
   <div id="flashNotice"><%= flash[:notice] %></div>
-
   <%= yield %>
 </div>
-
 </body>
-  
-  
-  
-
-<!--<p style="color: green"><%= flash[:notice] %></p>-->
-<!---->
-<!--<%= yield %>-->
-<!---->
-<!--</body>-->
 </html>
