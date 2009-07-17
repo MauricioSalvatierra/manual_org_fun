@@ -1,5 +1,7 @@
-<%= link_to('Imprimir', print_formulario_path(@formulario), :target => '_blank' )%>
+<% if params[:mostrar].nil? || !params[:mostrar]  %>
 
+<%= link_to('Imprimir', print_formulario_path(@formulario), :target => '_blank' )%>
+<% end %>
 <style>
 #formulario_area_id{ width: 300px}
 #tableForm{width:800px}
@@ -7,7 +9,20 @@ label{font-weight:bold}
 </style>
 
 <table id="tableForm">
-
+<tr>
+<td colspan=2>
+<div style="float:right">
+CODIGO <br>
+</div>
+<div style="float:left">
+<%= image_tag('escudo.jpg', :size => '150x80') %>
+</div>
+<div style="height:80px">
+MANUAL DE ORGANIZACION Y FUNCIONES
+</div>
+<div>
+</td>
+</tr>
 <tr>
   <td>
     <label>AREA:</label>
@@ -39,7 +54,7 @@ label{font-weight:bold}
     <label>AREAS DEPENDIENTES:</label> 
   </td>
   <td id="td_areas_dependientes" style="height:150px">
-    <div style="overflow:auto;height:150px" ><%= @formulario.area.all_children.map{|v| v.nombre}.join("<br/>") %></div>
+    <div style="overflow:auto;height:150px" ><%= @formulario.area.all_children(:conditions => {:activo => true}).map{|v| v.nombre}.join("<br/>") %></div>
   </td>
 </tr>
 
@@ -79,7 +94,7 @@ label{font-weight:bold}
 <tr>
   <td colspan="2">
     <label>RESULTADOS OBTENIDOS</label>
-  <td>
+  </td>
 </tr>
 <tr>
   <td colspan="2">
@@ -105,8 +120,44 @@ label{font-weight:bold}
     <%= @formulario.relacionamiento_interinstitucional %>
   </td>
 </tr>
+<tr>
+  <td colspan=2>
+    <label>ACTUALIZACION</label>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <label>FECHA: APROBACION</label>
+  </td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>
+    <label>FECHA: ACTUALIZACION</label>
+  </td>
+  <td></td>
+</tr>
+
+<tr>
+  <td>
+    <label>RESPONSABLE DE LA ELABORACION</label>
+  </td>
+  <td><%= @formulario.ci %></td>
+</tr>
+
+<tr>
+  <td>
+    <label>VoBo JEFE INMEDIATO SUPERIOR</label>
+  </td>
+  <td></td>
+</tr>
+
+
 
 </table>
-
+<% if params[:mostrar].nil? || !params[:mostrar]  %>
 <%= link_to 'Editar', edit_formulario_path(@formulario) %> |
 <%= link_to 'Listar', formularios_path() %>
+<% end %>

@@ -80,7 +80,7 @@
 <tr>
   <td colspan="2">
     <label>RESULTADOS OBTENIDOS</label>
-  <td>
+  </td>
 </tr>
 <tr>
   <td colspan="2">
@@ -100,15 +100,20 @@
     <div class="borde_b">RELACIONES DE COORDINACION INTERNA</div>
     <%= f.text_area :relaciones_coordinacion_interna, :size => "50x6" %>
   </td>
-
   <td>
     <div class="borde_b">RELACIONAMIENTO INTERINSTITUCIONAL</div>
     <%= f.text_area :relacionamiento_interinstitucional, :size => "50x6" %>
   </td>
 </tr>
+<tr>
+  <td>
+    <label>Carnet Identidad</label>
+  </td>
+  <td><%= f.text_field :ci %></td>
+</tr>
 
 <tr>
-  <td colspan="2">ACTUALIUZACION</td>
+  <td colspan="2">ACTUALIZACION</td>
 </tr>
 <tr>
   <td colspan="2" class="center">

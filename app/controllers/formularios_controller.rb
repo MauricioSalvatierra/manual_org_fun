@@ -92,4 +92,14 @@ class FormulariosController < ApplicationController
       format.html {render :layout => 'print', :action => 'show'}
     end
   end
+
+  def busqueda
+    @formulario = Formulario.first(:conditions => ['ci = ?', params[:search]])
+    if @formulario
+     redirect_to edit_formulario_url(@formulario)
+    else
+      redirect_to new_formulario_url(:ci => params[:search])
+    end
+    #render :action => :index
+  end
 end
