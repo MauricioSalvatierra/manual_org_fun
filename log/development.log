@@ -51,3 +51,3142 @@ Migrating to AdicionCi (20090717143402)
   [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("tipos")[0m
   [4;35;1mSQL (0.3ms)[0m   [0mPRAGMA index_list("users")[0m
   [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_info('index_users_on_login')[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:03:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:03:32) [GET]
+  [4;36;1mFormulario Load (1.5ms)[0m   [0;1mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 104ms (View: 53, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:03:37) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AreasController#index (for 127.0.0.1 at 2009-07-17 16:03:38) [GET]
+  [4;35;1mArea Load (0.5ms)[0m   [0mSELECT * FROM "areas" ORDER BY lft ASC LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering areas/index
+Completed in 58ms (View: 16, DB: 1) | 200 OK [http://localhost/areas]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:03:39) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing NivelesController#index (for 127.0.0.1 at 2009-07-17 16:03:40) [GET]
+  [4;36;1mNivel Load (0.9ms)[0m   [0;1mSELECT * FROM "niveles" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering niveles/index
+Completed in 49ms (View: 20, DB: 1) | 200 OK [http://localhost/niveles]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:03:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TiposController#index (for 127.0.0.1 at 2009-07-17 16:03:41) [GET]
+  [4;35;1mTipo Load (0.9ms)[0m   [0mSELECT * FROM "tipos" [0m
+Rendering template within layouts/application
+Rendering tipos/index
+Completed in 35ms (View: 19, DB: 1) | 200 OK [http://localhost/tipos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:04:49) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:04:50) [GET]
+  [4;36;1mFormulario Load (0.8ms)[0m   [0;1mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 20ms (View: 3, DB: 1) | 200 OK [http://localhost/formularios]
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2009-07-17 16:04:54) [GET]
+Rendering template within layouts/application
+Rendering formularios/new
+  [4;35;1mArea Load (0.4ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+Rendered formularios/_forma (65.7ms)
+Completed in 112ms (View: 91, DB: 0) | 200 OK [http://localhost/formularios/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:04:58) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#create (for 127.0.0.1 at 2009-07-17 16:05:10) [POST]
+  Parameters: {"commit"=>"Salvar", "authenticity_token"=>"5yjn8yfUhu+IlRo3+h1fNcm+E9OftHw/bRrxIbhLQ6A=", "formulario"=>{"descripcion_funciones_especificas"=>"asdf", "descripcion_funcion_principal"=>"asdfasd", "relaciones_coordinacion_interna"=>"asdf", "area_id"=>"", "relacionamiento_interinstitucional"=>"asdf", "objectivo_area_funcional"=>"asdfsd", "ci"=>"2343254", "principales_resultados"=>"asdf"}}
+  [4;36;1mFormulario Create (0.8ms)[0m   [0;1mINSERT INTO "formularios" ("descripcion_funciones_especificas", "fecha_aprovacion", "created_at", "usuario_id", "descripcion_funcion_principal", "updated_at", "area_id", "relaciones_coordinacion_interna", "objectivo_area_funcional", "relacionamiento_interinstitucional", "fecha_actualizacion", "ci", "principales_resultados") VALUES('asdf', NULL, '2009-07-17 20:05:10', NULL, 'asdfasd', '2009-07-17 20:05:10', NULL, 'asdf', 'asdfsd', 'asdf', NULL, '2343254', 'asdf')[0m
+Redirected to http://localhost:3000/formularios/1
+Completed in 39ms (DB: 1) | 302 Found [http://localhost/formularios]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-17 16:05:10) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mFormulario Load (0.8ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.nivel) on line #40 of app/views/formularios/show.html.erb:
+37:     <label>NIVEL JERARQUICO:</label>
+38:   </td>
+39:   <td id="td_nivel">
+40:   <%= @formulario.area.nivel %>
+41:   </td>
+42: </tr>
+43: <tr>
+
+    app/views/formularios/show.html.erb:40
+    app/controllers/formularios_controller.rb:20:in `show'
+
+Rendered rescues/_trace (95.5ms)
+Rendered rescues/_request_and_response (10.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (14.1ms)[0m   [0;1mCREATE TABLE "areas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "nombre" varchar(255), "tipo_id" integer, "nivel_id" integer, "lft" integer, "rgt" integer, "activo" boolean, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (12.6ms)[0m   [0;1mCREATE TABLE "formularios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "area_id" integer, "usuario_id" integer, "objectivo_area_funcional" text, "descripcion_funcion_principal" text, "descripcion_funciones_especificas" text, "relaciones_coordinacion_interna" text, "relacionamiento_interinstitucional" text, "fecha_aprovacion" date, "fecha_actualizacion" date, "created_at" datetime, "updated_at" datetime, "principales_resultados" varchar(255), "ci" varchar(20)) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (10.7ms)[0m   [0;1mCREATE TABLE "niveles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (12.8ms)[0m   [0;1mCREATE TABLE "tipos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (17.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "name" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime) [0m
+  [4;35;1mSQL (10.7ms)[0m   [0mCREATE UNIQUE INDEX "index_users_on_login" ON "users" ("login")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (14.4ms)[0m   [0mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;36;1mSQL (20.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (6.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090717143402')[0m
+  [4;36;1mSQL (17.9ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090714223502')[0m
+  [4;35;1mSQL (12.4ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090708162807')[0m
+  [4;36;1mSQL (15.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090714152134')[0m
+  [4;35;1mSQL (8.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090708163210')[0m
+  [4;36;1mSQL (11.3ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090708162603')[0m
+  [4;35;1mSQL (8.4ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090708162944')[0m
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:11:36) [GET]
+  [4;36;1mFormulario Load (2.3ms)[0m   [0;1mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+  [4;35;1mArea Load (0.6ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (0.6ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (0.6ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 14) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (0.6ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+Completed in 97ms (View: 64, DB: 5) | 200 OK [http://localhost/formularios]
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2009-07-17 16:11:40) [GET]
+Rendering template within layouts/application
+Rendering formularios/new
+  [4;36;1mArea Load (9.1ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (1.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;36;1mTipo Load (0.9ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (77.7ms)
+Completed in 101ms (View: 71, DB: 11) | 200 OK [http://localhost/formularios/new]
+
+
+Processing AreasController#seleccionar (for 127.0.0.1 at 2009-07-17 16:11:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mArea Load (0.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1 AND ("areas"."activo" = 't')) ORDER BY lft ASC[0m
+  [4;36;1mNivel Load (0.7ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" = 1) [0m
+  [4;35;1mTipo Load (0.4ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Rendering areas/seleccionar
+  [4;36;1mArea Load (9.1ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 1 AND 70)) ORDER BY areas.lft[0m
+Completed in 71ms (View: 13, DB: 11) | 200 OK [http://localhost/areas/1/seleccionar]
+
+
+Processing FormulariosController#create (for 127.0.0.1 at 2009-07-17 16:12:18) [POST]
+  Parameters: {"commit"=>"Salvar", "authenticity_token"=>"5yjn8yfUhu+IlRo3+h1fNcm+E9OftHw/bRrxIbhLQ6A=", "formulario"=>{"descripcion_funciones_especificas"=>"I've watched the other threads on missing disc space, but this one seems new. I have a link 4, and while my total space seems to be normal, my available space is disappearing before my eyes. Anyone have any idea what this could be?\r\nCode:\r\n\r\n# df ; while /bin/true ; do sleep 10 ; df |grep -v Filesystem; done\r\nFilesystem           1K-blocks      Used Available Use% Mounted on\r\n/dev/simfs            19922944   2271765   9162866  20% /\r\n/dev/simfs            19922944   2271765   9162250  20% /\r\n/dev/simfs            19922944   2271765   9161676  20% /\r\n/dev/simfs            19922944   2271765   9160970  20% /\r\n/dev/simfs            19922944   2271765   9160321  20% /\r\n/dev/simfs            19922944   2271765   9159784  20% /\r\n/dev/simfs            19922944   2271765   9159151  20% /\r\n/dev/simfs            19922944   2271767   9158521  20% /\r\n/dev/simfs            19922944   2271767   9157930  20% /\r\n/dev/simfs            19922944   2271767   9157273  20% /\r\n/dev/simfs            19922944   2271767   9156616  20% /\r\n/dev/simfs            19922944   2271767   9155975  20% /\r\n/dev/simfs            19922944   2271767   9155258  20% /\r\n/dev/simfs            19922944   2271767   9154590  20% /\r\n/dev/simfs            19922944   2271767   9154021  20% /\r\n/dev/simfs            19922944   2271767   9153375  20% /\r\n/dev/simfs            19922944   2271767   9152654  20% /\r\n/dev/simfs            19922944   2271767   9152099  20% /\r\n/dev/simfs            19922944   2271767   9151494  20% /\r\n/dev/simfs            19922944   2271768   9150816  20% /\r\n/dev/simfs            19922944   2271768   9150208  20% /\r\n\r\n", "descripcion_funcion_principal"=>"I've watched the other threads on missing disc space, but this one seems new. I have a link 4, and while my total space seems to be normal, my available space is disappearing before my eyes. Anyone have any idea what this could be?\r\nCode:\r\n\r\n# df ; while /bin/true ; do sleep 10 ; df |grep -v Filesystem; done\r\nFilesystem           1K-blocks      Used Available Use% Mounted on\r\n/dev/simfs            19922944   2271765   9162866  20% /\r\n/dev/simfs            19922944   2271765   9162250  20% /\r\n/dev/simfs            19922944   2271765   9161676  20% /\r\n/dev/simfs            19922944   2271765   9160970  20% /\r\n/dev/simfs            19922944   2271765   9160321  20% /\r\n/dev/simfs            19922944   2271765   9159784  20% /\r\n/dev/simfs            19922944   2271765   9159151  20% /\r\n/dev/simfs            19922944   2271767   9158521  20% /\r\n/dev/simfs            19922944   2271767   9157930  20% /\r\n/dev/simfs            19922944   2271767   9157273  20% /\r\n/dev/simfs            19922944   2271767   9156616  20% /\r\n/dev/simfs            19922944   2271767   9155975  20% /\r\n/dev/simfs            19922944   2271767   9155258  20% /\r\n/dev/simfs            19922944   2271767   9154590  20% /\r\n/dev/simfs            19922944   2271767   9154021  20% /\r\n/dev/simfs            19922944   2271767   9153375  20% /\r\n/dev/simfs            19922944   2271767   9152654  20% /\r\n/dev/simfs            19922944   2271767   9152099  20% /\r\n/dev/simfs            19922944   2271767   9151494  20% /\r\n/dev/simfs            19922944   2271768   9150816  20% /\r\n/dev/simfs            19922944   2271768   9150208  20% /\r\n\r\n", "relaciones_coordinacion_interna"=>"I've watched the other threads on missing disc space, but this one seems new. I have a link 4, and while my total space seems to be normal, my available space is disappearing before my eyes. Anyone have any idea what this could be?\r\nCode:\r\n\r\n# df ; while /bin/true ; do sleep 10 ; df |grep -v Filesystem; done\r\nFilesystem           1K-blocks      Used Available Use% Mounted on\r\n/dev/simfs            19922944   2271765   9162866  20% /\r\n/dev/simfs            19922944   2271765   9162250  20% /\r\n/dev/simfs            19922944   2271765   9161676  20% /\r\n/dev/simfs            19922944   2271765   9160970  20% /\r\n/dev/simfs            19922944   2271765   9160321  20% /\r\n/dev/simfs            19922944   2271765   9159784  20% /\r\n/dev/simfs            19922944   2271765   9159151  20% /\r\n/dev/simfs            19922944   2271767   9158521  20% /\r\n/dev/simfs            19922944   2271767   9157930  20% /\r\n/dev/simfs            19922944   2271767   9157273  20% /\r\n/dev/simfs            19922944   2271767   9156616  20% /\r\n/dev/simfs            19922944   2271767   9155975  20% /\r\n/dev/simfs            19922944   2271767   9155258  20% /\r\n/dev/simfs            19922944   2271767   9154590  20% /\r\n/dev/simfs            19922944   2271767   9154021  20% /\r\n/dev/simfs            19922944   2271767   9153375  20% /\r\n/dev/simfs            19922944   2271767   9152654  20% /\r\n/dev/simfs            19922944   2271767   9152099  20% /\r\n/dev/simfs            19922944   2271767   9151494  20% /\r\n/dev/simfs            19922944   2271768   9150816  20% /\r\n/dev/simfs            19922944   2271768   9150208  20% /\r\n\r\n", "area_id"=>"1", "relacionamiento_interinstitucional"=>"I've watched the other threads on missing disc space, but this one seems new. I have a link 4, and while my total space seems to be normal, my available space is disappearing before my eyes. Anyone have any idea what this could be?\r\nCode:\r\n\r\n# df ; while /bin/true ; do sleep 10 ; df |grep -v Filesystem; done\r\nFilesystem           1K-blocks      Used Available Use% Mounted on\r\n/dev/simfs            19922944   2271765   9162866  20% /\r\n/dev/simfs            19922944   2271765   9162250  20% /\r\n/dev/simfs            19922944   2271765   9161676  20% /\r\n/dev/simfs            19922944   2271765   9160970  20% /\r\n/dev/simfs            19922944   2271765   9160321  20% /\r\n/dev/simfs            19922944   2271765   9159784  20% /\r\n/dev/simfs            19922944   2271765   9159151  20% /\r\n/dev/simfs            19922944   2271767   9158521  20% /\r\n/dev/simfs            19922944   2271767   9157930  20% /\r\n/dev/simfs            19922944   2271767   9157273  20% /\r\n/dev/simfs            19922944   2271767   9156616  20% /\r\n/dev/simfs            19922944   2271767   9155975  20% /\r\n/dev/simfs            19922944   2271767   9155258  20% /\r\n/dev/simfs            19922944   2271767   9154590  20% /\r\n/dev/simfs            19922944   2271767   9154021  20% /\r\n/dev/simfs            19922944   2271767   9153375  20% /\r\n/dev/simfs            19922944   2271767   9152654  20% /\r\n/dev/simfs            19922944   2271767   9152099  20% /\r\n/dev/simfs            19922944   2271767   9151494  20% /\r\n/dev/simfs            19922944   2271768   9150816  20% /\r\n/dev/simfs            19922944   2271768   9150208  20% /\r\n\r\n", "objectivo_area_funcional"=>"I've watched the other threads on missing disc space, but this one seems new. I have a link 4, and while my total space seems to be normal, my available space is disappearing before my eyes. Anyone have any idea what this could be?\r\nCode:\r\n\r\n# df ; while /bin/true ; do sleep 10 ; df |grep -v Filesystem; done\r\nFilesystem           1K-blocks      Used Available Use% Mounted on\r\n/dev/simfs            19922944   2271765   9162866  20% /\r\n/dev/simfs            19922944   2271765   9162250  20% /\r\n/dev/simfs            19922944   2271765   9161676  20% /\r\n/dev/simfs            19922944   2271765   9160970  20% /\r\n/dev/simfs            19922944   2271765   9160321  20% /\r\n/dev/simfs            19922944   2271765   9159784  20% /\r\n/dev/simfs            19922944   2271765   9159151  20% /\r\n/dev/simfs            19922944   2271767   9158521  20% /\r\n/dev/simfs            19922944   2271767   9157930  20% /\r\n/dev/simfs            19922944   2271767   9157273  20% /\r\n/dev/simfs            19922944   2271767   9156616  20% /\r\n/dev/simfs            19922944   2271767   9155975  20% /\r\n/dev/simfs            19922944   2271767   9155258  20% /\r\n/dev/simfs            19922944   2271767   9154590  20% /\r\n/dev/simfs            19922944   2271767   9154021  20% /\r\n/dev/simfs            19922944   2271767   9153375  20% /\r\n/dev/simfs            19922944   2271767   9152654  20% /\r\n/dev/simfs            19922944   2271767   9152099  20% /\r\n/dev/simfs            19922944   2271767   9151494  20% /\r\n/dev/simfs            19922944   2271768   9150816  20% /\r\n/dev/simfs            19922944   2271768   9150208  20% /\r\n\r\n", "ci"=>"12345678", "principales_resultados"=>"I've watched the other threads on missing disc space, but this one seems new. I have a link 4, and while my total space seems to be normal, my available space is disappearing before my eyes. Anyone have any idea what this could be?\r\nCode:\r\n\r\n# df ; while /bin/true ; do sleep 10 ; df |grep -v Filesystem; done\r\nFilesystem           1K-blocks      Used Available Use% Mounted on\r\n/dev/simfs            19922944   2271765   9162866  20% /\r\n/dev/simfs            19922944   2271765   9162250  20% /\r\n/dev/simfs            19922944   2271765   9161676  20% /\r\n/dev/simfs            19922944   2271765   9160970  20% /\r\n/dev/simfs            19922944   2271765   9160321  20% /\r\n/dev/simfs            19922944   2271765   9159784  20% /\r\n/dev/simfs            19922944   2271765   9159151  20% /\r\n/dev/simfs            19922944   2271767   9158521  20% /\r\n/dev/simfs            19922944   2271767   9157930  20% /\r\n/dev/simfs            19922944   2271767   9157273  20% /\r\n/dev/simfs            19922944   2271767   9156616  20% /\r\n/dev/simfs            19922944   2271767   9155975  20% /\r\n/dev/simfs            19922944   2271767   9155258  20% /\r\n/dev/simfs            19922944   2271767   9154590  20% /\r\n/dev/simfs            19922944   2271767   9154021  20% /\r\n/dev/simfs            19922944   2271767   9153375  20% /\r\n/dev/simfs            19922944   2271767   9152654  20% /\r\n/dev/simfs            19922944   2271767   9152099  20% /\r\n/dev/simfs            19922944   2271767   9151494  20% /\r\n/dev/simfs            19922944   2271768   9150816  20% /\r\n/dev/simfs            19922944   2271768   9150208  20% /\r\n\r\n"}}
+  [4;35;1mFormulario Create (1.0ms)[0m   [0mINSERT INTO "formularios" ("descripcion_funciones_especificas", "fecha_aprovacion", "created_at", "usuario_id", "descripcion_funcion_principal", "updated_at", "area_id", "relaciones_coordinacion_interna", "objectivo_area_funcional", "relacionamiento_interinstitucional", "fecha_actualizacion", "ci", "principales_resultados") VALUES('I''ve watched the other threads on missing disc space, but this one seems new. I have a link 4, and while my total space seems to be normal, my available space is disappearing before my eyes. Anyone have any idea what this could be?
+Code:
+
+# df ; while /bin/true ; do sleep 10 ; df |grep -v Filesystem; done
+Filesystem 1K-blocks Used Available Use% Mounted on
+/dev/simfs 19922944 2271765 9162866 20% /
+/dev/simfs 19922944 2271765 9162250 20% /
+/dev/simfs 19922944 2271765 9161676 20% /
+/dev/simfs 19922944 2271765 9160970 20% /
+/dev/simfs 19922944 2271765 9160321 20% /
+/dev/simfs 19922944 2271765 9159784 20% /
+/dev/simfs 19922944 2271765 9159151 20% /
+/dev/simfs 19922944 2271767 9158521 20% /
+/dev/simfs 19922944 2271767 9157930 20% /
+/dev/simfs 19922944 2271767 9157273 20% /
+/dev/simfs 19922944 2271767 9156616 20% /
+/dev/simfs 19922944 2271767 9155975 20% /
+/dev/simfs 19922944 2271767 9155258 20% /
+/dev/simfs 19922944 2271767 9154590 20% /
+/dev/simfs 19922944 2271767 9154021 20% /
+/dev/simfs 19922944 2271767 9153375 20% /
+/dev/simfs 19922944 2271767 9152654 20% /
+/dev/simfs 19922944 2271767 9152099 20% /
+/dev/simfs 19922944 2271767 9151494 20% /
+/dev/simfs 19922944 2271768 9150816 20% /
+/dev/simfs 19922944 2271768 9150208 20% /
+
+', NULL, '2009-07-17 20:12:18', NULL, 'I''ve watched the other threads on missing disc space, but this one seems new. I have a link 4, and while my total space seems to be normal, my available space is disappearing before my eyes. Anyone have any idea what this could be?
+Code:
+
+# df ; while /bin/true ; do sleep 10 ; df |grep -v Filesystem; done
+Filesystem 1K-blocks Used Available Use% Mounted on
+/dev/simfs 19922944 2271765 9162866 20% /
+/dev/simfs 19922944 2271765 9162250 20% /
+/dev/simfs 19922944 2271765 9161676 20% /
+/dev/simfs 19922944 2271765 9160970 20% /
+/dev/simfs 19922944 2271765 9160321 20% /
+/dev/simfs 19922944 2271765 9159784 20% /
+/dev/simfs 19922944 2271765 9159151 20% /
+/dev/simfs 19922944 2271767 9158521 20% /
+/dev/simfs 19922944 2271767 9157930 20% /
+/dev/simfs 19922944 2271767 9157273 20% /
+/dev/simfs 19922944 2271767 9156616 20% /
+/dev/simfs 19922944 2271767 9155975 20% /
+/dev/simfs 19922944 2271767 9155258 20% /
+/dev/simfs 19922944 2271767 9154590 20% /
+/dev/simfs 19922944 2271767 9154021 20% /
+/dev/simfs 19922944 2271767 9153375 20% /
+/dev/simfs 19922944 2271767 9152654 20% /
+/dev/simfs 19922944 2271767 9152099 20% /
+/dev/simfs 19922944 2271767 9151494 20% /
+/dev/simfs 19922944 2271768 9150816 20% /
+/dev/simfs 19922944 2271768 9150208 20% /
+
+', '2009-07-17 20:12:18', 1, 'I''ve watched the other threads on missing disc space, but this one seems new. I have a link 4, and while my total space seems to be normal, my available space is disappearing before my eyes. Anyone have any idea what this could be?
+Code:
+
+# df ; while /bin/true ; do sleep 10 ; df |grep -v Filesystem; done
+Filesystem 1K-blocks Used Available Use% Mounted on
+/dev/simfs 19922944 2271765 9162866 20% /
+/dev/simfs 19922944 2271765 9162250 20% /
+/dev/simfs 19922944 2271765 9161676 20% /
+/dev/simfs 19922944 2271765 9160970 20% /
+/dev/simfs 19922944 2271765 9160321 20% /
+/dev/simfs 19922944 2271765 9159784 20% /
+/dev/simfs 19922944 2271765 9159151 20% /
+/dev/simfs 19922944 2271767 9158521 20% /
+/dev/simfs 19922944 2271767 9157930 20% /
+/dev/simfs 19922944 2271767 9157273 20% /
+/dev/simfs 19922944 2271767 9156616 20% /
+/dev/simfs 19922944 2271767 9155975 20% /
+/dev/simfs 19922944 2271767 9155258 20% /
+/dev/simfs 19922944 2271767 9154590 20% /
+/dev/simfs 19922944 2271767 9154021 20% /
+/dev/simfs 19922944 2271767 9153375 20% /
+/dev/simfs 19922944 2271767 9152654 20% /
+/dev/simfs 19922944 2271767 9152099 20% /
+/dev/simfs 19922944 2271767 9151494 20% /
+/dev/simfs 19922944 2271768 9150816 20% /
+/dev/simfs 19922944 2271768 9150208 20% /
+
+', 'I''ve watched the other threads on missing disc space, but this one seems new. I have a link 4, and while my total space seems to be normal, my available space is disappearing before my eyes. Anyone have any idea what this could be?
+Code:
+
+# df ; while /bin/true ; do sleep 10 ; df |grep -v Filesystem; done
+Filesystem 1K-blocks Used Available Use% Mounted on
+/dev/simfs 19922944 2271765 9162866 20% /
+/dev/simfs 19922944 2271765 9162250 20% /
+/dev/simfs 19922944 2271765 9161676 20% /
+/dev/simfs 19922944 2271765 9160970 20% /
+/dev/simfs 19922944 2271765 9160321 20% /
+/dev/simfs 19922944 2271765 9159784 20% /
+/dev/simfs 19922944 2271765 9159151 20% /
+/dev/simfs 19922944 2271767 9158521 20% /
+/dev/simfs 19922944 2271767 9157930 20% /
+/dev/simfs 19922944 2271767 9157273 20% /
+/dev/simfs 19922944 2271767 9156616 20% /
+/dev/simfs 19922944 2271767 9155975 20% /
+/dev/simfs 19922944 2271767 9155258 20% /
+/dev/simfs 19922944 2271767 9154590 20% /
+/dev/simfs 19922944 2271767 9154021 20% /
+/dev/simfs 19922944 2271767 9153375 20% /
+/dev/simfs 19922944 2271767 9152654 20% /
+/dev/simfs 19922944 2271767 9152099 20% /
+/dev/simfs 19922944 2271767 9151494 20% /
+/dev/simfs 19922944 2271768 9150816 20% /
+/dev/simfs 19922944 2271768 9150208 20% /
+
+', 'I''ve watched the other threads on missing disc space, but this one seems new. I have a link 4, and while my total space seems to be normal, my available space is disappearing before my eyes. Anyone have any idea what this could be?
+Code:
+
+# df ; while /bin/true ; do sleep 10 ; df |grep -v Filesystem; done
+Filesystem 1K-blocks Used Available Use% Mounted on
+/dev/simfs 19922944 2271765 9162866 20% /
+/dev/simfs 19922944 2271765 9162250 20% /
+/dev/simfs 19922944 2271765 9161676 20% /
+/dev/simfs 19922944 2271765 9160970 20% /
+/dev/simfs 19922944 2271765 9160321 20% /
+/dev/simfs 19922944 2271765 9159784 20% /
+/dev/simfs 19922944 2271765 9159151 20% /
+/dev/simfs 19922944 2271767 9158521 20% /
+/dev/simfs 19922944 2271767 9157930 20% /
+/dev/simfs 19922944 2271767 9157273 20% /
+/dev/simfs 19922944 2271767 9156616 20% /
+/dev/simfs 19922944 2271767 9155975 20% /
+/dev/simfs 19922944 2271767 9155258 20% /
+/dev/simfs 19922944 2271767 9154590 20% /
+/dev/simfs 19922944 2271767 9154021 20% /
+/dev/simfs 19922944 2271767 9153375 20% /
+/dev/simfs 19922944 2271767 9152654 20% /
+/dev/simfs 19922944 2271767 9152099 20% /
+/dev/simfs 19922944 2271767 9151494 20% /
+/dev/simfs 19922944 2271768 9150816 20% /
+/dev/simfs 19922944 2271768 9150208 20% /
+
+', NULL, '12345678', 'I''ve watched the other threads on missing disc space, but this one seems new. I have a link 4, and while my total space seems to be normal, my available space is disappearing before my eyes. Anyone have any idea what this could be?
+Code:
+
+# df ; while /bin/true ; do sleep 10 ; df |grep -v Filesystem; done
+Filesystem 1K-blocks Used Available Use% Mounted on
+/dev/simfs 19922944 2271765 9162866 20% /
+/dev/simfs 19922944 2271765 9162250 20% /
+/dev/simfs 19922944 2271765 9161676 20% /
+/dev/simfs 19922944 2271765 9160970 20% /
+/dev/simfs 19922944 2271765 9160321 20% /
+/dev/simfs 19922944 2271765 9159784 20% /
+/dev/simfs 19922944 2271765 9159151 20% /
+/dev/simfs 19922944 2271767 9158521 20% /
+/dev/simfs 19922944 2271767 9157930 20% /
+/dev/simfs 19922944 2271767 9157273 20% /
+/dev/simfs 19922944 2271767 9156616 20% /
+/dev/simfs 19922944 2271767 9155975 20% /
+/dev/simfs 19922944 2271767 9155258 20% /
+/dev/simfs 19922944 2271767 9154590 20% /
+/dev/simfs 19922944 2271767 9154021 20% /
+/dev/simfs 19922944 2271767 9153375 20% /
+/dev/simfs 19922944 2271767 9152654 20% /
+/dev/simfs 19922944 2271767 9152099 20% /
+/dev/simfs 19922944 2271767 9151494 20% /
+/dev/simfs 19922944 2271768 9150816 20% /
+/dev/simfs 19922944 2271768 9150208 20% /
+
+')[0m
+Redirected to http://localhost:3000/formularios/9
+Completed in 49ms (DB: 1) | 302 Found [http://localhost/formularios]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-17 16:12:18) [GET]
+  Parameters: {"id"=>"9"}
+  [4;36;1mFormulario Load (0.9ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 9) [0m
+  [4;35;1mArea Load (1.1ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) [0m
+  [4;36;1mTipo Load (0.6ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mNivel Load (0.5ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+  [4;36;1mArea Load (12.7ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 1 AND 70)) ORDER BY areas.lft[0m
+Completed in 99ms (View: 18, DB: 16) | 200 OK [http://localhost/formularios/9]
+
+
+Processing FormulariosController#print (for 127.0.0.1 at 2009-07-17 16:12:32) [GET]
+  Parameters: {"id"=>"9"}
+  [4;35;1mFormulario Load (1.1ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 9) [0m
+Rendering template within layouts/print
+Rendering formularios/show
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.5ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 1) [0m
+  [4;36;1mArea Load (12.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 1 AND 70)) ORDER BY areas.lft[0m
+  [4;35;1mTipo Load (0.6ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Completed in 103ms (View: 67, DB: 15) | 200 OK [http://localhost/formularios/9/print]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-17 16:13:29) [GET]
+  Parameters: {"id"=>"9"}
+  [4;36;1mFormulario Load (1.0ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 9) [0m
+  [4;35;1mArea Load (1.2ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) [0m
+  [4;36;1mTipo Load (0.5ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mNivel Load (0.6ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+  [4;36;1mArea Load (10.7ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 1 AND 70)) ORDER BY areas.lft[0m
+Completed in 100ms (View: 20, DB: 14) | 200 OK [http://localhost/formularios/9]
+
+
+Processing FormulariosController#print (for 127.0.0.1 at 2009-07-17 16:13:34) [GET]
+  Parameters: {"mostrar"=>"true", "id"=>"9"}
+  [4;35;1mFormulario Load (1.1ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 9) [0m
+Rendering template within layouts/print
+Rendering formularios/show
+  [4;36;1mArea Load (1.4ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.6ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 1) [0m
+  [4;36;1mArea Load (13.3ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 1 AND 70)) ORDER BY areas.lft[0m
+  [4;35;1mTipo Load (0.7ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Completed in 100ms (View: 62, DB: 17) | 200 OK [http://localhost/formularios/9/print?mostrar=true]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:15:58) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:15:59) [GET]
+  [4;36;1mFormulario Load (4.0ms)[0m   [0;1mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+  [4;35;1mArea Load (0.8ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (0.8ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (0.8ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 14) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (1.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+Completed in 83ms (View: 60, DB: 7) | 200 OK [http://localhost/formularios]
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:16:13) [GET]
+  [4;35;1mFormulario Load (2.8ms)[0m   [0mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+  [4;36;1mArea Load (0.7ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (0.7ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (0.7ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 14) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (0.7ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+Completed in 59ms (View: 41, DB: 6) | 200 OK [http://localhost/formularios]
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:16:31) [GET]
+  [4;36;1mFormulario Load (3.8ms)[0m   [0;1mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+  [4;35;1mArea Load (0.8ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (0.8ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (1.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 14) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (1.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+Completed in 75ms (View: 51, DB: 7) | 200 OK [http://localhost/formularios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:16:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:16:41) [GET]
+  [4;35;1mFormulario Load (3.6ms)[0m   [0mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+  [4;36;1mArea Load (1.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (1.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (1.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 14) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (1.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+Completed in 77ms (View: 54, DB: 8) | 200 OK [http://localhost/formularios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:16:43) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AreasController#index (for 127.0.0.1 at 2009-07-17 16:16:43) [GET]
+  [4;36;1mArea Load (8.1ms)[0m   [0;1mSELECT * FROM "areas" ORDER BY lft ASC LIMIT 20 OFFSET 0[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" [0m
+Rendering template within layouts/application
+Rendering areas/index
+  [4;36;1mTipo Load (0.5ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mNivel Load (0.6ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 1) [0m
+  [4;36;1mTipo Load (0.7ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 2) [0m
+  [4;35;1mNivel Load (0.7ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;36;1mTipo Load (0.5ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mNivel Load (0.6ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mNivel Load (0.5ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+Completed in 136ms (View: 97, DB: 13) | 200 OK [http://localhost/areas]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:16:50) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing NivelesController#index (for 127.0.0.1 at 2009-07-17 16:16:51) [GET]
+  [4;36;1mNivel Load (1.7ms)[0m   [0;1mSELECT * FROM "niveles" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering niveles/index
+Completed in 31ms (View: 15, DB: 2) | 200 OK [http://localhost/niveles]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:16:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TiposController#index (for 127.0.0.1 at 2009-07-17 16:16:54) [GET]
+  [4;35;1mTipo Load (1.3ms)[0m   [0mSELECT * FROM "tipos" [0m
+Rendering template within layouts/application
+Rendering tipos/index
+Completed in 26ms (View: 12, DB: 1) | 200 OK [http://localhost/tipos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:16:56) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:16:56) [GET]
+  [4;36;1mFormulario Load (4.0ms)[0m   [0;1mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+  [4;35;1mArea Load (1.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (0.8ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 14) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (0.8ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+Completed in 78ms (View: 55, DB: 8) | 200 OK [http://localhost/formularios]
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:17:09) [GET]
+  [4;35;1mFormulario Load (10.2ms)[0m   [0mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+  [4;36;1mArea Load (1.2ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (1.1ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (1.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 14) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (1.1ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+Completed in 135ms (View: 70, DB: 15) | 200 OK [http://localhost/formularios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:17:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:20:31) [GET]
+  [4;36;1mFormulario Load (4.5ms)[0m   [0;1mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+  [4;35;1mArea Load (0.8ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (0.7ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (0.7ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 14) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (0.7ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+Completed in 83ms (View: 58, DB: 7) | 200 OK [http://localhost/formularios]
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:20:51) [GET]
+  [4;35;1mFormulario Load (3.5ms)[0m   [0mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+  [4;36;1mArea Load (1.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (0.8ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (0.8ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 14) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (1.1ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+Completed in 86ms (View: 63, DB: 7) | 200 OK [http://localhost/formularios]
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:21:22) [GET]
+  [4;36;1mFormulario Load (2.8ms)[0m   [0;1mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+  [4;35;1mArea Load (0.7ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (0.7ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (0.7ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 14) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (1.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+Completed in 75ms (View: 57, DB: 6) | 200 OK [http://localhost/formularios]
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:26:41) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/formularios]
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2009-07-17 16:26:41) [GET]
+
+NameError (uninitialized constant SessionsesController):
+  
+
+Rendered rescues/_trace (60.9ms)
+Rendered rescues/_request_and_response (15.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:27:23) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/formularios]
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2009-07-17 16:27:23) [GET]
+
+NameError (uninitialized constant SessionsesController):
+  
+
+Rendered rescues/_trace (62.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:33:31) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/formularios]
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2009-07-17 16:33:31) [GET]
+
+NameError (uninitialized constant SessionsesController):
+  
+
+Rendered rescues/_trace (59.1ms)
+Rendered rescues/_request_and_response (1.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:34:23) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/formularios]
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2009-07-17 16:34:23) [GET]
+
+NameError (uninitialized constant SessionsesController):
+  
+
+Rendered rescues/_trace (65.8ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:34:24) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/formularios]
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2009-07-17 16:34:24) [GET]
+
+NameError (uninitialized constant SessionsesController):
+  
+
+Rendered rescues/_trace (55.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:34:26) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/formularios]
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2009-07-17 16:34:26) [GET]
+
+NameError (uninitialized constant SessionsesController):
+  
+
+Rendered rescues/_trace (59.7ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2009-07-17 16:35:34) [GET]
+
+NameError (uninitialized constant SessionsesController):
+  
+
+Rendered rescues/_trace (69.6ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:35:59) [GET]
+
+NameError (undefined local variable or method `new_sessions_path' for #<SessionsController:0xb6919aa4>):
+  lib/authenticated_system.rb:68:in `access_denied'
+  lib/authenticated_system.rb:65:in `access_denied'
+  lib/authenticated_system.rb:53:in `login_required'
+
+Rendered rescues/_trace (82.5ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:36:14) [GET]
+
+NameError (undefined local variable or method `new_sessions_path' for #<SessionsController:0xb69686b8>):
+  lib/authenticated_system.rb:68:in `access_denied'
+  lib/authenticated_system.rb:65:in `access_denied'
+  lib/authenticated_system.rb:53:in `login_required'
+
+Rendered rescues/_trace (158.9ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:36:34) [GET]
+
+NameError (undefined local variable or method `new_sessions_path' for #<SessionsController:0xb6674d44>):
+  lib/authenticated_system.rb:68:in `access_denied'
+  lib/authenticated_system.rb:65:in `access_denied'
+  lib/authenticated_system.rb:53:in `login_required'
+
+Rendered rescues/_trace (225.2ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:36:34) [GET]
+
+NameError (undefined local variable or method `new_sessions_path' for #<SessionsController:0xb688cbcc>):
+  lib/authenticated_system.rb:68:in `access_denied'
+  lib/authenticated_system.rb:65:in `access_denied'
+  lib/authenticated_system.rb:53:in `login_required'
+
+Rendered rescues/_trace (111.5ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:36:35) [GET]
+
+NameError (undefined local variable or method `new_sessions_path' for #<SessionsController:0xb670b0b4>):
+  lib/authenticated_system.rb:68:in `access_denied'
+  lib/authenticated_system.rb:65:in `access_denied'
+  lib/authenticated_system.rb:53:in `login_required'
+
+Rendered rescues/_trace (170.4ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:36:37) [GET]
+
+NameError (undefined local variable or method `new_sessions_path' for #<SessionsController:0xb68af974>):
+  lib/authenticated_system.rb:68:in `access_denied'
+  lib/authenticated_system.rb:65:in `access_denied'
+  lib/authenticated_system.rb:53:in `login_required'
+
+Rendered rescues/_trace (84.4ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:36:38) [GET]
+
+NameError (undefined local variable or method `new_sessions_path' for #<SessionsController:0xb672e050>):
+  lib/authenticated_system.rb:68:in `access_denied'
+  lib/authenticated_system.rb:65:in `access_denied'
+  lib/authenticated_system.rb:53:in `login_required'
+
+Rendered rescues/_trace (221.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:36:39) [GET]
+
+NameError (undefined local variable or method `new_sessions_path' for #<SessionsController:0xb68d1d6c>):
+  lib/authenticated_system.rb:68:in `access_denied'
+  lib/authenticated_system.rb:65:in `access_denied'
+  lib/authenticated_system.rb:53:in `login_required'
+
+Rendered rescues/_trace (91.5ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:36:40) [GET]
+
+NameError (undefined local variable or method `new_sessions_path' for #<SessionsController:0xb6757770>):
+  lib/authenticated_system.rb:68:in `access_denied'
+  lib/authenticated_system.rb:65:in `access_denied'
+  lib/authenticated_system.rb:53:in `login_required'
+
+Rendered rescues/_trace (168.5ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:36:46) [GET]
+
+NameError (undefined local variable or method `new_sessions_path' for #<SessionsController:0xb66f7e24>):
+  lib/authenticated_system.rb:68:in `access_denied'
+  lib/authenticated_system.rb:65:in `access_denied'
+  lib/authenticated_system.rb:53:in `login_required'
+
+Rendered rescues/_trace (75.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:36:49) [GET]
+
+NameError (undefined local variable or method `new_sessions_path' for #<SessionsController:0xb691ed4c>):
+  lib/authenticated_system.rb:68:in `access_denied'
+  lib/authenticated_system.rb:65:in `access_denied'
+  lib/authenticated_system.rb:53:in `login_required'
+
+Rendered rescues/_trace (77.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:37:37) [GET]
+
+NameError (undefined local variable or method `new_sessions_path' for #<SessionsController:0xb68861f0>):
+  lib/authenticated_system.rb:68:in `access_denied'
+  lib/authenticated_system.rb:65:in `access_denied'
+  lib/authenticated_system.rb:53:in `login_required'
+
+Rendered rescues/_trace (75.9ms)
+Rendered rescues/_request_and_response (2.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:38:47) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:38:48) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:38:48) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:38:48) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:38:48) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:38:48) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:38:48) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:38:48) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:38:48) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:38:48) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:38:48) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:38:48) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:38:48) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:38:48) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:38:49) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:38:49) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:38:49) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:38:49) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:38:49) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:38:49) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:38:49) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:39:28) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:39:28) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:39:28) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:39:28) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:39:28) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:39:28) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:39:28) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:39:28) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:39:28) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:39:28) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:39:29) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:39:29) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 67ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:39:29) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:39:29) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:39:29) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:39:29) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:39:29) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:39:29) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:39:29) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:39:29) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:39:29) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:40:29) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:40:29) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:40:29) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:40:29) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:40:30) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:40:30) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:40:30) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:40:30) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:40:30) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:40:30) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:40:30) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:40:30) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:40:30) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:40:30) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:40:30) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:40:30) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:40:30) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:40:30) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:40:31) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:40:31) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:40:31) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:41:00) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 57ms (View: 52, DB: 0) | 200 OK [http://localhost/sessions/new]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-07-17 16:41:06) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"5yjn8yfUhu+IlRo3+h1fNcm+E9OftHw/bRrxIbhLQ6A=", "login"=>"admin", "password"=>"gotama"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'admin') LIMIT 1[0m
+Failed login for 'admin' from 127.0.0.1 at Fri Jul 17 20:41:06 UTC 2009
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 57ms (View: 5, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:41:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:41:17) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/formularios]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:41:18) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/sessions/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:41:47) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:41:47) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/formularios]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:41:48) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 27ms (View: 7, DB: 0) | 200 OK [http://localhost/sessions/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:41:50) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:41:50) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/formularios]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:41:50) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://localhost/sessions/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:41:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:41:53) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/formularios]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:41:54) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/sessions/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:41:57) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:42:07) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/sessions/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:42:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:42:09) [GET]
+  [4;35;1mFormulario Load (3.9ms)[0m   [0mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (0.7ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (1.1ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 14) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (1.4ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+Completed in 215ms (View: 174, DB: 8) | 200 OK [http://localhost/formularios]
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:42:52) [GET]
+  [4;36;1mFormulario Load (4.0ms)[0m   [0;1mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 33ms (View: 13, DB: 4) | 200 OK [http://localhost/formularios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:42:57) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:44:49) [GET]
+  [4;35;1mFormulario Load (4.3ms)[0m   [0mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 34ms (View: 13, DB: 4) | 200 OK [http://localhost/formularios]
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:45:10) [GET]
+  [4;36;1mFormulario Load (3.6ms)[0m   [0;1mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 121ms (View: 7, DB: 4) | 200 OK [http://localhost/formularios]
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:45:38) [GET]
+  [4;35;1mFormulario Load (3.8ms)[0m   [0mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 25ms (View: 5, DB: 4) | 200 OK [http://localhost/formularios]
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:45:56) [GET]
+  [4;36;1mFormulario Load (3.8ms)[0m   [0;1mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 24ms (View: 5, DB: 4) | 200 OK [http://localhost/formularios]
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:46:55) [GET]
+  [4;35;1mFormulario Load (3.6ms)[0m   [0mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 31ms (View: 13, DB: 4) | 200 OK [http://localhost/formularios]
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:47:49) [GET]
+  [4;36;1mFormulario Load (3.7ms)[0m   [0;1mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 25ms (View: 5, DB: 4) | 200 OK [http://localhost/formularios]
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:48:00) [GET]
+  [4;35;1mFormulario Load (3.5ms)[0m   [0mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 26ms (View: 5, DB: 3) | 200 OK [http://localhost/formularios]
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:48:16) [GET]
+  [4;36;1mFormulario Load (4.6ms)[0m   [0;1mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 25ms (View: 4, DB: 5) | 200 OK [http://localhost/formularios]
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:48:30) [GET]
+  [4;35;1mFormulario Load (4.1ms)[0m   [0mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 25ms (View: 4, DB: 4) | 200 OK [http://localhost/formularios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:48:33) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-07-17 16:49:11) [GET]
+
+ActionView::MissingTemplate (Missing template users/index.erb in view path app/views):
+  app/controllers/application_controller.rb:19:in `index'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-07-17 16:49:15) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 55ms (View: 32, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:49:29) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-07-17 16:49:48) [POST]
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"5yjn8yfUhu+IlRo3+h1fNcm+E9OftHw/bRrxIbhLQ6A=", "user"=>{"password_confirmation"=>"gotama", "password"=>"gotama", "login"=>"carakan", "email"=>"gotama@gmail.com"}}
+  [4;36;1mUser Exists (0.4ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'carakan') LIMIT 1[0m
+  [4;35;1mUser Exists (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'gotama@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Create (14.8ms)[0m   [0;1mINSERT INTO "users" ("name", "salt", "created_at", "crypted_password", "remember_token_expires_at", "updated_at", "remember_token", "login", "email") VALUES('', 'b2175775a3a74b7c66a28c949c92e89c90d77221', '2009-07-17 20:49:48', '08a5c6e2d8bf0c43493af980d3408438c706c0f0', NULL, '2009-07-17 20:49:48', NULL, 'carakan', 'gotama@gmail.com')[0m
+Redirected to http://localhost:3000/formularios
+Completed in 80ms (DB: 16) | 302 Found [http://localhost/users]
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:49:48) [GET]
+  [4;35;1mFormulario Load (4.6ms)[0m   [0mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mArea Load (1.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (1.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (1.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 14) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (0.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+Completed in 112ms (View: 85, DB: 9) | 200 OK [http://localhost/formularios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:49:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:49:55) [GET]
+  [4;35;1mFormulario Load (4.4ms)[0m   [0mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mArea Load (0.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (0.7ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (0.6ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 14) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (0.6ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+Completed in 181ms (View: 157, DB: 8) | 200 OK [http://localhost/formularios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:49:57) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AreasController#index (for 127.0.0.1 at 2009-07-17 16:49:58) [GET]
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mArea Load (7.8ms)[0m   [0;1mSELECT * FROM "areas" ORDER BY lft ASC LIMIT 20 OFFSET 0[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" [0m
+Rendering template within layouts/application
+Rendering areas/index
+  [4;36;1mTipo Load (0.5ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mNivel Load (0.5ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 1) [0m
+  [4;36;1mTipo Load (0.7ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 2) [0m
+  [4;35;1mNivel Load (0.7ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;36;1mTipo Load (0.7ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mNivel Load (0.7ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mNivel Load (0.6ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+Completed in 172ms (View: 110, DB: 14) | 200 OK [http://localhost/areas]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:50:00) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing NivelesController#index (for 127.0.0.1 at 2009-07-17 16:50:00) [GET]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mNivel Load (1.0ms)[0m   [0mSELECT * FROM "niveles" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering niveles/index
+Completed in 159ms (View: 122, DB: 2) | 200 OK [http://localhost/niveles]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:50:02) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:50:02) [GET]
+  [4;36;1mFormulario Load (3.6ms)[0m   [0;1mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mArea Load (0.8ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (0.7ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (0.7ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 14) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (0.7ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+Completed in 96ms (View: 74, DB: 7) | 200 OK [http://localhost/formularios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:50:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2009-07-17 16:50:12) [GET]
+Redirected to http://localhost:3000/
+Completed in 18ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:50:13) [GET]
+  [4;36;1mFormulario Load (2.9ms)[0m   [0;1mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 21ms (View: 4, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:50:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:50:17) [GET]
+  [4;35;1mFormulario Load (3.7ms)[0m   [0mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 26ms (View: 5, DB: 4) | 200 OK [http://localhost/formularios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:50:19) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AreasController#index (for 127.0.0.1 at 2009-07-17 16:50:19) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/areas]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:50:19) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/sessions/new]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-07-17 16:50:24) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"F621r+XPXFqfcwLa8nzEl2TrbGheWAf8IS7X0vexQ2M=", "login"=>"carakan", "password"=>"gotama"}
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'carakan') LIMIT 1[0m
+Redirected to http://localhost:3000/areas
+Completed in 36ms (DB: 1) | 302 Found [http://localhost/sessions]
+
+
+Processing AreasController#index (for 127.0.0.1 at 2009-07-17 16:50:24) [GET]
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mArea Load (8.7ms)[0m   [0;1mSELECT * FROM "areas" ORDER BY lft ASC LIMIT 20 OFFSET 0[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "areas" [0m
+Rendering template within layouts/application
+Rendering areas/index
+  [4;36;1mTipo Load (0.6ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mNivel Load (0.7ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 1) [0m
+  [4;36;1mTipo Load (0.6ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 2) [0m
+  [4;35;1mNivel Load (0.5ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;36;1mTipo Load (0.6ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mNivel Load (0.6ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mNivel Load (0.6ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+Completed in 170ms (View: 108, DB: 14) | 200 OK [http://localhost/areas]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:50:26) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:50:27) [GET]
+  [4;36;1mFormulario Load (3.7ms)[0m   [0;1mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mArea Load (0.7ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (0.7ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (0.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 14) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+Completed in 191ms (View: 166, DB: 8) | 200 OK [http://localhost/formularios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:50:30) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:50:33) [GET]
+  [4;36;1mFormulario Load (3.8ms)[0m   [0;1mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mArea Load (1.4ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (0.6ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (1.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 14) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (0.7ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+Completed in 98ms (View: 73, DB: 9) | 200 OK [http://localhost/formularios]
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:51:05) [GET]
+  [4;36;1mFormulario Load (3.8ms)[0m   [0;1mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mArea Load (0.6ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (0.7ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (0.6ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 14) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (0.6ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+Completed in 172ms (View: 150, DB: 7) | 200 OK [http://localhost/formularios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:51:17) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:52:21) [GET]
+  [4;36;1mFormulario Load (3.9ms)[0m   [0;1mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mArea Load (0.7ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (0.7ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (0.8ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 14) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (0.8ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+Completed in 111ms (View: 87, DB: 8) | 200 OK [http://localhost/formularios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:52:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:53:00) [GET]
+  [4;36;1mFormulario Load (4.2ms)[0m   [0;1mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mArea Load (1.1ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (1.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (7.7ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 14) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (1.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+Completed in 370ms (View: 328, DB: 16) | 200 OK [http://localhost/formularios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:53:03) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:53:10) [GET]
+  [4;36;1mFormulario Load (4.3ms)[0m   [0;1mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mArea Load (1.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (0.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (1.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 14) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+Completed in 122ms (View: 95, DB: 9) | 200 OK [http://localhost/formularios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:53:12) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2009-07-17 16:53:13) [GET]
+Redirected to http://localhost:3000/
+Completed in 20ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:53:13) [GET]
+  [4;36;1mFormulario Load (4.0ms)[0m   [0;1mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 21ms (View: 4, DB: 4) | 200 OK [http://localhost/]
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:53:55) [GET]
+  [4;35;1mFormulario Load (3.8ms)[0m   [0mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 24ms (View: 5, DB: 4) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:53:56) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:53:57) [GET]
+  [4;36;1mFormulario Load (4.1ms)[0m   [0;1mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 25ms (View: 5, DB: 4) | 200 OK [http://localhost/formularios]
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2009-07-17 16:54:00) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/formularios/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:54:01) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://localhost/sessions/new]
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:54:40) [GET]
+  [4;35;1mFormulario Load (4.5ms)[0m   [0mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 40ms (View: 6, DB: 4) | 200 OK [http://localhost/formularios]
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2009-07-17 16:54:42) [GET]
+Rendering template within layouts/application
+Rendering formularios/new
+  [4;36;1mArea Load (9.2ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.9ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;36;1mTipo Load (0.7ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (84.5ms)
+Completed in 135ms (View: 105, DB: 11) | 200 OK [http://localhost/formularios/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:55:05) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:55:05) [GET]
+  [4;35;1mFormulario Load (2.9ms)[0m   [0mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 21ms (View: 5, DB: 3) | 200 OK [http://localhost/formularios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:55:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing NivelesController#index (for 127.0.0.1 at 2009-07-17 16:55:11) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/niveles]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 16:55:11) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/sessions/new]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-07-17 16:55:16) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"84rJ26lP1bWT9AZT6v9Ik5YxZkATYRXp5HmyH67ruiI=", "login"=>"carakan", "password"=>"gotama"}
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'carakan') LIMIT 1[0m
+Redirected to http://localhost:3000/niveles
+Completed in 51ms (DB: 1) | 302 Found [http://localhost/sessions]
+
+
+Processing NivelesController#index (for 127.0.0.1 at 2009-07-17 16:55:16) [GET]
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;36;1mNivel Load (1.3ms)[0m   [0;1mSELECT * FROM "niveles" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering niveles/index
+Completed in 148ms (View: 17, DB: 2) | 200 OK [http://localhost/niveles]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:55:19) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:55:20) [GET]
+  [4;35;1mFormulario Load (4.0ms)[0m   [0mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+  [4;36;1mUser Load (1.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mArea Load (1.6ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (0.7ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (1.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 14) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (0.7ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+Completed in 102ms (View: 77, DB: 9) | 200 OK [http://localhost/formularios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:55:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:55:27) [GET]
+  [4;35;1mFormulario Load (3.5ms)[0m   [0mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [4;35;1mArea Load (0.8ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (0.7ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 14) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (0.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+Completed in 183ms (View: 161, DB: 8) | 200 OK [http://localhost/formularios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 16:55:29) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2009-07-17 16:55:30) [GET]
+Redirected to http://localhost:3000/
+Completed in 18ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 16:55:30) [GET]
+  [4;35;1mFormulario Load (3.4ms)[0m   [0mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 21ms (View: 4, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2009-07-17 16:55:32) [GET]
+Rendering template within layouts/application
+Rendering formularios/new
+  [4;36;1mArea Load (12.1ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (1.3ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;36;1mTipo Load (1.1ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (179.3ms)
+Completed in 202ms (View: 169, DB: 14) | 200 OK [http://localhost/formularios/new]
+  [4;36;1mSQL (1.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTipos (20090708162603)
+Migrating to CreateNiveles (20090708162807)
+Migrating to CreateAreas (20090708162944)
+Migrating to CreateFormularios (20090708163210)
+Migrating to Arreglos (20090714152134)
+Migrating to CreateUsers (20090714223502)
+Migrating to AdicionCi (20090717143402)
+Migrating to AddNombre (20090717210051)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mALTER TABLE "formularios" ADD "nombre" varchar(255)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mALTER TABLE "formularios" ADD "apellido" varchar(255)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090717210051')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mPRAGMA index_list("areas")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("formularios")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("niveles")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("tipos")[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mPRAGMA index_info('index_users_on_login')[0m
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2009-07-17 17:04:41) [GET]
+Rendering template within layouts/application
+Rendering formularios/new
+  [4;35;1mArea Load (10.3ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;36;1mNivel Load (0.9ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;35;1mTipo Load (0.7ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (72.5ms)
+Completed in 102ms (View: 68, DB: 12) | 200 OK [http://localhost/formularios/new]
+
+
+Processing AreasController#seleccionar (for 127.0.0.1 at 2009-07-17 17:05:04) [GET]
+  Parameters: {"id"=>"15"}
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 4ms (View: 1, DB: 0) | 401 Unauthorized [http://localhost/areas/15/seleccionar]
+
+
+Processing AreasController#seleccionar (for 127.0.0.1 at 2009-07-17 17:06:52) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArea Load (1.1ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 3 AND ("areas"."activo" = 't')) ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.6ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 4) [0m
+  [4;36;1mTipo Load (0.7ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Rendering areas/seleccionar
+  [4;35;1mArea Load (1.3ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 27 AND 32)) ORDER BY areas.lft[0m
+  [4;36;1mArea Load (0.7ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+Completed in 175ms (View: 21, DB: 4) | 200 OK [http://localhost/areas/3/seleccionar]
+
+
+Processing AreasController#seleccionar (for 127.0.0.1 at 2009-07-17 17:06:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mArea Load (0.8ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1 AND ("areas"."activo" = 't')) ORDER BY lft ASC[0m
+  [4;36;1mNivel Load (0.4ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" = 1) [0m
+  [4;35;1mTipo Load (0.6ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Rendering areas/seleccionar
+  [4;36;1mArea Load (9.6ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 1 AND 70)) ORDER BY areas.lft[0m
+Completed in 64ms (View: 10, DB: 11) | 200 OK [http://localhost/areas/1/seleccionar]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 17:07:43) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#create (for 127.0.0.1 at 2009-07-17 17:07:51) [POST]
+  Parameters: {"commit"=>"Salvar", "authenticity_token"=>"QD2E1y+9mh96wnTgVnxu7KhOepKQvwU0q/TycUKAOG8=", "formulario"=>{"descripcion_funciones_especificas"=>"asdfasdf", "nombre"=>"carlangas", "descripcion_funcion_principal"=>"asdfasdf", "relaciones_coordinacion_interna"=>"asdf", "area_id"=>"1", "relacionamiento_interinstitucional"=>"asdf", "objectivo_area_funcional"=>"fsdasdf", "ci"=>"6098494", "principales_resultados"=>"asdf asdf asdf asdf", "apellido"=>"Ramos"}}
+  [4;35;1mFormulario Create (0.7ms)[0m   [0mINSERT INTO "formularios" ("descripcion_funciones_especificas", "fecha_aprovacion", "created_at", "nombre", "usuario_id", "descripcion_funcion_principal", "updated_at", "area_id", "relaciones_coordinacion_interna", "objectivo_area_funcional", "relacionamiento_interinstitucional", "fecha_actualizacion", "ci", "principales_resultados", "apellido") VALUES('asdfasdf', NULL, '2009-07-17 21:07:51', 'carlangas', NULL, 'asdfasdf', '2009-07-17 21:07:51', 1, 'asdf', 'fsdasdf', 'asdf', NULL, '6098494', 'asdf asdf asdf asdf', 'Ramos')[0m
+Redirected to http://localhost:3000/formularios/10
+Completed in 41ms (DB: 1) | 302 Found [http://localhost/formularios]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-17 17:07:51) [GET]
+  Parameters: {"id"=>"10"}
+  [4;36;1mFormulario Load (0.8ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 10) [0m
+  [4;35;1mArea Load (0.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) [0m
+  [4;36;1mTipo Load (0.6ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mNivel Load (2.1ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+  [4;36;1mArea Load (9.6ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 1 AND 70)) ORDER BY areas.lft[0m
+Completed in 171ms (View: 21, DB: 14) | 200 OK [http://localhost/formularios/10]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-17 17:08:32) [GET]
+  Parameters: {"id"=>"10"}
+  [4;35;1mFormulario Load (1.1ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 10) [0m
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) [0m
+  [4;35;1mTipo Load (0.4ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;36;1mNivel Load (0.4ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+  [4;35;1mArea Load (8.5ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 1 AND 70)) ORDER BY areas.lft[0m
+Completed in 90ms (View: 12, DB: 11) | 200 OK [http://localhost/formularios/10]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 17:08:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AreasController#index (for 127.0.0.1 at 2009-07-17 17:08:44) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/areas]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 17:08:44) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/sessions/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 17:08:47) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing NivelesController#index (for 127.0.0.1 at 2009-07-17 17:08:47) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/niveles]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 17:08:47) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/sessions/new]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 17:09:38) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://localhost/sessions/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 17:09:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 17:09:55) [GET]
+  [4;36;1mFormulario Load (4.3ms)[0m   [0;1mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 24ms (View: 5, DB: 4) | 200 OK [http://localhost/formularios]
+
+
+Processing FormulariosController#busqueda (for 127.0.0.1 at 2009-07-17 17:10:04) [POST]
+  Parameters: {"authenticity_token"=>"QD2E1y+9mh96wnTgVnxu7KhOepKQvwU0q/TycUKAOG8=", "search"=>"6098494"}
+  [4;35;1mFormulario Load (1.4ms)[0m   [0mSELECT * FROM "formularios" WHERE (ci = '6098494') LIMIT 1[0m
+Redirected to http://localhost:3000/formularios/8/edit
+Completed in 18ms (DB: 1) | 302 Found [http://localhost/formularios/busqueda]
+
+
+Processing FormulariosController#edit (for 127.0.0.1 at 2009-07-17 17:10:04) [GET]
+  Parameters: {"id"=>"8"}
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/formularios/8/edit]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 17:10:04) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/sessions/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 17:10:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 17:10:47) [GET]
+  [4;36;1mFormulario Load (4.2ms)[0m   [0;1mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 24ms (View: 5, DB: 4) | 200 OK [http://localhost/formularios]
+
+
+Processing FormulariosController#busqueda (for 127.0.0.1 at 2009-07-17 17:10:51) [POST]
+  Parameters: {"authenticity_token"=>"QD2E1y+9mh96wnTgVnxu7KhOepKQvwU0q/TycUKAOG8=", "search"=>"6098494"}
+  [4;35;1mFormulario Load (1.9ms)[0m   [0mSELECT * FROM "formularios" WHERE (ci = '6098494') LIMIT 1[0m
+Redirected to http://localhost:3000/formularios/8/edit
+Completed in 22ms (DB: 2) | 302 Found [http://localhost/formularios/busqueda]
+
+
+Processing FormulariosController#edit (for 127.0.0.1 at 2009-07-17 17:10:52) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mFormulario Load (0.8ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 8) [0m
+Rendering template within layouts/application
+Rendering formularios/edit
+  [4;35;1mArea Load (8.6ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;36;1mNivel Load (1.0ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;35;1mTipo Load (1.1ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (70.4ms)
+Completed in 113ms (View: 84, DB: 12) | 200 OK [http://localhost/formularios/8/edit]
+
+
+Processing AreasController#seleccionar (for 127.0.0.1 at 2009-07-17 17:10:53) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 3 AND ("areas"."activo" = 't')) ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.6ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 4) [0m
+  [4;36;1mTipo Load (0.5ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Rendering areas/seleccionar
+  [4;35;1mArea Load (1.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 27 AND 32)) ORDER BY areas.lft[0m
+  [4;36;1mArea Load (1.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+Completed in 63ms (View: 10, DB: 5) | 200 OK [http://localhost/areas/3/seleccionar]
+
+
+Processing FormulariosController#update (for 127.0.0.1 at 2009-07-17 17:11:09) [PUT]
+  Parameters: {"commit"=>"Salvar", "authenticity_token"=>"QD2E1y+9mh96wnTgVnxu7KhOepKQvwU0q/TycUKAOG8=", "id"=>"8", "formulario"=>{"descripcion_funciones_especificas"=>"que es esto?", "nombre"=>"carlos ", "descripcion_funcion_principal"=>"que es esto?", "relaciones_coordinacion_interna"=>"que es esto? asdfsd", "area_id"=>"3", "relacionamiento_interinstitucional"=>"que es esto? asdfsd", "objectivo_area_funcional"=>"nosse", "ci"=>"6098494", "principales_resultados"=>"que es esto?", "apellido"=>"Ramos"}}
+  [4;35;1mFormulario Load (1.1ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 8) [0m
+  [4;36;1mFormulario Update (0.7ms)[0m   [0;1mUPDATE "formularios" SET "updated_at" = '2009-07-17 21:11:09', "nombre" = 'carlos ', "apellido" = 'Ramos', "relaciones_coordinacion_interna" = 'que es esto? asdfsd', "relacionamiento_interinstitucional" = 'que es esto? asdfsd' WHERE "id" = 8[0m
+Redirected to http://localhost:3000/formularios/8
+Completed in 37ms (DB: 2) | 302 Found [http://localhost/formularios/8]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-17 17:11:09) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mFormulario Load (1.0ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 8) [0m
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 3) [0m
+  [4;35;1mTipo Load (0.4ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;36;1mNivel Load (0.5ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+  [4;35;1mArea Load (0.7ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (1.4ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 27 AND 32)) ORDER BY areas.lft[0m
+Completed in 80ms (View: 10, DB: 5) | 200 OK [http://localhost/formularios/8]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-17 17:12:25) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mFormulario Load (1.1ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 8) [0m
+  [4;36;1mArea Load (0.8ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 3) [0m
+  [4;35;1mTipo Load (0.4ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;36;1mNivel Load (0.5ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+  [4;35;1mArea Load (0.7ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (1.3ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 27 AND 32)) ORDER BY areas.lft[0m
+Completed in 99ms (View: 16, DB: 5) | 200 OK [http://localhost/formularios/8]
+
+
+Processing FormulariosController#print (for 127.0.0.1 at 2009-07-17 17:12:34) [GET]
+  Parameters: {"mostrar"=>"true", "id"=>"8"}
+  [4;35;1mFormulario Load (1.1ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 8) [0m
+Rendering template within layouts/print
+Rendering formularios/show
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.5ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 4) [0m
+  [4;36;1mArea Load (0.8ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (1.6ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 27 AND 32)) ORDER BY areas.lft[0m
+  [4;36;1mTipo Load (0.6ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Completed in 101ms (View: 76, DB: 6) | 200 OK [http://localhost/formularios/8/print?mostrar=true]
+
+
+Processing FormulariosController#print (for 127.0.0.1 at 2009-07-17 17:14:09) [GET]
+  Parameters: {"mostrar"=>"true", "id"=>"8"}
+  [4;35;1mFormulario Load (0.8ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 8) [0m
+Rendering template within layouts/print
+Rendering formularios/show
+  [4;36;1mArea Load (0.7ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.7ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 4) [0m
+  [4;36;1mArea Load (0.7ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (1.3ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 27 AND 32)) ORDER BY areas.lft[0m
+  [4;36;1mTipo Load (0.4ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Completed in 72ms (View: 50, DB: 5) | 200 OK [http://localhost/formularios/8/print?mostrar=true]
+
+
+Processing FormulariosController#print (for 127.0.0.1 at 2009-07-17 17:15:21) [GET]
+  Parameters: {"mostrar"=>"true", "id"=>"8"}
+  [4;35;1mFormulario Load (29.1ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 8) [0m
+Rendering template within layouts/print
+Rendering formularios/show
+  [4;36;1mArea Load (1.1ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.7ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 4) [0m
+  [4;36;1mArea Load (1.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (1.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 27 AND 32)) ORDER BY areas.lft[0m
+  [4;36;1mTipo Load (0.4ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Completed in 127ms (View: 68, DB: 34) | 200 OK [http://localhost/formularios/8/print?mostrar=true]
+
+
+Processing FormulariosController#print (for 127.0.0.1 at 2009-07-17 17:15:48) [GET]
+  Parameters: {"mostrar"=>"true", "id"=>"8"}
+  [4;35;1mFormulario Load (1.0ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 8) [0m
+Rendering template within layouts/print
+Rendering formularios/show
+  [4;36;1mArea Load (1.1ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (3.9ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 4) [0m
+  [4;36;1mArea Load (1.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (2.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 27 AND 32)) ORDER BY areas.lft[0m
+  [4;36;1mTipo Load (0.7ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Completed in 137ms (View: 108, DB: 10) | 200 OK [http://localhost/formularios/8/print?mostrar=true]
+
+
+Processing FormulariosController#print (for 127.0.0.1 at 2009-07-17 17:16:03) [GET]
+  Parameters: {"mostrar"=>"true", "id"=>"8"}
+  [4;35;1mFormulario Load (1.1ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 8) [0m
+Rendering template within layouts/print
+Rendering formularios/show
+  [4;36;1mArea Load (0.8ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.5ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 4) [0m
+  [4;36;1mArea Load (0.7ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (1.3ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 27 AND 32)) ORDER BY areas.lft[0m
+  [4;36;1mTipo Load (0.6ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Completed in 68ms (View: 44, DB: 5) | 200 OK [http://localhost/formularios/8/print?mostrar=true]
+
+
+Processing FormulariosController#print (for 127.0.0.1 at 2009-07-17 17:17:31) [GET]
+  Parameters: {"mostrar"=>"true", "id"=>"8"}
+  [4;35;1mFormulario Load (1.1ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 8) [0m
+Rendering template within layouts/print
+Rendering formularios/show
+  [4;36;1mArea Load (1.3ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.6ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 4) [0m
+  [4;36;1mArea Load (1.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (2.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 27 AND 32)) ORDER BY areas.lft[0m
+  [4;36;1mTipo Load (0.4ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Completed in 90ms (View: 63, DB: 6) | 200 OK [http://localhost/formularios/8/print?mostrar=true]
+
+
+Processing FormulariosController#print (for 127.0.0.1 at 2009-07-17 17:18:06) [GET]
+  Parameters: {"mostrar"=>"true", "id"=>"8"}
+  [4;35;1mFormulario Load (1.0ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 8) [0m
+Rendering template within layouts/print
+Rendering formularios/show
+  [4;36;1mArea Load (1.1ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.4ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 4) [0m
+  [4;36;1mArea Load (0.6ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (1.4ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 27 AND 32)) ORDER BY areas.lft[0m
+  [4;36;1mTipo Load (0.4ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Completed in 81ms (View: 55, DB: 5) | 200 OK [http://localhost/formularios/8/print?mostrar=true]
+
+
+Processing FormulariosController#print (for 127.0.0.1 at 2009-07-17 17:19:31) [GET]
+  Parameters: {"mostrar"=>"true", "id"=>"8"}
+  [4;35;1mFormulario Load (5.7ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 8) [0m
+Rendering template within layouts/print
+Rendering formularios/show
+  [4;36;1mArea Load (1.1ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.7ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 4) [0m
+  [4;36;1mArea Load (1.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (1.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 27 AND 32)) ORDER BY areas.lft[0m
+  [4;36;1mTipo Load (0.6ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Completed in 178ms (View: 131, DB: 11) | 200 OK [http://localhost/formularios/8/print?mostrar=true]
+
+
+Processing FormulariosController#print (for 127.0.0.1 at 2009-07-17 17:19:48) [GET]
+  Parameters: {"mostrar"=>"true", "id"=>"8"}
+  [4;35;1mFormulario Load (1.0ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 8) [0m
+Rendering template within layouts/print
+Rendering formularios/show
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.5ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 4) [0m
+  [4;36;1mArea Load (0.8ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (1.5ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 27 AND 32)) ORDER BY areas.lft[0m
+  [4;36;1mTipo Load (0.5ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Completed in 75ms (View: 51, DB: 5) | 200 OK [http://localhost/formularios/8/print?mostrar=true]
+
+
+Processing FormulariosController#print (for 127.0.0.1 at 2009-07-17 17:20:39) [GET]
+  Parameters: {"mostrar"=>"true", "id"=>"8"}
+  [4;35;1mFormulario Load (1.0ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 8) [0m
+Rendering template within layouts/print
+Rendering formularios/show
+  [4;36;1mArea Load (1.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.4ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 4) [0m
+  [4;36;1mArea Load (0.6ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (1.2ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 27 AND 32)) ORDER BY areas.lft[0m
+  [4;36;1mTipo Load (0.6ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Completed in 150ms (View: 124, DB: 5) | 200 OK [http://localhost/formularios/8/print?mostrar=true]
+
+
+Processing FormulariosController#print (for 127.0.0.1 at 2009-07-17 17:21:04) [GET]
+  Parameters: {"mostrar"=>"true", "id"=>"8"}
+  [4;35;1mFormulario Load (1.0ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 8) [0m
+Rendering template within layouts/print
+Rendering formularios/show
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.5ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 4) [0m
+  [4;36;1mArea Load (0.8ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (1.7ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 27 AND 32)) ORDER BY areas.lft[0m
+  [4;36;1mTipo Load (0.9ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Completed in 79ms (View: 53, DB: 6) | 200 OK [http://localhost/formularios/8/print?mostrar=true]
+
+
+Processing FormulariosController#print (for 127.0.0.1 at 2009-07-17 17:21:47) [GET]
+  Parameters: {"mostrar"=>"true", "id"=>"8"}
+  [4;35;1mFormulario Load (1.1ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 8) [0m
+Rendering template within layouts/print
+Rendering formularios/show
+  [4;36;1mArea Load (1.1ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.4ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 4) [0m
+  [4;36;1mArea Load (0.6ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (1.7ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 27 AND 32)) ORDER BY areas.lft[0m
+  [4;36;1mTipo Load (0.4ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Completed in 77ms (View: 50, DB: 5) | 200 OK [http://localhost/formularios/8/print?mostrar=true]
+
+
+Processing FormulariosController#print (for 127.0.0.1 at 2009-07-17 17:24:51) [GET]
+  Parameters: {"mostrar"=>"true", "id"=>"8"}
+  [4;35;1mFormulario Load (1.2ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 8) [0m
+Rendering template within layouts/print
+Rendering formularios/show
+  [4;36;1mArea Load (1.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.4ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 4) [0m
+  [4;36;1mArea Load (0.7ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (1.3ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 27 AND 32)) ORDER BY areas.lft[0m
+  [4;36;1mTipo Load (0.4ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Completed in 159ms (View: 134, DB: 5) | 200 OK [http://localhost/formularios/8/print?mostrar=true]
+
+
+Processing FormulariosController#print (for 127.0.0.1 at 2009-07-17 17:25:27) [GET]
+  Parameters: {"mostrar"=>"true", "id"=>"8"}
+  [4;35;1mFormulario Load (1.0ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 8) [0m
+Rendering template within layouts/print
+Rendering formularios/show
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.5ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 4) [0m
+  [4;36;1mArea Load (0.8ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (1.6ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 27 AND 32)) ORDER BY areas.lft[0m
+  [4;36;1mTipo Load (0.5ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Completed in 86ms (View: 61, DB: 5) | 200 OK [http://localhost/formularios/8/print?mostrar=true]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 17:25:48) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 17:25:51) [GET]
+  [4;35;1mFormulario Load (4.2ms)[0m   [0mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 24ms (View: 5, DB: 4) | 200 OK [http://localhost/formularios]
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2009-07-17 17:25:54) [GET]
+Rendering template within layouts/application
+Rendering formularios/new
+  [4;36;1mArea Load (9.2ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.9ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;36;1mTipo Load (1.2ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (167.4ms)
+Completed in 190ms (View: 160, DB: 11) | 200 OK [http://localhost/formularios/new]
+
+
+Processing AreasController#seleccionar (for 127.0.0.1 at 2009-07-17 17:26:01) [GET]
+  Parameters: {"id"=>"17"}
+  [4;35;1mArea Load (1.1ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 17 AND ("areas"."activo" = 't')) ORDER BY lft ASC[0m
+  [4;36;1mNivel Load (0.7ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;35;1mTipo Load (0.5ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" = 3) [0m
+Rendering areas/seleccionar
+  [4;36;1mArea Load (0.7ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 16) ORDER BY lft ASC[0m
+Completed in 52ms (View: 6, DB: 3) | 200 OK [http://localhost/areas/17/seleccionar]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 17:26:03) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AreasController#index (for 127.0.0.1 at 2009-07-17 17:26:05) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/areas]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 17:26:05) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/sessions/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 17:26:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing NivelesController#index (for 127.0.0.1 at 2009-07-17 17:26:08) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/niveles]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 17:26:08) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/sessions/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 17:26:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TiposController#index (for 127.0.0.1 at 2009-07-17 17:26:09) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/tipos]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 17:26:10) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/sessions/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 17:26:12) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 17:26:12) [GET]
+  [4;35;1mFormulario Load (4.4ms)[0m   [0mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 26ms (View: 5, DB: 4) | 200 OK [http://localhost/formularios]
+
+
+Processing FormulariosController#busqueda (for 127.0.0.1 at 2009-07-17 17:26:20) [POST]
+  Parameters: {"authenticity_token"=>"QD2E1y+9mh96wnTgVnxu7KhOepKQvwU0q/TycUKAOG8=", "search"=>"6098494"}
+  [4;36;1mFormulario Load (1.7ms)[0m   [0;1mSELECT * FROM "formularios" WHERE (ci = '6098494') LIMIT 1[0m
+Redirected to http://localhost:3000/formularios/8/edit
+Completed in 23ms (DB: 2) | 302 Found [http://localhost/formularios/busqueda]
+
+
+Processing FormulariosController#edit (for 127.0.0.1 at 2009-07-17 17:26:20) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mFormulario Load (0.8ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 8) [0m
+Rendering template within layouts/application
+Rendering formularios/edit
+  [4;36;1mArea Load (8.2ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (1.1ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;36;1mTipo Load (0.8ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (68.4ms)
+Completed in 91ms (View: 64, DB: 11) | 200 OK [http://localhost/formularios/8/edit]
+
+
+Processing AreasController#seleccionar (for 127.0.0.1 at 2009-07-17 17:26:21) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mArea Load (1.1ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 3 AND ("areas"."activo" = 't')) ORDER BY lft ASC[0m
+  [4;36;1mNivel Load (0.7ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" = 4) [0m
+  [4;35;1mTipo Load (0.6ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Rendering areas/seleccionar
+  [4;36;1mArea Load (1.7ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 27 AND 32)) ORDER BY areas.lft[0m
+  [4;35;1mArea Load (0.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+Completed in 166ms (View: 9, DB: 5) | 200 OK [http://localhost/areas/3/seleccionar]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 17:27:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 17:27:15) [GET]
+  [4;36;1mFormulario Load (4.2ms)[0m   [0;1mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 25ms (View: 5, DB: 4) | 200 OK [http://localhost/formularios]
+
+
+Processing FormulariosController#busqueda (for 127.0.0.1 at 2009-07-17 17:27:20) [POST]
+  Parameters: {"authenticity_token"=>"QD2E1y+9mh96wnTgVnxu7KhOepKQvwU0q/TycUKAOG8=", "search"=>"6098494"}
+  [4;35;1mFormulario Load (1.8ms)[0m   [0mSELECT * FROM "formularios" WHERE (ci = '6098494') LIMIT 1[0m
+Redirected to http://localhost:3000/formularios/8/edit
+Completed in 22ms (DB: 2) | 302 Found [http://localhost/formularios/busqueda]
+
+
+Processing FormulariosController#edit (for 127.0.0.1 at 2009-07-17 17:27:20) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mFormulario Load (0.8ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 8) [0m
+Rendering template within layouts/application
+Rendering formularios/edit
+  [4;35;1mArea Load (8.4ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;36;1mNivel Load (1.2ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;35;1mTipo Load (0.8ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (144.1ms)
+Completed in 167ms (View: 138, DB: 11) | 200 OK [http://localhost/formularios/8/edit]
+
+
+Processing AreasController#seleccionar (for 127.0.0.1 at 2009-07-17 17:27:21) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArea Load (1.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 3 AND ("areas"."activo" = 't')) ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.6ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 4) [0m
+  [4;36;1mTipo Load (0.7ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Rendering areas/seleccionar
+  [4;35;1mArea Load (1.7ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 27 AND 32)) ORDER BY areas.lft[0m
+  [4;36;1mArea Load (1.4ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+Completed in 68ms (View: 10, DB: 5) | 200 OK [http://localhost/areas/3/seleccionar]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 17:27:29) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AreasController#index (for 127.0.0.1 at 2009-07-17 17:27:30) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/areas]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 17:27:30) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/sessions/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 17:27:33) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing NivelesController#index (for 127.0.0.1 at 2009-07-17 17:27:34) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/niveles]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 17:27:34) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/sessions/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 17:27:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TiposController#index (for 127.0.0.1 at 2009-07-17 17:27:36) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/tipos]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 17:27:36) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/sessions/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 17:27:39) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AreasController#index (for 127.0.0.1 at 2009-07-17 17:27:45) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/areas]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 17:27:45) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/sessions/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 17:27:47) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 17:27:47) [GET]
+  [4;35;1mFormulario Load (4.3ms)[0m   [0mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 24ms (View: 5, DB: 4) | 200 OK [http://localhost/formularios]
+
+
+Processing FormulariosController#busqueda (for 127.0.0.1 at 2009-07-17 17:27:51) [POST]
+  Parameters: {"authenticity_token"=>"QD2E1y+9mh96wnTgVnxu7KhOepKQvwU0q/TycUKAOG8=", "search"=>"sdafsd"}
+  [4;36;1mFormulario Load (1.1ms)[0m   [0;1mSELECT * FROM "formularios" WHERE (ci = 'sdafsd') LIMIT 1[0m
+Redirected to http://localhost:3000/formularios/new?ci=sdafsd
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/formularios/busqueda]
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2009-07-17 17:27:51) [GET]
+  Parameters: {"ci"=>"sdafsd"}
+Rendering template within layouts/application
+Rendering formularios/new
+  [4;35;1mArea Load (11.8ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;36;1mNivel Load (0.9ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;35;1mTipo Load (0.8ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (147.6ms)
+Completed in 166ms (View: 138, DB: 13) | 200 OK [http://localhost/formularios/new?ci=sdafsd]
+
+
+Processing AreasController#seleccionar (for 127.0.0.1 at 2009-07-17 17:28:01) [GET]
+  Parameters: {"id"=>"14"}
+  [4;36;1mArea Load (1.1ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 14 AND ("areas"."activo" = 't')) ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.4ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;36;1mTipo Load (0.4ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 2) [0m
+Rendering areas/seleccionar
+  [4;35;1mArea Load (1.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 13) ORDER BY lft ASC[0m
+Completed in 51ms (View: 5, DB: 3) | 200 OK [http://localhost/areas/14/seleccionar]
+
+
+Processing AreasController#seleccionar (for 127.0.0.1 at 2009-07-17 17:28:04) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArea Load (1.1ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1 AND ("areas"."activo" = 't')) ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.4ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 1) [0m
+  [4;36;1mTipo Load (0.4ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Rendering areas/seleccionar
+  [4;35;1mArea Load (8.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 1 AND 70)) ORDER BY areas.lft[0m
+Completed in 65ms (View: 9, DB: 11) | 200 OK [http://localhost/areas/1/seleccionar]
+
+
+Processing AreasController#seleccionar (for 127.0.0.1 at 2009-07-17 17:28:08) [GET]
+  Parameters: {"id"=>"30"}
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 30 AND ("areas"."activo" = 't')) ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.5ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 3) [0m
+  [4;36;1mTipo Load (0.4ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Rendering areas/seleccionar
+  [4;35;1mArea Load (2.4ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 54 AND 69)) ORDER BY areas.lft[0m
+  [4;36;1mArea Load (0.6ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+Completed in 56ms (View: 7, DB: 5) | 200 OK [http://localhost/areas/30/seleccionar]
+
+
+Processing AreasController#seleccionar (for 127.0.0.1 at 2009-07-17 17:28:13) [GET]
+  Parameters: {"id"=>"36"}
+  [4;35;1mArea Load (0.8ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 36 AND ("areas"."activo" = 't')) ORDER BY lft ASC[0m
+  [4;36;1mNivel Load (0.4ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;35;1mTipo Load (0.5ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Rendering areas/seleccionar
+  [4;36;1mArea Load (0.7ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 34) ORDER BY lft ASC[0m
+Completed in 45ms (View: 5, DB: 2) | 200 OK [http://localhost/areas/36/seleccionar]
+
+
+Processing AreasController#seleccionar (for 127.0.0.1 at 2009-07-17 17:28:17) [GET]
+  Parameters: {"id"=>"12"}
+  [4;35;1mArea Load (1.1ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 12 AND ("areas"."activo" = 't')) ORDER BY lft ASC[0m
+  [4;36;1mNivel Load (0.5ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;35;1mTipo Load (0.4ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" = 2) [0m
+Rendering areas/seleccionar
+  [4;36;1mArea Load (0.6ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 6) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (0.6ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+Completed in 53ms (View: 7, DB: 3) | 200 OK [http://localhost/areas/12/seleccionar]
+
+
+Processing AreasController#seleccionar (for 127.0.0.1 at 2009-07-17 17:28:20) [GET]
+  Parameters: {"id"=>"17"}
+  [4;36;1mArea Load (1.2ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 17 AND ("areas"."activo" = 't')) ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.4ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;36;1mTipo Load (0.4ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 3) [0m
+Rendering areas/seleccionar
+  [4;35;1mArea Load (0.7ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 16) ORDER BY lft ASC[0m
+Completed in 48ms (View: 5, DB: 3) | 200 OK [http://localhost/areas/17/seleccionar]
+
+
+Processing AreasController#seleccionar (for 127.0.0.1 at 2009-07-17 17:28:23) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 5 AND ("areas"."activo" = 't')) ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.4ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 2) [0m
+  [4;36;1mTipo Load (0.5ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Rendering areas/seleccionar
+  [4;35;1mArea Load (0.7ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+Completed in 125ms (View: 5, DB: 2) | 200 OK [http://localhost/areas/5/seleccionar]
+
+
+Processing AreasController#seleccionar (for 127.0.0.1 at 2009-07-17 17:28:25) [GET]
+  Parameters: {"id"=>"20"}
+  [4;36;1mArea Load (18.8ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 20 AND ("areas"."activo" = 't')) ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.6ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 3) [0m
+  [4;36;1mTipo Load (0.6ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Rendering areas/seleccionar
+  [4;35;1mArea Load (2.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 34 AND 45)) ORDER BY areas.lft[0m
+  [4;36;1mArea Load (1.4ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+Completed in 86ms (View: 10, DB: 24) | 200 OK [http://localhost/areas/20/seleccionar]
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2009-07-17 17:30:27) [GET]
+  Parameters: {"ci"=>"sdafsd"}
+Rendering template within layouts/application
+Rendering formularios/new
+  [4;35;1mArea Load (11.6ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;36;1mNivel Load (0.9ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;35;1mTipo Load (0.8ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (77.2ms)
+Completed in 102ms (View: 68, DB: 13) | 200 OK [http://localhost/formularios/new?ci=sdafsd]
+
+
+Processing AreasController#seleccionar (for 127.0.0.1 at 2009-07-17 17:30:28) [GET]
+  Parameters: {"id"=>"20"}
+  [4;36;1mArea Load (1.2ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 20 AND ("areas"."activo" = 't')) ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.6ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 3) [0m
+  [4;36;1mTipo Load (0.7ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Rendering areas/seleccionar
+  [4;35;1mArea Load (3.1ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 34 AND 45)) ORDER BY areas.lft[0m
+  [4;36;1mArea Load (1.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+Completed in 170ms (View: 11, DB: 7) | 200 OK [http://localhost/areas/20/seleccionar]
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2009-07-17 17:31:22) [GET]
+  Parameters: {"ci"=>"sdafsd"}
+Rendering template within layouts/application
+Rendering formularios/new
+  [4;35;1mArea Load (10.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;36;1mNivel Load (0.9ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;35;1mTipo Load (0.7ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (75.0ms)
+Completed in 100ms (View: 67, DB: 12) | 200 OK [http://localhost/formularios/new?ci=sdafsd]
+
+
+Processing AreasController#seleccionar (for 127.0.0.1 at 2009-07-17 17:31:23) [GET]
+  Parameters: {"id"=>"20"}
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 20 AND ("areas"."activo" = 't')) ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.5ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 3) [0m
+  [4;36;1mTipo Load (0.7ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Rendering areas/seleccionar
+  [4;35;1mArea Load (2.8ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 34 AND 45)) ORDER BY areas.lft[0m
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+Completed in 63ms (View: 10, DB: 6) | 200 OK [http://localhost/areas/20/seleccionar]
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2009-07-17 17:31:50) [GET]
+  Parameters: {"ci"=>"sdafsd"}
+Rendering template within layouts/application
+Rendering formularios/new
+  [4;35;1mArea Load (11.6ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;36;1mNivel Load (0.9ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;35;1mTipo Load (0.8ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (69.0ms)
+Completed in 92ms (View: 63, DB: 13) | 200 OK [http://localhost/formularios/new?ci=sdafsd]
+
+
+Processing AreasController#seleccionar (for 127.0.0.1 at 2009-07-17 17:31:51) [GET]
+  Parameters: {"id"=>"20"}
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 20 AND ("areas"."activo" = 't')) ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.5ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 3) [0m
+  [4;36;1mTipo Load (0.7ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Rendering areas/seleccionar
+  [4;35;1mArea Load (2.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 34 AND 45)) ORDER BY areas.lft[0m
+  [4;36;1mArea Load (0.8ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+Completed in 63ms (View: 10, DB: 6) | 200 OK [http://localhost/areas/20/seleccionar]
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2009-07-17 17:32:32) [GET]
+  Parameters: {"ci"=>"sdafsd"}
+Rendering template within layouts/application
+Rendering formularios/new
+  [4;35;1mArea Load (13.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;36;1mNivel Load (1.2ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;35;1mTipo Load (1.4ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (233.8ms)
+Completed in 257ms (View: 221, DB: 17) | 200 OK [http://localhost/formularios/new?ci=sdafsd]
+
+
+Processing AreasController#seleccionar (for 127.0.0.1 at 2009-07-17 17:32:33) [GET]
+  Parameters: {"id"=>"20"}
+  [4;36;1mArea Load (1.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 20 AND ("areas"."activo" = 't')) ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.6ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 3) [0m
+  [4;36;1mTipo Load (0.7ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Rendering areas/seleccionar
+  [4;35;1mArea Load (3.3ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 34 AND 45)) ORDER BY areas.lft[0m
+  [4;36;1mArea Load (1.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+Completed in 66ms (View: 10, DB: 6) | 200 OK [http://localhost/areas/20/seleccionar]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 17:32:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 17:32:36) [GET]
+  [4;35;1mFormulario Load (4.2ms)[0m   [0mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 32ms (View: 12, DB: 4) | 200 OK [http://localhost/formularios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 17:32:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#busqueda (for 127.0.0.1 at 2009-07-17 17:32:44) [POST]
+  Parameters: {"authenticity_token"=>"QD2E1y+9mh96wnTgVnxu7KhOepKQvwU0q/TycUKAOG8=", "search"=>"asdfsdf"}
+  [4;36;1mFormulario Load (1.4ms)[0m   [0;1mSELECT * FROM "formularios" WHERE (ci = 'asdfsdf') LIMIT 1[0m
+Redirected to http://localhost:3000/formularios/new?ci=asdfsdf
+Completed in 17ms (DB: 1) | 302 Found [http://localhost/formularios/busqueda]
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2009-07-17 17:32:44) [GET]
+  Parameters: {"ci"=>"asdfsdf"}
+Rendering template within layouts/application
+Rendering formularios/new
+  [4;35;1mArea Load (8.5ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;36;1mNivel Load (1.2ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;35;1mTipo Load (1.1ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (70.4ms)
+Completed in 91ms (View: 63, DB: 11) | 200 OK [http://localhost/formularios/new?ci=asdfsdf]
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2009-07-17 17:33:21) [GET]
+  Parameters: {"ci"=>"asdfsdf"}
+Rendering template within layouts/application
+Rendering formularios/new
+  [4;36;1mArea Load (11.4ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (1.3ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;36;1mTipo Load (1.2ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (186.0ms)
+Completed in 212ms (View: 178, DB: 14) | 200 OK [http://localhost/formularios/new?ci=asdfsdf]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 17:33:28) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 17:33:29) [GET]
+  [4;35;1mFormulario Load (4.3ms)[0m   [0mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 25ms (View: 5, DB: 4) | 200 OK [http://localhost/formularios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 17:33:44) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TiposController#index (for 127.0.0.1 at 2009-07-17 17:33:45) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/tipos]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 17:33:45) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/sessions/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 17:33:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 17:33:46) [GET]
+  [4;36;1mFormulario Load (5.2ms)[0m   [0;1mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 27ms (View: 5, DB: 5) | 200 OK [http://localhost/formularios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 17:34:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 17:34:09) [GET]
+  [4;35;1mFormulario Load (4.3ms)[0m   [0mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 25ms (View: 5, DB: 4) | 200 OK [http://localhost/formularios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 17:34:13) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 17:35:10) [GET]
+  [4;36;1mFormulario Load (4.2ms)[0m   [0;1mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 24ms (View: 5, DB: 4) | 200 OK [http://localhost/formularios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 17:35:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)

@@ -1,6 +1,8 @@
 class FormulariosController < ApplicationController
   # GET /formularios
   # GET /formularios.xml
+  
+  skip_before_filter :login_required
   def index
     @formularios = Formulario.paginate(:page => @page)
     #@formularios = Formulario.all
@@ -46,7 +48,7 @@ class FormulariosController < ApplicationController
 
     respond_to do |format|
       if @formulario.save
-        flash[:notice] = 'Formulario was successfully created.'
+        flash[:notice] = 'Formulario se ha creado.'
         format.html { redirect_to(@formulario) }
         format.xml  { render :xml => @formulario, :status => :created, :location => @formulario }
       else
@@ -63,7 +65,7 @@ class FormulariosController < ApplicationController
 
     respond_to do |format|
       if @formulario.update_attributes(params[:formulario])
-        flash[:notice] = 'Formulario was successfully updated.'
+        flash[:notice] = 'Formulario se actualizo.'
         format.html { redirect_to(@formulario) }
         format.xml  { head :ok }
       else

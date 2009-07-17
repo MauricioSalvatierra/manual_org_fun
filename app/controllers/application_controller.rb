@@ -6,6 +6,9 @@ class ApplicationController < ActionController::Base
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
   before_filter :adicionar_paginacion
   
+  before_filter :login_required
+
+  
   # Be sure to include AuthenticationSystem in Application Controller instead
   include AuthenticatedSystem
   

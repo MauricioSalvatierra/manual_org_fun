@@ -1,6 +1,6 @@
 <% if params[:mostrar].nil? || !params[:mostrar]  %>
 
-<%= link_to('Imprimir', print_formulario_path(@formulario), :target => '_blank' )%>
+<%= link_to('Imprimir', print_formulario_path(@formulario, :mostrar => true), :target => '_blank' )%>
 <% end %>
 <style>
 #formulario_area_id{ width: 300px}
@@ -11,13 +11,13 @@ label{font-weight:bold}
 <table id="tableForm">
 <tr>
 <td colspan=2>
-<div style="float:right">
+<div style="float:right" class="codigo">
 CODIGO <br>
 </div>
 <div style="float:left">
 <%= image_tag('escudo.jpg', :size => '150x80') %>
 </div>
-<div style="height:80px">
+<div style="height:60px" class="title">
 MANUAL DE ORGANIZACION Y FUNCIONES
 </div>
 <div>
@@ -97,8 +97,8 @@ MANUAL DE ORGANIZACION Y FUNCIONES
   </td>
 </tr>
 <tr>
-  <td colspan="2">
-    <%= @formulario.principales_resultados %>
+  <td colspan="2" style="height:100px;">
+    
   </td>
 </tr>
 
@@ -112,11 +112,17 @@ MANUAL DE ORGANIZACION Y FUNCIONES
 <tr>
   <td>
     <label class="bordeb">RELACIONES DE COORDINACION INTERNA</label>
-    <%= @formulario.relaciones_coordinacion_interna %>
   </td>
 
   <td>
     <label class="bordeb">RELACIONAMIENTO INTERINSTITUCIONAL</label>
+  </td>
+</tr>
+<tr>
+  <td>
+    <%= @formulario.relaciones_coordinacion_interna %>
+  </td>
+  <td>
     <%= @formulario.relacionamiento_interinstitucional %>
   </td>
 </tr>
@@ -144,7 +150,7 @@ MANUAL DE ORGANIZACION Y FUNCIONES
   <td>
     <label>RESPONSABLE DE LA ELABORACION</label>
   </td>
-  <td><%= @formulario.ci %></td>
+  <td><%= @formulario.ci %> - <%= "#{@formulario.nombre} #{@formulario.apellido}"%></td>
 </tr>
 
 <tr>
@@ -153,11 +159,11 @@ MANUAL DE ORGANIZACION Y FUNCIONES
   </td>
   <td></td>
 </tr>
-
-
-
 </table>
+
+<div class="enlaces">
 <% if params[:mostrar].nil? || !params[:mostrar]  %>
 <%= link_to 'Editar', edit_formulario_path(@formulario) %> |
 <%= link_to 'Listar', formularios_path() %>
 <% end %>
+</div>

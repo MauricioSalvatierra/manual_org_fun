@@ -1,0 +1,22 @@
+body{
+    font-family:arial;
+    font-size:12px;
+}
+td{
+    border:1px solid black;
+    padding:2px;
+}
+.title{
+    float:left;
+    background-color:black;
+    padding:10px;
+    font-size:25px;
+    font-family:Times;
+    color:#fff;
+    font-style:italic;
+}
+.codigo{
+    padding:10px;
+    background-color:black;
+    color:#fff;
+}

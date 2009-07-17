@@ -1,11 +1,12 @@
-<div style="float:right">
+<div class="formulario">
 <% form_tag('/formularios/busqueda') do %>
 CI: <input name="search" type="text"/>
 <% end %>
 </div>
 
+<% if logged_in? %>
 <h1>Listar Formularios</h1>
-
+<br class="clear">
 <table>
   <tr>
     <th class="ui-state-default">Area</th>
@@ -21,11 +22,11 @@ CI: <input name="search" type="text"/>
   <tr>
     <td><%=h formulario.area.nombre if formulario.area %></td>
     
-    <td><%=h formulario.objectivo_area_funcional %></td>
-    <td><%=h formulario.descripcion_funcion_principal %></td>
-    <td><%=h formulario.descripcion_funciones_especificas %></td>
-    <td><%=h formulario.relaciones_coordinacion_interna %></td>
-    <td><%=h formulario.relacionamiento_interinstitucional %></td>
+    <td><%=h truncate(formulario.objectivo_area_funcional, :length => 150) %></td>
+    <td><%=h truncate(formulario.descripcion_funcion_principal, :length => 150) %></td>
+    <td><%=h truncate(formulario.descripcion_funciones_especificas, :length => 150) %></td>
+    <td><%=h truncate(formulario.relaciones_coordinacion_interna, :length => 150) %></td>
+    <td><%=h truncate(formulario.relacionamiento_interinstitucional, :length => 150) %></td>
     
     <td><%= link_to 'Ver', formulario_path(formulario) %></td>
     <td><%= link_to 'Editar', edit_formulario_path(formulario) %></td>
@@ -33,8 +34,12 @@ CI: <input name="search" type="text"/>
   </tr>
 <% end %>
 </table>
+<% end %>
+<br class="clear"/>
 
-<br />
+<div class="enlaces">
+  
 
 <%= link_to 'Nuevo Formulario', new_formulario_path %>
 <%= will_paginate @areas %>
+</div>
