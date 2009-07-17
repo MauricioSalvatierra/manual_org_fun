@@ -3190,3 +3190,182 @@ ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glas
   
 
 Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 17:40:43) [GET]
+  [4;35;1mFormulario Load (4.9ms)[0m   [0mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 26ms (View: 5, DB: 5) | 200 OK [http://localhost/formularios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 17:40:45) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AreasController#index (for 127.0.0.1 at 2009-07-17 17:40:46) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/areas]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 17:40:46) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/sessions/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 17:40:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing NivelesController#index (for 127.0.0.1 at 2009-07-17 17:40:47) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/niveles]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-17 17:40:47) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/sessions/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 17:40:48) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 17:40:49) [GET]
+  [4;36;1mFormulario Load (4.4ms)[0m   [0;1mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 25ms (View: 5, DB: 4) | 200 OK [http://localhost/formularios]
+
+
+Processing FormulariosController#busqueda (for 127.0.0.1 at 2009-07-17 17:40:56) [POST]
+  Parameters: {"authenticity_token"=>"QD2E1y+9mh96wnTgVnxu7KhOepKQvwU0q/TycUKAOG8=", "search"=>"1234565"}
+  [4;35;1mFormulario Load (1.2ms)[0m   [0mSELECT * FROM "formularios" WHERE (ci = '1234565') LIMIT 1[0m
+Redirected to http://localhost:3000/formularios/new?ci=1234565
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/formularios/busqueda]
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2009-07-17 17:40:56) [GET]
+  Parameters: {"ci"=>"1234565"}
+Rendering template within layouts/application
+Rendering formularios/new
+  [4;36;1mArea Load (8.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.9ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;36;1mTipo Load (0.8ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (147.8ms)
+Completed in 169ms (View: 141, DB: 11) | 200 OK [http://localhost/formularios/new?ci=1234565]
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2009-07-17 17:41:25) [GET]
+  Parameters: {"ci"=>"1234565"}
+Rendering template within layouts/application
+Rendering formularios/new
+  [4;35;1mArea Load (11.4ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;36;1mNivel Load (0.8ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;35;1mTipo Load (0.7ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+
+ActionView::TemplateError (undefined method `merge' for "1234565":String) on line #112 of app/views/formularios/_forma.html.erb:
+109:   <td>
+110:     <label>Carnet Identidad</label>
+111:   </td>
+112:   <td><%= f.text_field :ci, params[:ci] %></td>
+113: </tr>
+114: <tr>
+115:   <td>
+
+    app/views/formularios/_forma.html.erb:112
+    app/views/formularios/_forma.html.erb:10
+    app/views/formularios/new.html.erb:3
+    app/controllers/formularios_controller.rb:33:in `new'
+
+Rendered rescues/_trace (193.0ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2009-07-17 17:41:39) [GET]
+  Parameters: {"ci"=>"1234565"}
+Rendering template within layouts/application
+Rendering formularios/new
+  [4;36;1mArea Load (27.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (1.4ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;36;1mTipo Load (6.2ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (186.8ms)
+Completed in 218ms (View: 162, DB: 35) | 200 OK [http://localhost/formularios/new?ci=1234565]
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2009-07-17 17:41:46) [GET]
+Rendering template within layouts/application
+Rendering formularios/new
+  [4;35;1mArea Load (12.7ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;36;1mNivel Load (1.3ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;35;1mTipo Load (1.1ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (188.0ms)
+Completed in 211ms (View: 177, DB: 15) | 200 OK [http://localhost/formularios/new]
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 17:41:56) [GET]
+  [4;36;1mFormulario Load (4.9ms)[0m   [0;1mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 27ms (View: 5, DB: 5) | 200 OK [http://localhost/formularios]
+
+
+Processing FormulariosController#busqueda (for 127.0.0.1 at 2009-07-17 17:42:03) [POST]
+  Parameters: {"authenticity_token"=>"QD2E1y+9mh96wnTgVnxu7KhOepKQvwU0q/TycUKAOG8=", "search"=>"12345"}
+  [4;35;1mFormulario Load (1.1ms)[0m   [0mSELECT * FROM "formularios" WHERE (ci = '12345') LIMIT 1[0m
+Redirected to http://localhost:3000/formularios/new?ci=12345
+Completed in 16ms (DB: 1) | 302 Found [http://localhost/formularios/busqueda]
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2009-07-17 17:42:03) [GET]
+  Parameters: {"ci"=>"12345"}
+Rendering template within layouts/application
+Rendering formularios/new
+  [4;36;1mArea Load (10.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (1.1ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;36;1mTipo Load (0.7ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (73.4ms)
+Completed in 99ms (View: 65, DB: 13) | 200 OK [http://localhost/formularios/new?ci=12345]
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2009-07-17 17:42:15) [GET]
+  Parameters: {"ci"=>"123427682134283746"}
+Rendering template within layouts/application
+Rendering formularios/new
+  [4;35;1mArea Load (13.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;36;1mNivel Load (1.1ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;35;1mTipo Load (1.0ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (88.3ms)
+Completed in 115ms (View: 78, DB: 15) | 200 OK [http://localhost/formularios/new?ci=123427682134283746]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-17 17:42:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-17 17:42:24) [GET]
+  [4;36;1mFormulario Load (4.2ms)[0m   [0;1mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 25ms (View: 5, DB: 4) | 200 OK [http://localhost/formularios]
