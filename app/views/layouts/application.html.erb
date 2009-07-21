@@ -9,15 +9,20 @@
   <%= javascript_include_tag "jquery-1.3.2.min.js", "application.js" %>
 </head>
 <body>
+  <div class="container">
 <ul id="navigation">
   <li><%= link_to('Tipos', tipos_path) %></li>
   <li><%= link_to('Niveles', niveles_path) %></li>
   <li><%= link_to('Areas', areas_path) %></li>
   <li><%= link_to('Formularios', formularios_path) %></li>
+  <%if logged_in?%>
+  <li><%= link_to('Salir', logout_path) %></li>
+<%end%>
 </ul>
 <div id="cont">
   <div id="flashNotice"><%= flash[:notice] %></div>
   <%= yield %>
+</div>
 </div>
 </body>
 </html>

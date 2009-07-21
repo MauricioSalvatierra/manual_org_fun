@@ -1,4 +1,3 @@
-
 --- 
 tipos: 
   columns: 
@@ -498,3 +497,7 @@ formularios:
     - 2009-07-17 15:14:18
     - que es esto?
     - "6098494"
+<<<<<<< HEAD:db/data.yml
+=======
+
+>>>>>>> 9751d81bf709ed6d2c0105c4ddd36393c27e174f:db/data.yml

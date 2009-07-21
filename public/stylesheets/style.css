@@ -1,0 +1,28 @@
+.container{
+    font-family:arial;
+    font-size:12px;
+    width:900px;
+    margin:0 auto;
+    background-color:#fffff5;
+}
+.formulario{
+    padding:10px;
+    border: 5px solid #eee;
+    margin:20px 0;
+    float:right;
+    width:200px;
+}
+.formulario input{
+    font-size:20px;
+    width:150px;
+} 
+.clear{
+    clear:both;
+}
+.enlaces{
+    padding:10px 5px;
+}
+.enlaces a{
+    padding:5px;
+    font-size:15px;
+}

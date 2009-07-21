@@ -1,6 +1,8 @@
 class AreasController < ApplicationController
   # GET /areas
   # GET /areas.xml
+  skip_before_filter :login_required, :only => [:seleccionar]
+  
   def index
     @areas = Area.paginate(:page => @page)
 

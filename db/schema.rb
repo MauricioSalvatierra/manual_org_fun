@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090717143402) do
+ActiveRecord::Schema.define(:version => 20090717210051) do
 
   create_table "areas", :force => true do |t|
     t.integer  "parent_id"
@@ -37,6 +37,8 @@ ActiveRecord::Schema.define(:version => 20090717143402) do
     t.datetime "updated_at"
     t.string   "principales_resultados"
     t.string   "ci",                                 :limit => 20
+    t.string   "nombre"
+    t.string   "apellido"
   end
 
   create_table "niveles", :force => true do |t|

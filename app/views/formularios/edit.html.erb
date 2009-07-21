@@ -3,5 +3,8 @@
 </div>
 <h1>Editar Formulario</h1>
 <%= render :partial => "forma" %>
+
+<div class="enlaces">
 <%= link_to 'Ver', formulario_path(@formulario, :page => @page) %> |
 <%= link_to 'Listar', formularios_path (:page => @page)%>
+</div>
