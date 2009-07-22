@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090717210051) do
+ActiveRecord::Schema.define(:version => 20090722144952) do
 
   create_table "areas", :force => true do |t|
     t.integer  "parent_id"
@@ -39,6 +39,11 @@ ActiveRecord::Schema.define(:version => 20090717210051) do
     t.string   "ci",                                 :limit => 20
     t.string   "nombre"
     t.string   "apellido"
+    t.string   "cargo"
+    t.string   "nivel_jerarquico"
+    t.string   "inmediato_superior"
+    t.string   "areas_dependientes"
+    t.string   "tipo_area"
   end
 
   create_table "niveles", :force => true do |t|

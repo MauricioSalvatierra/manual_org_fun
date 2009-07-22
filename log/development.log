@@ -3744,3 +3744,2309 @@ Completed in 85ms (View: 58, DB: 8) | 200 OK [http://localhost/formularios]
 =======
 Completed in 25ms (View: 5, DB: 4) | 200 OK [http://localhost/formularios]
 >>>>>>> 9751d81bf709ed6d2c0105c4ddd36393c27e174f:log/development.log
+
+
+Processing AreasController#index (for 127.0.0.1 at 2009-07-22 10:35:37) [GET]
+Redirected to http://localhost:2000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 11ms (DB: 0) | 302 Found [http://localhost/areas]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-22 10:35:37) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 62ms (View: 58, DB: 0) | 200 OK [http://localhost/sessions/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-22 10:35:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-22 10:35:41) [GET]
+  [4;36;1mFormulario Load (3.9ms)[0m   [0;1mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 63ms (View: 30, DB: 4) | 200 OK [http://localhost/formularios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-22 10:35:41) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#busqueda (for 127.0.0.1 at 2009-07-22 10:35:46) [POST]
+  Parameters: {"authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "search"=>"5315291"}
+  [4;35;1mFormulario Load (1.2ms)[0m   [0mSELECT * FROM "formularios" WHERE (ci = '5315291') LIMIT 1[0m
+Redirected to http://localhost:2000/formularios/new?ci=5315291
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/formularios/busqueda]
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2009-07-22 10:35:46) [GET]
+  Parameters: {"ci"=>"5315291"}
+Rendering template within layouts/application
+Rendering formularios/new
+  [4;36;1mArea Load (9.1ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (1.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;36;1mTipo Load (0.7ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (203.6ms)
+Completed in 250ms (View: 220, DB: 11) | 200 OK [http://localhost/formularios/new?ci=5315291]
+
+
+Processing AreasController#seleccionar (for 127.0.0.1 at 2009-07-22 10:35:59) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mArea Load (0.8ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1 AND ("areas"."activo" = 't')) ORDER BY lft ASC[0m
+  [4;36;1mNivel Load (0.4ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" = 1) [0m
+  [4;35;1mTipo Load (0.4ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Rendering areas/seleccionar
+  [4;36;1mArea Load (9.1ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 1 AND 70)) ORDER BY areas.lft[0m
+Completed in 121ms (View: 72, DB: 11) | 200 OK [http://localhost/areas/1/seleccionar]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-22 10:36:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AreasController#index (for 127.0.0.1 at 2009-07-22 10:36:08) [GET]
+Redirected to http://localhost:2000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/areas]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-22 10:36:08) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/sessions/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-22 10:36:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-22 10:36:09) [GET]
+  [4;35;1mFormulario Load (4.9ms)[0m   [0mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 22ms (View: 4, DB: 5) | 200 OK [http://localhost/formularios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-22 10:36:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#busqueda (for 127.0.0.1 at 2009-07-22 10:36:16) [POST]
+  Parameters: {"authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "search"=>"5315291"}
+  [4;36;1mFormulario Load (0.8ms)[0m   [0;1mSELECT * FROM "formularios" WHERE (ci = '5315291') LIMIT 1[0m
+Redirected to http://localhost:2000/formularios/new?ci=5315291
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/formularios/busqueda]
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2009-07-22 10:36:16) [GET]
+  Parameters: {"ci"=>"5315291"}
+Rendering template within layouts/application
+Rendering formularios/new
+  [4;35;1mArea Load (12.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;36;1mNivel Load (0.9ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;35;1mTipo Load (0.7ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (148.8ms)
+Completed in 172ms (View: 139, DB: 14) | 200 OK [http://localhost/formularios/new?ci=5315291]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-22 10:36:20) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-22 10:36:21) [GET]
+  [4;36;1mFormulario Load (5.2ms)[0m   [0;1mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 22ms (View: 4, DB: 5) | 200 OK [http://localhost/formularios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-22 10:36:21) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#busqueda (for 127.0.0.1 at 2009-07-22 10:36:23) [POST]
+  Parameters: {"authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "search"=>"dfgbfh"}
+  [4;35;1mFormulario Load (1.2ms)[0m   [0mSELECT * FROM "formularios" WHERE (ci = 'dfgbfh') LIMIT 1[0m
+Redirected to http://localhost:2000/formularios/new?ci=dfgbfh
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/formularios/busqueda]
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2009-07-22 10:36:23) [GET]
+  Parameters: {"ci"=>"dfgbfh"}
+Rendering template within layouts/application
+Rendering formularios/new
+  [4;36;1mArea Load (12.3ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.9ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;36;1mTipo Load (0.7ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (161.7ms)
+Completed in 180ms (View: 151, DB: 14) | 200 OK [http://localhost/formularios/new?ci=dfgbfh]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-22 10:36:28) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-22 10:36:28) [GET]
+  [4;35;1mFormulario Load (5.2ms)[0m   [0mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 22ms (View: 4, DB: 5) | 200 OK [http://localhost/formularios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-22 10:36:29) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#busqueda (for 127.0.0.1 at 2009-07-22 10:36:43) [POST]
+  Parameters: {"authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "search"=>"5315291"}
+  [4;36;1mFormulario Load (1.2ms)[0m   [0;1mSELECT * FROM "formularios" WHERE (ci = '5315291') LIMIT 1[0m
+Redirected to http://localhost:2000/formularios/new?ci=5315291
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/formularios/busqueda]
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2009-07-22 10:36:43) [GET]
+  Parameters: {"ci"=>"5315291"}
+Rendering template within layouts/application
+Rendering formularios/new
+  [4;35;1mArea Load (9.2ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;36;1mNivel Load (0.9ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;35;1mTipo Load (0.7ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (73.6ms)
+Completed in 94ms (View: 67, DB: 11) | 200 OK [http://localhost/formularios/new?ci=5315291]
+
+
+Processing AreasController#seleccionar (for 127.0.0.1 at 2009-07-22 10:36:48) [GET]
+  Parameters: {"id"=>"20"}
+  [4;36;1mArea Load (0.7ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 20 AND ("areas"."activo" = 't')) ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.4ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 3) [0m
+  [4;36;1mTipo Load (0.4ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Rendering areas/seleccionar
+  [4;35;1mArea Load (2.4ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 34 AND 45)) ORDER BY areas.lft[0m
+  [4;36;1mArea Load (0.6ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+Completed in 51ms (View: 7, DB: 5) | 200 OK [http://localhost/areas/20/seleccionar]
+
+
+Processing FormulariosController#create (for 127.0.0.1 at 2009-07-22 10:37:15) [POST]
+  Parameters: {"commit"=>"Salvar", "authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "formulario"=>{"descripcion_funciones_especificas"=>"dcvxcxzcxvfdgdfgfdgfdgfdfsg\r\nsdfg\r\nsdfg\r\ndsfg\r\nsdfg\r\nsdfg\r\nsdfg", "nombre"=>"ffffffffffffff", "descripcion_funcion_principal"=>"sdfvsdagvsdfg\r\nsdfg\r\nsdfg\r\nsdfg\r\nsdfg\r\ndsfg\r\nsdfg", "relaciones_coordinacion_interna"=>"dcvxcxzcxvfdgdfgfdgfdgfdfsg\r\nsdfg\r\nsdfg\r\ndsfg\r\nsdfg\r\nsdfg\r\nsdfg", "area_id"=>"20", "relacionamiento_interinstitucional"=>"dcvxcxzcxvfdgdfgfdgfdgfdfsg\r\nsdfg\r\nsdfg\r\ndsfg\r\nsdfg\r\nsdfg\r\nsdfg", "objectivo_area_funcional"=>"dcvxcxzcxvfdgdfgfdgfdgfdfsg\r\nsdfg\r\nsdfg\r\ndsfg\r\nsdfg\r\nsdfg\r\nsdfg\r\ns", "ci"=>"5315291", "principales_resultados"=>"dcvxcxzcxvfdgdfgfdgfdgfdfsg\r\nsdfg\r\nsdfg\r\ndsfg\r\nsdfg\r\nsdfg\r\nsdfg", "apellido"=>"fffffffffffffffffffffffffffff"}}
+  [4;35;1mFormulario Create (9.8ms)[0m   [0mINSERT INTO "formularios" ("descripcion_funciones_especificas", "fecha_aprovacion", "created_at", "nombre", "usuario_id", "descripcion_funcion_principal", "updated_at", "area_id", "relaciones_coordinacion_interna", "objectivo_area_funcional", "relacionamiento_interinstitucional", "fecha_actualizacion", "ci", "principales_resultados", "apellido") VALUES('dcvxcxzcxvfdgdfgfdgfdgfdfsg
+sdfg
+sdfg
+dsfg
+sdfg
+sdfg
+sdfg', NULL, '2009-07-22 14:37:15', 'ffffffffffffff', NULL, 'sdfvsdagvsdfg
+sdfg
+sdfg
+sdfg
+sdfg
+dsfg
+sdfg', '2009-07-22 14:37:15', 20, 'dcvxcxzcxvfdgdfgfdgfdgfdfsg
+sdfg
+sdfg
+dsfg
+sdfg
+sdfg
+sdfg', 'dcvxcxzcxvfdgdfgfdgfdgfdfsg
+sdfg
+sdfg
+dsfg
+sdfg
+sdfg
+sdfg
+s', 'dcvxcxzcxvfdgdfgfdgfdgfdfsg
+sdfg
+sdfg
+dsfg
+sdfg
+sdfg
+sdfg', NULL, '5315291', 'dcvxcxzcxvfdgdfgfdgfdgfdfsg
+sdfg
+sdfg
+dsfg
+sdfg
+sdfg
+sdfg', 'fffffffffffffffffffffffffffff')[0m
+Redirected to http://localhost:2000/formularios/11
+Completed in 40ms (DB: 10) | 302 Found [http://localhost/formularios]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-22 10:37:15) [GET]
+  Parameters: {"id"=>"11"}
+  [4;36;1mFormulario Load (17.9ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 11) [0m
+  [4;35;1mArea Load (0.7ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 20) [0m
+  [4;36;1mTipo Load (0.5ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mNivel Load (0.4ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+  [4;36;1mArea Load (1.1ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (3.5ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 34 AND 45)) ORDER BY areas.lft[0m
+Completed in 190ms (View: 43, DB: 24) | 200 OK [http://localhost/formularios/11]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-22 10:47:57) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AreasController#index (for 127.0.0.1 at 2009-07-22 10:47:58) [GET]
+Redirected to http://localhost:2000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/areas]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-22 10:47:58) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 104ms (View: 99, DB: 0) | 200 OK [http://localhost/sessions/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-22 10:47:58) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing NivelesController#index (for 127.0.0.1 at 2009-07-22 10:48:00) [GET]
+Redirected to http://localhost:2000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/niveles]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-22 10:48:00) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/sessions/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-22 10:48:00) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TiposController#index (for 127.0.0.1 at 2009-07-22 10:48:01) [GET]
+Redirected to http://localhost:2000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/tipos]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-22 10:48:01) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/sessions/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-22 10:48:01) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-22 10:52:17) [GET]
+  [4;36;1mFormulario Load (4.2ms)[0m   [0;1mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 54ms (View: 22, DB: 4) | 200 OK [http://localhost/formularios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-22 10:52:17) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#busqueda (for 127.0.0.1 at 2009-07-22 10:52:22) [POST]
+  Parameters: {"authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "search"=>"5315291"}
+  [4;35;1mFormulario Load (1.8ms)[0m   [0mSELECT * FROM "formularios" WHERE (ci = '5315291') LIMIT 1[0m
+Redirected to http://localhost:2000/formularios/11/edit
+Completed in 20ms (DB: 2) | 302 Found [http://localhost/formularios/busqueda]
+
+
+Processing FormulariosController#edit (for 127.0.0.1 at 2009-07-22 10:52:22) [GET]
+  Parameters: {"id"=>"11"}
+  [4;36;1mFormulario Load (1.4ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 11) [0m
+Rendering template within layouts/application
+Rendering formularios/edit
+  [4;35;1mArea Load (9.2ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;36;1mNivel Load (0.9ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;35;1mTipo Load (0.7ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (197.9ms)
+Completed in 246ms (View: 213, DB: 12) | 200 OK [http://localhost/formularios/11/edit]
+
+
+Processing AreasController#seleccionar (for 127.0.0.1 at 2009-07-22 10:52:23) [GET]
+  Parameters: {"id"=>"20"}
+  [4;36;1mArea Load (1.1ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 20 AND ("areas"."activo" = 't')) ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.7ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 3) [0m
+  [4;36;1mTipo Load (0.4ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Rendering areas/seleccionar
+  [4;35;1mArea Load (2.1ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 34 AND 45)) ORDER BY areas.lft[0m
+  [4;36;1mArea Load (0.7ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+Completed in 77ms (View: 18, DB: 5) | 200 OK [http://localhost/areas/20/seleccionar]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-22 10:52:26) [GET]
+  Parameters: {"id"=>"11", "page"=>"1"}
+  [4;35;1mFormulario Load (0.8ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 11) [0m
+  [4;36;1mArea Load (0.7ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 20) [0m
+  [4;35;1mTipo Load (0.4ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;36;1mNivel Load (0.4ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+  [4;35;1mArea Load (1.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (3.2ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 34 AND 45)) ORDER BY areas.lft[0m
+Completed in 82ms (View: 19, DB: 6) | 200 OK [http://localhost/formularios/11?page=1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-22 10:55:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#print (for 127.0.0.1 at 2009-07-22 10:55:54) [GET]
+  Parameters: {"mostrar"=>"true", "id"=>"11"}
+  [4;35;1mFormulario Load (1.3ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 11) [0m
+Rendering template within layouts/print
+Rendering formularios/show
+  [4;36;1mArea Load (1.1ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 20) ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.5ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 3) [0m
+  [4;36;1mArea Load (0.6ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (3.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') AND (1 = 1 AND (areas.lft BETWEEN 34 AND 45)) ORDER BY areas.lft[0m
+  [4;36;1mTipo Load (0.4ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Completed in 109ms (View: 77, DB: 7) | 200 OK [http://localhost/formularios/11/print?mostrar=true]
+  [4;36;1mSQL (1.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTipos (20090708162603)
+Migrating to CreateNiveles (20090708162807)
+Migrating to CreateAreas (20090708162944)
+Migrating to CreateFormularios (20090708163210)
+Migrating to Arreglos (20090714152134)
+Migrating to CreateUsers (20090714223502)
+Migrating to AdicionCi (20090717143402)
+Migrating to AddNombre (20090717210051)
+Migrating to ModificacionDeFormulario (20090722144952)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTipos (20090708162603)
+Migrating to CreateNiveles (20090708162807)
+Migrating to CreateAreas (20090708162944)
+Migrating to CreateFormularios (20090708163210)
+Migrating to Arreglos (20090714152134)
+Migrating to CreateUsers (20090714223502)
+Migrating to AdicionCi (20090717143402)
+Migrating to AddNombre (20090717210051)
+Migrating to ModificacionDeFormulario (20090722144952)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mALTER TABLE "formularios" ADD "cargo" varchar(255)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mALTER TABLE "formularios" ADD "nivel_jerarquico" varchar(255)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mALTER TABLE "formularios" ADD "inmediato_superior" varchar(255)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mALTER TABLE "formularios" ADD "areas_dependientes" varchar(255)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mALTER TABLE "formularios" ADD "tipo_area" varchar(255)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090722144952')[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("areas")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("formularios")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("niveles")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("tipos")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mPRAGMA index_info('index_users_on_login')[0m
+
+
+Processing FormulariosController#print (for 127.0.0.1 at 2009-07-22 11:15:54) [GET]
+  Parameters: {"mostrar"=>"true", "id"=>"11"}
+  [4;35;1mFormulario Load (1.1ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 11) [0m
+Rendering template within layouts/print
+Rendering formularios/show
+Completed in 43ms (View: 21, DB: 1) | 200 OK [http://localhost/formularios/11/print?mostrar=true]
+
+
+Processing FormulariosController#print (for 127.0.0.1 at 2009-07-22 11:18:18) [GET]
+  Parameters: {"mostrar"=>"true", "id"=>"11"}
+  [4;36;1mFormulario Load (0.9ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 11) [0m
+Rendering template within layouts/print
+Rendering formularios/show
+Completed in 29ms (View: 7, DB: 1) | 200 OK [http://localhost/formularios/11/print?mostrar=true]
+
+
+Processing FormulariosController#print (for 127.0.0.1 at 2009-07-22 11:19:10) [GET]
+  Parameters: {"mostrar"=>"true", "id"=>"11"}
+  [4;35;1mFormulario Load (1.0ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 11) [0m
+Rendering template within layouts/print
+Rendering formularios/show
+Completed in 28ms (View: 8, DB: 1) | 200 OK [http://localhost/formularios/11/print?mostrar=true]
+
+
+Processing FormulariosController#print (for 127.0.0.1 at 2009-07-22 11:19:34) [GET]
+  Parameters: {"mostrar"=>"true", "id"=>"11"}
+  [4;36;1mFormulario Load (1.0ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 11) [0m
+Rendering template within layouts/print
+Rendering formularios/show
+Completed in 28ms (View: 7, DB: 1) | 200 OK [http://localhost/formularios/11/print?mostrar=true]
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-22 11:19:47) [GET]
+  [4;35;1mFormulario Load (6.7ms)[0m   [0mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 31ms (View: 5, DB: 7) | 200 OK [http://localhost/formularios]
+
+
+Processing FormulariosController#busqueda (for 127.0.0.1 at 2009-07-22 11:19:55) [POST]
+  Parameters: {"authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "search"=>"5315291"}
+  [4;36;1mFormulario Load (1.5ms)[0m   [0;1mSELECT * FROM "formularios" WHERE (ci = '5315291') LIMIT 1[0m
+Redirected to http://localhost:2000/formularios/11/edit
+Completed in 20ms (DB: 1) | 302 Found [http://localhost/formularios/busqueda]
+
+
+Processing FormulariosController#edit (for 127.0.0.1 at 2009-07-22 11:19:55) [GET]
+  Parameters: {"id"=>"11"}
+  [4;35;1mFormulario Load (0.9ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 11) [0m
+Rendering template within layouts/application
+Rendering formularios/edit
+  [4;36;1mArea Load (8.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.9ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;36;1mTipo Load (1.2ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (153.1ms)
+Completed in 183ms (View: 153, DB: 12) | 200 OK [http://localhost/formularios/11/edit]
+
+
+Processing FormulariosController#update (for 127.0.0.1 at 2009-07-22 11:20:21) [PUT]
+  Parameters: {"commit"=>"Salvar", "authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "id"=>"11", "formulario"=>{"descripcion_funciones_especificas"=>"dcvxcxzcxvfdgdfgfdgfdgfdfsg\r\nsdfg\r\nsdfg\r\ndsfg\r\nsdfg\r\nsdfg\r\nsdfg", "areas_dependientes"=>"asdasdasdasd", "nombre"=>"ffffffffffffff", "descripcion_funcion_principal"=>"sdfvsdagvsdfg\r\nsdfg\r\nsdfg\r\nsdfg\r\nsdfg\r\ndsfg\r\nsdfg", "relaciones_coordinacion_interna"=>"dcvxcxzcxvfdgdfgfdgfdgfdfsg\r\nsdfg\r\nsdfg\r\ndsfg\r\nsdfg\r\nsdfg\r\nsdfg", "inmediato_superior"=>"asdasdasd", "relacionamiento_interinstitucional"=>"dcvxcxzcxvfdgdfgfdgfdgfdfsg\r\nsdfg\r\nsdfg\r\ndsfg\r\nsdfg\r\nsdfg\r\nsdfg", "objectivo_area_funcional"=>"dcvxcxzcxvfdgdfgfdgfdgfdfsg\r\nsdfg\r\nsdfg\r\ndsfg\r\nsdfg\r\nsdfg\r\nsdfg\r\ns", "ci"=>"5315291", "tipo_area"=>"asdasdasdasdasd", "cargo"=>"dasdasdasd", "principales_resultados"=>"dcvxcxzcxvfdgdfgfdgfdgfdfsg\r\nsdfg\r\nsdfg\r\ndsfg\r\nsdfg\r\nsdfg\r\nsdfg", "apellido"=>"fffffffffffffffffffffffffffff", "nivel_jerarquico"=>"asdasdasdas"}}
+  [4;35;1mFormulario Load (0.9ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 11) [0m
+  [4;36;1mFormulario Update (0.7ms)[0m   [0;1mUPDATE "formularios" SET "updated_at" = '2009-07-22 15:20:21', "inmediato_superior" = 'asdasdasd', "areas_dependientes" = 'asdasdasdasd', "tipo_area" = 'asdasdasdasdasd', "nivel_jerarquico" = 'asdasdasdas', "cargo" = 'dasdasdasd' WHERE "id" = 11[0m
+Redirected to http://localhost:2000/formularios/11
+Completed in 44ms (DB: 2) | 302 Found [http://localhost/formularios/11]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-22 11:20:21) [GET]
+  Parameters: {"id"=>"11"}
+  [4;35;1mFormulario Load (0.9ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 11) [0m
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 20) [0m
+  [4;35;1mTipo Load (0.4ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;36;1mNivel Load (0.4ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+Completed in 65ms (View: 5, DB: 3) | 200 OK [http://localhost/formularios/11]
+
+
+Processing FormulariosController#edit (for 127.0.0.1 at 2009-07-22 11:20:45) [GET]
+  Parameters: {"id"=>"11"}
+  [4;35;1mFormulario Load (0.9ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 11) [0m
+Rendering template within layouts/application
+Rendering formularios/edit
+  [4;36;1mArea Load (11.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.8ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;36;1mTipo Load (0.8ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (163.9ms)
+Completed in 190ms (View: 155, DB: 14) | 200 OK [http://localhost/formularios/11/edit]
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-22 11:20:50) [GET]
+  [4;35;1mFormulario Load (4.3ms)[0m   [0mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 21ms (View: 4, DB: 4) | 200 OK [http://localhost/formularios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-22 11:20:50) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#busqueda (for 127.0.0.1 at 2009-07-22 11:20:55) [POST]
+  Parameters: {"authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "search"=>"120120"}
+  [4;36;1mFormulario Load (1.3ms)[0m   [0;1mSELECT * FROM "formularios" WHERE (ci = '120120') LIMIT 1[0m
+Redirected to http://localhost:2000/formularios/new?ci=120120
+Completed in 18ms (DB: 1) | 302 Found [http://localhost/formularios/busqueda]
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2009-07-22 11:20:55) [GET]
+  Parameters: {"ci"=>"120120"}
+Rendering template within layouts/application
+Rendering formularios/new
+  [4;35;1mArea Load (8.8ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;36;1mNivel Load (0.9ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;35;1mTipo Load (0.8ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (156.3ms)
+Completed in 183ms (View: 156, DB: 10) | 200 OK [http://localhost/formularios/new?ci=120120]
+
+
+Processing FormulariosController#create (for 127.0.0.1 at 2009-07-22 11:25:30) [POST]
+  Parameters: {"commit"=>"Salvar", "authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "formulario"=>{"descripcion_funciones_especificas"=>"Masajes  al Big Boss", "areas_dependientes"=>"Minesterio ", "nombre"=>"Ana", "descripcion_funcion_principal"=>"Llenado de planillas y cafecitos", "relaciones_coordinacion_interna"=>"Ninguna", "inmediato_superior"=>"Recursos Humanos", "relacionamiento_interinstitucional"=>"Mi herma en el ministerio de Defensa", "objectivo_area_funcional"=>"preaparacionde de documentos \r\n 1 ..- Realizacvion de CArtas \r\n 2.-   Mandados\r\n  3.- Cafecitos", "ci"=>"120120", "tipo_area"=>"Sustantivo", "cargo"=>"Secretaria", "principales_resultados"=>"Buen sueldo y pronto acenso", "apellido"=>"Barrigas", "nivel_jerarquico"=>"Operativo"}}
+  [4;36;1mFormulario Create (0.6ms)[0m   [0;1mINSERT INTO "formularios" ("descripcion_funciones_especificas", "fecha_aprovacion", "created_at", "areas_dependientes", "nombre", "usuario_id", "descripcion_funcion_principal", "updated_at", "area_id", "relaciones_coordinacion_interna", "inmediato_superior", "objectivo_area_funcional", "relacionamiento_interinstitucional", "fecha_actualizacion", "ci", "cargo", "tipo_area", "principales_resultados", "apellido", "nivel_jerarquico") VALUES('Masajes al Big Boss', NULL, '2009-07-22 15:25:30', 'Minesterio ', 'Ana', NULL, 'Llenado de planillas y cafecitos', '2009-07-22 15:25:30', NULL, 'Ninguna', 'Recursos Humanos', 'preaparacionde de documentos 
+ 1 ..- Realizacvion de CArtas 
+ 2.- Mandados
+ 3.- Cafecitos', 'Mi herma en el ministerio de Defensa', NULL, '120120', 'Secretaria', 'Sustantivo', 'Buen sueldo y pronto acenso', 'Barrigas', 'Operativo')[0m
+Redirected to http://localhost:2000/formularios/12
+Completed in 38ms (DB: 1) | 302 Found [http://localhost/formularios]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-22 11:25:30) [GET]
+  Parameters: {"id"=>"12"}
+  [4;35;1mFormulario Load (1.5ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+Completed in 42ms (View: 4, DB: 2) | 200 OK [http://localhost/formularios/12]
+
+
+Processing FormulariosController#print (for 127.0.0.1 at 2009-07-22 11:27:05) [GET]
+  Parameters: {"mostrar"=>"true", "id"=>"12"}
+  [4;36;1mFormulario Load (1.5ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 12) [0m
+Rendering template within layouts/print
+Rendering formularios/show
+Completed in 38ms (View: 11, DB: 2) | 200 OK [http://localhost/formularios/12/print?mostrar=true]
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-22 11:34:14) [GET]
+  [4;35;1mFormulario Load (4.7ms)[0m   [0mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 24ms (View: 4, DB: 5) | 200 OK [http://localhost/formularios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-22 11:34:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2009-07-22 11:34:23) [GET]
+Rendering template within layouts/application
+Rendering formularios/new
+  [4;36;1mArea Load (11.1ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.9ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;36;1mTipo Load (1.1ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (76.1ms)
+Completed in 100ms (View: 67, DB: 13) | 200 OK [http://localhost/formularios/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-22 11:34:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-22 11:34:26) [GET]
+  [4;35;1mFormulario Load (4.7ms)[0m   [0mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 21ms (View: 4, DB: 5) | 200 OK [http://localhost/formularios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-22 11:34:26) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#busqueda (for 127.0.0.1 at 2009-07-22 11:34:31) [POST]
+  Parameters: {"authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "search"=>"120120"}
+  [4;36;1mFormulario Load (1.6ms)[0m   [0;1mSELECT * FROM "formularios" WHERE (ci = '120120') LIMIT 1[0m
+Redirected to http://localhost:2000/formularios/12/edit
+Completed in 22ms (DB: 2) | 302 Found [http://localhost/formularios/busqueda]
+
+
+Processing FormulariosController#edit (for 127.0.0.1 at 2009-07-22 11:34:31) [GET]
+  Parameters: {"id"=>"12"}
+  [4;35;1mFormulario Load (0.9ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering formularios/edit
+  [4;36;1mArea Load (9.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (1.3ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;36;1mTipo Load (0.9ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (75.1ms)
+Completed in 99ms (View: 70, DB: 12) | 200 OK [http://localhost/formularios/12/edit]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-22 11:34:41) [GET]
+  Parameters: {"id"=>"12", "page"=>"1"}
+  [4;35;1mFormulario Load (1.5ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+
+ActionView::TemplateError (wrong number of arguments (2 for 1)) on line #47 of app/views/formularios/show.html.erb:
+44:     <label>NOMBRE DEL AREA FUNCIONAL INMEDIATO SUPERIOR:</label>
+45:   </td>
+46:   <td id="td_parent">
+47:     <%= @formulario.inmediato_superior.replace("\n","<br>") %>
+48:   </td>
+49: </tr>
+50: 
+
+    app/views/formularios/show.html.erb:47:in `replace'
+    app/views/formularios/show.html.erb:47
+    app/controllers/formularios_controller.rb:22:in `show'
+
+Rendered rescues/_trace (191.2ms)
+Rendered rescues/_request_and_response (20.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-22 11:40:15) [GET]
+  Parameters: {"id"=>"12", "page"=>"1"}
+  [4;36;1mFormulario Load (1.5ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+Completed in 52ms (View: 13, DB: 1) | 200 OK [http://localhost/formularios/12?page=1]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-22 11:44:59) [GET]
+  Parameters: {"id"=>"12", "page"=>"1"}
+  [4;35;1mFormulario Load (0.9ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+Completed in 54ms (View: 15, DB: 1) | 200 OK [http://localhost/formularios/12?page=1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-22 11:47:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-22 11:47:55) [GET]
+  [4;36;1mFormulario Load (7.4ms)[0m   [0;1mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 25ms (View: 4, DB: 7) | 200 OK [http://localhost/formularios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-22 11:47:55) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#busqueda (for 127.0.0.1 at 2009-07-22 11:48:01) [POST]
+  Parameters: {"authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "search"=>"101010"}
+  [4;35;1mFormulario Load (0.9ms)[0m   [0mSELECT * FROM "formularios" WHERE (ci = '101010') LIMIT 1[0m
+Redirected to http://localhost:2000/formularios/new?ci=101010
+Completed in 12ms (DB: 1) | 302 Found [http://localhost/formularios/busqueda]
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2009-07-22 11:48:01) [GET]
+  Parameters: {"ci"=>"101010"}
+Rendering template within layouts/application
+Rendering formularios/new
+  [4;36;1mArea Load (11.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (1.4ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;36;1mTipo Load (0.8ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (166.9ms)
+Completed in 191ms (View: 158, DB: 13) | 200 OK [http://localhost/formularios/new?ci=101010]
+
+
+Processing FormulariosController#busqueda (for 127.0.0.1 at 2009-07-22 11:48:01) [POST]
+  Parameters: {"authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "search"=>"101010"}
+  [4;35;1mFormulario Load (0.9ms)[0m   [0mSELECT * FROM "formularios" WHERE (ci = '101010') LIMIT 1[0m
+Redirected to http://localhost:2000/formularios/new?ci=101010
+Completed in 17ms (DB: 1) | 302 Found [http://localhost/formularios/busqueda]
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2009-07-22 11:48:01) [GET]
+  Parameters: {"ci"=>"101010"}
+Rendering template within layouts/application
+Rendering formularios/new
+  [4;36;1mArea Load (9.3ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.8ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;36;1mTipo Load (1.1ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (74.5ms)
+Completed in 98ms (View: 68, DB: 11) | 200 OK [http://localhost/formularios/new?ci=101010]
+
+
+Processing FormulariosController#create (for 127.0.0.1 at 2009-07-22 11:48:53) [POST]
+  Parameters: {"commit"=>"Salvar", "authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "formulario"=>{"descripcion_funciones_especificas"=>"", "areas_dependientes"=>"Viceministerios", "nombre"=>"", "descripcion_funcion_principal"=>"", "relaciones_coordinacion_interna"=>"", "inmediato_superior"=>"Precidencia", "relacionamiento_interinstitucional"=>"", "objectivo_area_funcional"=>"", "ci"=>"101010", "tipo_area"=>"", "cargo"=>"Ministro", "principales_resultados"=>"", "apellido"=>"", "nivel_jerarquico"=>"Ejecutivo"}}
+  [4;35;1mFormulario Create (0.5ms)[0m   [0mINSERT INTO "formularios" ("descripcion_funciones_especificas", "fecha_aprovacion", "created_at", "areas_dependientes", "nombre", "usuario_id", "descripcion_funcion_principal", "updated_at", "area_id", "relaciones_coordinacion_interna", "inmediato_superior", "objectivo_area_funcional", "relacionamiento_interinstitucional", "fecha_actualizacion", "ci", "cargo", "tipo_area", "principales_resultados", "apellido", "nivel_jerarquico") VALUES('', NULL, '2009-07-22 15:48:53', 'Viceministerios', '', NULL, '', '2009-07-22 15:48:53', NULL, '', 'Precidencia', '', '', NULL, '101010', 'Ministro', '', '', '', 'Ejecutivo')[0m
+Redirected to http://localhost:2000/formularios/13
+Completed in 36ms (DB: 1) | 302 Found [http://localhost/formularios]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-22 11:48:54) [GET]
+  Parameters: {"id"=>"13"}
+  [4;36;1mFormulario Load (1.5ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 13) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+Completed in 63ms (View: 16, DB: 2) | 200 OK [http://localhost/formularios/13]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-22 11:48:58) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#create (for 127.0.0.1 at 2009-07-22 11:50:38) [POST]
+  Parameters: {"commit"=>"Salvar", "authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "formulario"=>{"descripcion_funciones_especificas"=>"I.  eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee\r\nII. eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee\r\nIII.eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee", "areas_dependientes"=>"Viceministerios ", "nombre"=>"", "descripcion_funcion_principal"=>"a) ddddddddddddddddddddddddddddd\r\nb) dddddddddddddddddddddddddddddddd\r\nc) dddddddddddddddddddddddddddddddd", "relaciones_coordinacion_interna"=>"", "inmediato_superior"=>"Precidencia", "relacionamiento_interinstitucional"=>"", "objectivo_area_funcional"=>"1 fffffffffffffffffff\r\n2 fffffffffffffffffffff\r\n3 ffffffffffffffffffffffff\r\n5 ffffffffffffffffffffffffffff\r\n6 ffffffffffffffffffffffffffffff", "ci"=>"101010", "tipo_area"=>"S", "cargo"=>"Ministro", "principales_resultados"=>"A.- gggggggggggggggggggggggggggggggggggggggggg\r\nB.- ggggggggggggggggggggggggggggggggggggggg", "apellido"=>"", "nivel_jerarquico"=>"Ejecutivo"}}
+  [4;35;1mFormulario Create (0.6ms)[0m   [0mINSERT INTO "formularios" ("descripcion_funciones_especificas", "fecha_aprovacion", "created_at", "areas_dependientes", "nombre", "usuario_id", "descripcion_funcion_principal", "updated_at", "area_id", "relaciones_coordinacion_interna", "inmediato_superior", "objectivo_area_funcional", "relacionamiento_interinstitucional", "fecha_actualizacion", "ci", "cargo", "tipo_area", "principales_resultados", "apellido", "nivel_jerarquico") VALUES('I. eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+II. eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+III.eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee', NULL, '2009-07-22 15:50:38', 'Viceministerios ', '', NULL, 'a) ddddddddddddddddddddddddddddd
+b) dddddddddddddddddddddddddddddddd
+c) dddddddddddddddddddddddddddddddd', '2009-07-22 15:50:38', NULL, '', 'Precidencia', '1 fffffffffffffffffff
+2 fffffffffffffffffffff
+3 ffffffffffffffffffffffff
+5 ffffffffffffffffffffffffffff
+6 ffffffffffffffffffffffffffffff', '', NULL, '101010', 'Ministro', 'S', 'A.- gggggggggggggggggggggggggggggggggggggggggg
+B.- ggggggggggggggggggggggggggggggggggggggg', '', 'Ejecutivo')[0m
+Redirected to http://localhost:2000/formularios/14
+Completed in 40ms (DB: 1) | 302 Found [http://localhost/formularios]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-22 11:50:38) [GET]
+  Parameters: {"id"=>"14"}
+  [4;36;1mFormulario Load (1.4ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 14) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+Completed in 41ms (View: 4, DB: 1) | 200 OK [http://localhost/formularios/14]
+
+
+Processing FormulariosController#create (for 127.0.0.1 at 2009-07-22 11:51:59) [POST]
+  Parameters: {"commit"=>"Salvar", "authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "formulario"=>{"descripcion_funciones_especificas"=>"I.  eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee\r\nII. eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee\r\nIII.eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee", "areas_dependientes"=>"Viceministerios ", "nombre"=>"Juan", "descripcion_funcion_principal"=>"a) ddddddddddddddddddddddddddddd\r\nb) dddddddddddddddddddddddddddddddd\r\nc) dddddddddddddddddddddddddddddddd", "relaciones_coordinacion_interna"=>"asdasdddddddddddddddddddddddddddddddddddddddssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss", "inmediato_superior"=>"Precidencia", "relacionamiento_interinstitucional"=>"sss\r\ns\r\nsssss\r\ns\r\ns\r\ns\r\nss\r\ns\r\ns\r\ns\r\ns\r\ns\r\ns\r\ns\r\ns\r\ns\r\ns\r\nss\r\ns\r\ns\r\ns\r\ns\r\ns\r\ns\r\ns\r\ns\r\ns\r\ns\r\ns\r\ns\r\ns\r\ns\r\ns\r\ns\r\ns\r\ns\r\ns\r\ns\r\ns\r\ns\r\ns\r\ns\r\ns\r\ns\r\ns\r\ns\r\ns\r\ns\r\ns\r\ns\r\ns\r\n\r\ns\r\ns\r\ns\r\nss\r\ns\r\ns\r\ns\r\ns\r\ns\r\nss\r\n\r\ns\r\ns\r\n", "objectivo_area_funcional"=>"1 fffffffffffffffffff\r\n2 fffffffffffffffffffff\r\n3 ffffffffffffffffffffffff\r\n5 ffffffffffffffffffffffffffff\r\n6 ffffffffffffffffffffffffffffff", "ci"=>"101010", "tipo_area"=>"Sustantivo", "cargo"=>"Ministro", "principales_resultados"=>"A.- gggggggggggggggggggggggggggggggggggggggggg\r\nB.- ggggggggggggggggggggggggggggggggggggggg", "apellido"=>"Perez", "nivel_jerarquico"=>"Ejecutivo"}}
+  [4;35;1mFormulario Create (0.6ms)[0m   [0mINSERT INTO "formularios" ("descripcion_funciones_especificas", "fecha_aprovacion", "created_at", "areas_dependientes", "nombre", "usuario_id", "descripcion_funcion_principal", "updated_at", "area_id", "relaciones_coordinacion_interna", "inmediato_superior", "objectivo_area_funcional", "relacionamiento_interinstitucional", "fecha_actualizacion", "ci", "cargo", "tipo_area", "principales_resultados", "apellido", "nivel_jerarquico") VALUES('I. eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+II. eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+III.eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee', NULL, '2009-07-22 15:51:59', 'Viceministerios ', 'Juan', NULL, 'a) ddddddddddddddddddddddddddddd
+b) dddddddddddddddddddddddddddddddd
+c) dddddddddddddddddddddddddddddddd', '2009-07-22 15:51:59', NULL, 'asdasdddddddddddddddddddddddddddddddddddddddssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss', 'Precidencia', '1 fffffffffffffffffff
+2 fffffffffffffffffffff
+3 ffffffffffffffffffffffff
+5 ffffffffffffffffffffffffffff
+6 ffffffffffffffffffffffffffffff', 'sss
+s
+sssss
+s
+s
+s
+ss
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+ss
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+s
+
+s
+s
+s
+ss
+s
+s
+s
+s
+s
+ss
+
+s
+s
+', NULL, '101010', 'Ministro', 'Sustantivo', 'A.- gggggggggggggggggggggggggggggggggggggggggg
+B.- ggggggggggggggggggggggggggggggggggggggg', 'Perez', 'Ejecutivo')[0m
+Redirected to http://localhost:2000/formularios/15
+Completed in 119ms (DB: 1) | 302 Found [http://localhost/formularios]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-22 11:51:59) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mFormulario Load (1.0ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 15) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+Completed in 46ms (View: 7, DB: 1) | 200 OK [http://localhost/formularios/15]
+
+
+Processing FormulariosController#print (for 127.0.0.1 at 2009-07-22 11:52:43) [GET]
+  Parameters: {"mostrar"=>"true", "id"=>"15"}
+  [4;35;1mFormulario Load (1.5ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 15) [0m
+Rendering template within layouts/print
+Rendering formularios/show
+Completed in 38ms (View: 12, DB: 1) | 200 OK [http://localhost/formularios/15/print?mostrar=true]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-22 11:58:57) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-22 11:58:57) [GET]
+  [4;36;1mFormulario Load (9.4ms)[0m   [0;1mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 28ms (View: 4, DB: 9) | 200 OK [http://localhost/formularios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-22 11:58:58) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2009-07-22 11:58:58) [GET]
+Rendering template within layouts/application
+Rendering formularios/new
+  [4;35;1mArea Load (13.1ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;36;1mNivel Load (1.2ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;35;1mTipo Load (0.7ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (82.3ms)
+Completed in 107ms (View: 73, DB: 15) | 200 OK [http://localhost/formularios/new]
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2009-07-22 11:59:20) [GET]
+Rendering template within layouts/application
+Rendering formularios/new
+  [4;36;1mArea Load (12.3ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.8ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;36;1mTipo Load (1.1ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (78.5ms)
+Completed in 106ms (View: 72, DB: 14) | 200 OK [http://localhost/formularios/new]
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2009-07-22 12:02:00) [GET]
+Rendering template within layouts/application
+Rendering formularios/new
+  [4;35;1mArea Load (10.1ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;36;1mNivel Load (0.9ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;35;1mTipo Load (1.1ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (84.6ms)
+Completed in 112ms (View: 82, DB: 12) | 200 OK [http://localhost/formularios/new]
+
+
+Processing FormulariosController#create (for 127.0.0.1 at 2009-07-22 12:02:07) [POST]
+  Parameters: {"commit"=>"Salvar", "authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "formulario"=>{"descripcion_funciones_especificas"=>"", "areas_dependientes"=>"5555555", "nombre"=>"", "descripcion_funcion_principal"=>"", "relaciones_coordinacion_interna"=>"", "inmediato_superior"=>"", "relacionamiento_interinstitucional"=>"", "objectivo_area_funcional"=>"", "ci"=>"", "tipo_area"=>"", "cargo"=>"", "principales_resultados"=>"", "apellido"=>"", "nivel_jerarquico"=>""}}
+Rendering template within layouts/application
+Rendering formularios/new
+  [4;36;1mArea Load (12.1ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.8ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;36;1mTipo Load (1.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (71.6ms)
+Completed in 178ms (View: 61, DB: 14) | 200 OK [http://localhost/formularios]
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-22 12:02:21) [GET]
+  [4;35;1mFormulario Load (7.1ms)[0m   [0mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 27ms (View: 4, DB: 7) | 200 OK [http://localhost/formularios]
+
+
+Processing FormulariosController#create (for 127.0.0.1 at 2009-07-22 12:03:38) [POST]
+  Parameters: {"commit"=>"Salvar", "authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "formulario"=>{"descripcion_funciones_especificas"=>"", "areas_dependientes"=>"5555555", "nombre"=>"", "descripcion_funcion_principal"=>"", "relaciones_coordinacion_interna"=>"", "inmediato_superior"=>"", "relacionamiento_interinstitucional"=>"", "objectivo_area_funcional"=>"", "ci"=>"", "tipo_area"=>"", "cargo"=>"", "principales_resultados"=>"", "apellido"=>"", "nivel_jerarquico"=>""}}
+Rendering template within layouts/application
+Rendering formularios/new
+  [4;36;1mArea Load (13.8ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (1.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;36;1mTipo Load (1.1ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (120.7ms)
+Completed in 177ms (View: 115, DB: 16) | 200 OK [http://localhost/formularios]
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-22 12:04:09) [GET]
+  [4;35;1mFormulario Load (5.8ms)[0m   [0mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 22ms (View: 3, DB: 6) | 200 OK [http://localhost/formularios]
+
+
+Processing FormulariosController#create (for 127.0.0.1 at 2009-07-22 12:04:33) [POST]
+  Parameters: {"commit"=>"Salvar", "authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "formulario"=>{"descripcion_funciones_especificas"=>"", "areas_dependientes"=>"5555555", "nombre"=>"", "descripcion_funcion_principal"=>"", "relaciones_coordinacion_interna"=>"", "inmediato_superior"=>"", "relacionamiento_interinstitucional"=>"", "objectivo_area_funcional"=>"", "ci"=>"", "tipo_area"=>"", "cargo"=>"", "principales_resultados"=>"", "apellido"=>"", "nivel_jerarquico"=>""}}
+Rendering template within layouts/application
+Rendering formularios/new
+  [4;36;1mArea Load (13.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (1.4ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;36;1mTipo Load (1.1ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (105.8ms)
+Completed in 163ms (View: 101, DB: 16) | 200 OK [http://localhost/formularios]
+
+
+Processing FormulariosController#create (for 127.0.0.1 at 2009-07-22 12:04:47) [POST]
+  Parameters: {"commit"=>"Salvar", "authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "formulario"=>{"descripcion_funciones_especificas"=>"", "areas_dependientes"=>"5555555", "nombre"=>"", "descripcion_funcion_principal"=>"", "relaciones_coordinacion_interna"=>"", "inmediato_superior"=>"", "relacionamiento_interinstitucional"=>"", "objectivo_area_funcional"=>"", "ci"=>"", "tipo_area"=>"", "cargo"=>"", "principales_resultados"=>"", "apellido"=>"", "nivel_jerarquico"=>""}}
+Rendering template within layouts/application
+Rendering formularios/new
+  [4;35;1mArea Load (12.3ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;36;1mNivel Load (1.3ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;35;1mTipo Load (0.7ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (87.7ms)
+Completed in 141ms (View: 84, DB: 14) | 200 OK [http://localhost/formularios]
+
+
+Processing FormulariosController#create (for 127.0.0.1 at 2009-07-22 12:05:06) [POST]
+  Parameters: {"commit"=>"Salvar", "authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "formulario"=>{"descripcion_funciones_especificas"=>"", "areas_dependientes"=>"5555555", "nombre"=>"", "descripcion_funcion_principal"=>"", "relaciones_coordinacion_interna"=>"", "inmediato_superior"=>"", "relacionamiento_interinstitucional"=>"", "objectivo_area_funcional"=>"", "ci"=>"", "tipo_area"=>"", "cargo"=>"", "principales_resultados"=>"", "apellido"=>"", "nivel_jerarquico"=>""}}
+Rendering template within layouts/application
+Rendering formularios/new
+  [4;36;1mArea Load (13.5ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (1.3ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;36;1mTipo Load (1.1ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (101.3ms)
+Completed in 160ms (View: 96, DB: 16) | 200 OK [http://localhost/formularios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-22 12:06:51) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-22 12:06:51) [GET]
+  [4;35;1mFormulario Load (8.5ms)[0m   [0mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 27ms (View: 4, DB: 9) | 200 OK [http://localhost/formularios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-22 12:06:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2009-07-22 12:06:57) [GET]
+Rendering template within layouts/application
+Rendering formularios/new
+  [4;36;1mArea Load (8.8ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.8ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;36;1mTipo Load (0.7ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (77.1ms)
+Completed in 101ms (View: 71, DB: 10) | 200 OK [http://localhost/formularios/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-22 12:07:02) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-22 12:07:02) [GET]
+  [4;35;1mFormulario Load (6.7ms)[0m   [0mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 27ms (View: 6, DB: 7) | 200 OK [http://localhost/formularios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-22 12:07:03) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#busqueda (for 127.0.0.1 at 2009-07-22 12:07:06) [POST]
+  Parameters: {"authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "search"=>"55555"}
+  [4;36;1mFormulario Load (1.1ms)[0m   [0;1mSELECT * FROM "formularios" WHERE (ci = '55555') LIMIT 1[0m
+Redirected to http://localhost:2000/formularios/new?ci=55555
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/formularios/busqueda]
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2009-07-22 12:07:06) [GET]
+  Parameters: {"ci"=>"55555"}
+Rendering template within layouts/application
+Rendering formularios/new
+  [4;35;1mArea Load (12.4ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;36;1mNivel Load (1.2ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;35;1mTipo Load (0.7ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (87.0ms)
+Completed in 117ms (View: 78, DB: 14) | 200 OK [http://localhost/formularios/new?ci=55555]
+
+
+Processing FormulariosController#busqueda (for 127.0.0.1 at 2009-07-22 12:07:07) [POST]
+  Parameters: {"authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "search"=>"55555"}
+  [4;36;1mFormulario Load (0.9ms)[0m   [0;1mSELECT * FROM "formularios" WHERE (ci = '55555') LIMIT 1[0m
+Redirected to http://localhost:2000/formularios/new?ci=55555
+Completed in 17ms (DB: 1) | 302 Found [http://localhost/formularios/busqueda]
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2009-07-22 12:07:07) [GET]
+  Parameters: {"ci"=>"55555"}
+Rendering template within layouts/application
+Rendering formularios/new
+  [4;35;1mArea Load (10.1ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;36;1mNivel Load (0.9ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;35;1mTipo Load (1.2ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (79.4ms)
+Completed in 104ms (View: 72, DB: 12) | 200 OK [http://localhost/formularios/new?ci=55555]
+
+
+Processing FormulariosController#new (for 127.0.0.1 at 2009-07-22 12:07:36) [GET]
+  Parameters: {"ci"=>"55555"}
+Rendering template within layouts/application
+Rendering formularios/new
+  [4;36;1mArea Load (8.7ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (1.2ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;36;1mTipo Load (0.7ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (78.2ms)
+Completed in 102ms (View: 75, DB: 11) | 200 OK [http://localhost/formularios/new?ci=55555]
+
+
+Processing FormulariosController#create (for 127.0.0.1 at 2009-07-22 12:07:56) [POST]
+  Parameters: {"commit"=>"Salvar", "authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "formulario"=>{"descripcion_funciones_especificas"=>"", "areas_dependientes"=>"", "nombre"=>"", "descripcion_funcion_principal"=>"", "relaciones_coordinacion_interna"=>"", "inmediato_superior"=>"", "relacionamiento_interinstitucional"=>"", "objectivo_area_funcional"=>"", "ci"=>"55555", "tipo_area"=>"", "cargo"=>"", "principales_resultados"=>"", "apellido"=>"", "nivel_jerarquico"=>""}}
+  [4;35;1mFormulario Create (0.6ms)[0m   [0mINSERT INTO "formularios" ("descripcion_funciones_especificas", "fecha_aprovacion", "created_at", "areas_dependientes", "nombre", "usuario_id", "descripcion_funcion_principal", "updated_at", "area_id", "relaciones_coordinacion_interna", "inmediato_superior", "objectivo_area_funcional", "relacionamiento_interinstitucional", "fecha_actualizacion", "ci", "cargo", "tipo_area", "principales_resultados", "apellido", "nivel_jerarquico") VALUES('', NULL, '2009-07-22 16:07:56', '', '', NULL, '', '2009-07-22 16:07:56', NULL, '', '', '', '', NULL, '55555', '', '', '', '', '')[0m
+Redirected to http://localhost:2000/formularios/16
+Completed in 128ms (DB: 1) | 302 Found [http://localhost/formularios]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-22 12:07:56) [GET]
+  Parameters: {"id"=>"16"}
+  [4;36;1mFormulario Load (1.4ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 16) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+Completed in 45ms (View: 4, DB: 1) | 200 OK [http://localhost/formularios/16]
+
+
+Processing FormulariosController#print (for 127.0.0.1 at 2009-07-22 12:08:00) [GET]
+  Parameters: {"mostrar"=>"true", "id"=>"16"}
+  [4;35;1mFormulario Load (1.5ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 16) [0m
+Rendering template within layouts/print
+Rendering formularios/show
+Completed in 39ms (View: 11, DB: 2) | 200 OK [http://localhost/formularios/16/print?mostrar=true]
+
+
+Processing FormulariosController#print (for 127.0.0.1 at 2009-07-22 12:15:57) [GET]
+  Parameters: {"mostrar"=>"true", "id"=>"16"}
+  [4;36;1mFormulario Load (1.5ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 16) [0m
+Rendering template within layouts/print
+Rendering formularios/show
+Completed in 39ms (View: 11, DB: 2) | 200 OK [http://localhost/formularios/16/print?mostrar=true]
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-22 15:29:34) [GET]
+  [4;36;1mFormulario Load (6.9ms)[0m   [0;1mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+Completed in 153ms (View: 102, DB: 7) | 200 OK [http://localhost/formularios]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-22 15:29:37) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing TiposController#index (for 127.0.0.1 at 2009-07-22 15:29:38) [GET]
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/tipos]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-07-22 15:29:38) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 31ms (View: 26, DB: 0) | 200 OK [http://localhost/sessions/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-22 15:29:39) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-07-22 15:29:47) [POST]
+  Parameters: {"commit"=>"Iniciar sesion", "authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "login"=>"admin", "password"=>"gotama"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'admin') LIMIT 1[0m
+Failed login for 'admin' from 127.0.0.1 at Wed Jul 22 19:29:47 UTC 2009
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 68ms (View: 6, DB: 0) | 200 OK [http://localhost/sessions]
+  [4;36;1mUser Exists (0.3ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."login" = 'boris') LIMIT 1[0m
+  [4;35;1mUser Exists (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'boris@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.9ms)[0m   [0;1mINSERT INTO "users" ("name", "salt", "created_at", "crypted_password", "remember_token_expires_at", "updated_at", "remember_token", "login", "email") VALUES('', '79e9dff8cea1af6ab6008b73a43f1bff63f229a5', '2009-07-22 19:30:51', 'bb555399f5107b0d493d14869cab22f9dde68aa9', NULL, '2009-07-22 19:30:51', NULL, 'boris', 'boris@example.com')[0m
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM "users" [0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-07-22 15:31:04) [POST]
+  Parameters: {"commit"=>"Iniciar sesion", "authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "login"=>"boris", "password"=>"demo123"}
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'boris') LIMIT 1[0m
+Redirected to http://localhost:3000/tipos
+Completed in 29ms (DB: 1) | 302 Found [http://localhost/sessions]
+
+
+Processing TiposController#index (for 127.0.0.1 at 2009-07-22 15:31:04) [GET]
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [4;36;1mTipo Load (0.7ms)[0m   [0;1mSELECT * FROM "tipos" [0m
+Rendering template within layouts/application
+Rendering tipos/index
+Completed in 97ms (View: 37, DB: 1) | 200 OK [http://localhost/tipos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-22 15:31:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-22 15:31:07) [GET]
+  [4;35;1mFormulario Load (6.9ms)[0m   [0mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+  [4;36;1mUser Load (1.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [4;35;1mArea Load (0.8ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (0.6ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (0.7ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 14) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (0.8ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (0.6ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 20) ORDER BY lft ASC[0m
+Completed in 143ms (View: 115, DB: 12) | 200 OK [http://localhost/formularios]
+
+
+Processing FormulariosController#edit (for 127.0.0.1 at 2009-07-22 15:31:13) [GET]
+  Parameters: {"id"=>"9"}
+  [4;35;1mFormulario Load (1.5ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 9) [0m
+Rendering template within layouts/application
+Rendering formularios/edit
+  [4;36;1mArea Load (9.1ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (1.1ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;36;1mTipo Load (0.8ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (93.3ms)
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 238ms (View: 206, DB: 13) | 200 OK [http://localhost/formularios/9/edit]
+
+
+Processing FormulariosController#update (for 127.0.0.1 at 2009-07-22 15:31:54) [PUT]
+  Parameters: {"commit"=>"Salvar", "authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "id"=>"9", "formulario"=>{"descripcion_funciones_especificas"=>"I've watched the other threads on missing disc space, but this one seems new. I have a link 4, and while my total space seems to be normal, my available space is disappearing before my eyes. Anyone have any idea what this could be?\r\nCode:\r\n\r\n# df ; while /bin/true ; do sleep 10 ; df |grep -v Filesystem; done\r\nFilesystem           1K-blocks      Used Available Use% Mounted on\r\n/dev/simfs            19922944   2271765   9162866  20% /\r\n/dev/simfs            19922944   2271765   9162250  20% /\r\n/dev/simfs            19922944   2271765   9161676  20% /\r\n/dev/simfs            19922944   2271765   9160970  20% /\r\n/dev/simfs            19922944   2271765   9160321  20% /\r\n/dev/simfs            19922944   2271765   9159784  20% /\r\n/dev/simfs            19922944   2271765   9159151  20% /\r\n/dev/simfs            19922944   2271767   9158521  20% /\r\n/dev/simfs            19922944   2271767   9157930  20% /\r\n/dev/simfs            19922944   2271767   9157273  20% /\r\n/dev/simfs            19922944   2271767   9156616  20% /\r\n/dev/simfs            19922944   2271767   9155975  20% /\r\n/dev/simfs            19922944   2271767   9155258  20% /\r\n/dev/simfs            19922944   2271767   9154590  20% /\r\n/dev/simfs            19922944   2271767   9154021  20% /\r\n/dev/simfs            19922944   2271767   9153375  20% /\r\n/dev/simfs            19922944   2271767   9152654  20% /\r\n/dev/simfs            19922944   2271767   9152099  20% /\r\n/dev/simfs            19922944   2271767   9151494  20% /\r\n/dev/simfs            19922944   2271768   9150816  20% /\r\n/dev/simfs            19922944   2271768   9150208  20% /\r\n\r\n", "areas_dependientes"=>"", "nombre"=>"", "descripcion_funcion_principal"=>"1. Coordinar la elaboración y/o reformulación de los Planes Sectoriales de Desarrollo de los sectores de Hidrocarburos y Electricidad con los Viceministerios, Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE, articulado al Plan Nacional de Desarrollo PND.\r\n2. Coordinar la elaboración y/o reformulación del Plan Estratégico Institucional con los Viceministerios, Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE, articulado al Plan Sectorial de Desarrollo.\r\n3. Coordinar la elaboración y/o reformulación del Programa de Operaciones Anual (POA) con los Viceministerios y Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE.\r\n4. Coordinar la formulación y ejecución del POA de la Dirección General de Planificación. \r\n5. Compatibilizar el Programa de Operaciones Anual de la Entidad.\r\n6. Participar en comisiones técnicas, talleres y seminarios que sean encomendados por el Ministro.\r\n7. Desarrollar las funciones que le sean delegadas por el Ministro, dentro del ámbito de su competencia.\r\n", "relaciones_coordinacion_interna"=>"I've watched the other threads on missing disc space, but this one seems new. I have a link 4, and while my total space seems to be normal, my available space is disappearing before my eyes. Anyone have any idea what this could be?\r\nCode:\r\n\r\n# df ; while /bin/true ; do sleep 10 ; df |grep -v Filesystem; done\r\nFilesystem           1K-blocks      Used Available Use% Mounted on\r\n/dev/simfs            19922944   2271765   9162866  20% /\r\n/dev/simfs            19922944   2271765   9162250  20% /\r\n/dev/simfs            19922944   2271765   9161676  20% /\r\n/dev/simfs            19922944   2271765   9160970  20% /\r\n/dev/simfs            19922944   2271765   9160321  20% /\r\n/dev/simfs            19922944   2271765   9159784  20% /\r\n/dev/simfs            19922944   2271765   9159151  20% /\r\n/dev/simfs            19922944   2271767   9158521  20% /\r\n/dev/simfs            19922944   2271767   9157930  20% /\r\n/dev/simfs            19922944   2271767   9157273  20% /\r\n/dev/simfs            19922944   2271767   9156616  20% /\r\n/dev/simfs            19922944   2271767   9155975  20% /\r\n/dev/simfs            19922944   2271767   9155258  20% /\r\n/dev/simfs            19922944   2271767   9154590  20% /\r\n/dev/simfs            19922944   2271767   9154021  20% /\r\n/dev/simfs            19922944   2271767   9153375  20% /\r\n/dev/simfs            19922944   2271767   9152654  20% /\r\n/dev/simfs            19922944   2271767   9152099  20% /\r\n/dev/simfs            19922944   2271767   9151494  20% /\r\n/dev/simfs            19922944   2271768   9150816  20% /\r\n/dev/simfs            19922944   2271768   9150208  20% /\r\n\r\n", "inmediato_superior"=>"", "relacionamiento_interinstitucional"=>"I've watched the other threads on missing disc space, but this one seems new. I have a link 4, and while my total space seems to be normal, my available space is disappearing before my eyes. Anyone have any idea what this could be?\r\nCode:\r\n\r\n# df ; while /bin/true ; do sleep 10 ; df |grep -v Filesystem; done\r\nFilesystem           1K-blocks      Used Available Use% Mounted on\r\n/dev/simfs            19922944   2271765   9162866  20% /\r\n/dev/simfs            19922944   2271765   9162250  20% /\r\n/dev/simfs            19922944   2271765   9161676  20% /\r\n/dev/simfs            19922944   2271765   9160970  20% /\r\n/dev/simfs            19922944   2271765   9160321  20% /\r\n/dev/simfs            19922944   2271765   9159784  20% /\r\n/dev/simfs            19922944   2271765   9159151  20% /\r\n/dev/simfs            19922944   2271767   9158521  20% /\r\n/dev/simfs            19922944   2271767   9157930  20% /\r\n/dev/simfs            19922944   2271767   9157273  20% /\r\n/dev/simfs            19922944   2271767   9156616  20% /\r\n/dev/simfs            19922944   2271767   9155975  20% /\r\n/dev/simfs            19922944   2271767   9155258  20% /\r\n/dev/simfs            19922944   2271767   9154590  20% /\r\n/dev/simfs            19922944   2271767   9154021  20% /\r\n/dev/simfs            19922944   2271767   9153375  20% /\r\n/dev/simfs            19922944   2271767   9152654  20% /\r\n/dev/simfs            19922944   2271767   9152099  20% /\r\n/dev/simfs            19922944   2271767   9151494  20% /\r\n/dev/simfs            19922944   2271768   9150816  20% /\r\n/dev/simfs            19922944   2271768   9150208  20% /\r\n\r\n", "objectivo_area_funcional"=>"I've watched the other threads on missing disc space, but this one seems new. I have a link 4, and while my total space seems to be normal, my available space is disappearing before my eyes. Anyone have any idea what this could be?\r\nCode:\r\n\r\n# df ; while /bin/true ; do sleep 10 ; df |grep -v Filesystem; done\r\nFilesystem           1K-blocks      Used Available Use% Mounted on\r\n/dev/simfs            19922944   2271765   9162866  20% /\r\n/dev/simfs            19922944   2271765   9162250  20% /\r\n/dev/simfs            19922944   2271765   9161676  20% /\r\n/dev/simfs            19922944   2271765   9160970  20% /\r\n/dev/simfs            19922944   2271765   9160321  20% /\r\n/dev/simfs            19922944   2271765   9159784  20% /\r\n/dev/simfs            19922944   2271765   9159151  20% /\r\n/dev/simfs            19922944   2271767   9158521  20% /\r\n/dev/simfs            19922944   2271767   9157930  20% /\r\n/dev/simfs            19922944   2271767   9157273  20% /\r\n/dev/simfs            19922944   2271767   9156616  20% /\r\n/dev/simfs            19922944   2271767   9155975  20% /\r\n/dev/simfs            19922944   2271767   9155258  20% /\r\n/dev/simfs            19922944   2271767   9154590  20% /\r\n/dev/simfs            19922944   2271767   9154021  20% /\r\n/dev/simfs            19922944   2271767   9153375  20% /\r\n/dev/simfs            19922944   2271767   9152654  20% /\r\n/dev/simfs            19922944   2271767   9152099  20% /\r\n/dev/simfs            19922944   2271767   9151494  20% /\r\n/dev/simfs            19922944   2271768   9150816  20% /\r\n/dev/simfs            19922944   2271768   9150208  20% /\r\n\r\n", "ci"=>"12345678", "tipo_area"=>"", "cargo"=>"", "principales_resultados"=>"I've watched the other threads on missing disc space, but this one seems new. I have a link 4, and while my total space seems to be normal, my available space is disappearing before my eyes. Anyone have any idea what this could be?\r\nCode:\r\n\r\n# df ; while /bin/true ; do sleep 10 ; df |grep -v Filesystem; done\r\nFilesystem           1K-blocks      Used Available Use% Mounted on\r\n/dev/simfs            19922944   2271765   9162866  20% /\r\n/dev/simfs            19922944   2271765   9162250  20% /\r\n/dev/simfs            19922944   2271765   9161676  20% /\r\n/dev/simfs            19922944   2271765   9160970  20% /\r\n/dev/simfs            19922944   2271765   9160321  20% /\r\n/dev/simfs            19922944   2271765   9159784  20% /\r\n/dev/simfs            19922944   2271765   9159151  20% /\r\n/dev/simfs            19922944   2271767   9158521  20% /\r\n/dev/simfs            19922944   2271767   9157930  20% /\r\n/dev/simfs            19922944   2271767   9157273  20% /\r\n/dev/simfs            19922944   2271767   9156616  20% /\r\n/dev/simfs            19922944   2271767   9155975  20% /\r\n/dev/simfs            19922944   2271767   9155258  20% /\r\n/dev/simfs            19922944   2271767   9154590  20% /\r\n/dev/simfs            19922944   2271767   9154021  20% /\r\n/dev/simfs            19922944   2271767   9153375  20% /\r\n/dev/simfs            19922944   2271767   9152654  20% /\r\n/dev/simfs            19922944   2271767   9152099  20% /\r\n/dev/simfs            19922944   2271767   9151494  20% /\r\n/dev/simfs            19922944   2271768   9150816  20% /\r\n/dev/simfs            19922944   2271768   9150208  20% /\r\n\r\n", "apellido"=>"", "nivel_jerarquico"=>""}}
+  [4;36;1mFormulario Load (1.0ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 9) [0m
+  [4;35;1mFormulario Update (1.2ms)[0m   [0mUPDATE "formularios" SET "updated_at" = '2009-07-22 19:31:54', "inmediato_superior" = '', "areas_dependientes" = '', "tipo_area" = '', "nombre" = '', "apellido" = '', "nivel_jerarquico" = '', "descripcion_funcion_principal" = '1. Coordinar la elaboración y/o reformulación de los Planes Sectoriales de Desarrollo de los sectores de Hidrocarburos y Electricidad con los Viceministerios, Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE, articulado al Plan Nacional de Desarrollo PND.
+2. Coordinar la elaboración y/o reformulación del Plan Estratégico Institucional con los Viceministerios, Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE, articulado al Plan Sectorial de Desarrollo.
+3. Coordinar la elaboración y/o reformulación del Programa de Operaciones Anual (POA) con los Viceministerios y Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE.
+4. Coordinar la formulación y ejecución del POA de la Dirección General de Planificación. 
+5. Compatibilizar el Programa de Operaciones Anual de la Entidad.
+6. Participar en comisiones técnicas, talleres y seminarios que sean encomendados por el Ministro.
+7. Desarrollar las funciones que le sean delegadas por el Ministro, dentro del ámbito de su competencia.
+', "cargo" = '' WHERE "id" = 9[0m
+Redirected to http://localhost:3000/formularios/9
+Completed in 45ms (DB: 2) | 302 Found [http://localhost/formularios/9]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-22 15:31:54) [GET]
+  Parameters: {"id"=>"9"}
+  [4;36;1mFormulario Load (1.6ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 9) [0m
+  [4;35;1mArea Load (0.7ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) [0m
+  [4;36;1mTipo Load (0.6ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mNivel Load (0.4ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 137ms (View: 65, DB: 4) | 200 OK [http://localhost/formularios/9]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-22 15:32:35) [GET]
+  Parameters: {"id"=>"9"}
+  [4;35;1mFormulario Load (1.1ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 9) [0m
+  [4;36;1mArea Load (0.7ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) [0m
+  [4;35;1mTipo Load (0.4ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;36;1mNivel Load (0.5ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 97ms (View: 29, DB: 4) | 200 OK [http://localhost/formularios/9]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-22 15:33:02) [GET]
+  Parameters: {"id"=>"9"}
+  [4;36;1mFormulario Load (1.6ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 9) [0m
+  [4;35;1mArea Load (0.7ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) [0m
+  [4;36;1mTipo Load (0.6ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mNivel Load (0.5ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 91ms (View: 28, DB: 4) | 200 OK [http://localhost/formularios/9]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-22 15:33:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#print (for 127.0.0.1 at 2009-07-22 15:33:28) [GET]
+  Parameters: {"mostrar"=>"true", "id"=>"9"}
+  [4;35;1mFormulario Load (1.7ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 9) [0m
+Rendering template within layouts/print
+Rendering formularios/show
+Completed in 48ms (View: 20, DB: 2) | 200 OK [http://localhost/formularios/9/print?mostrar=true]
+
+
+Processing FormulariosController#print (for 127.0.0.1 at 2009-07-22 15:33:51) [GET]
+  Parameters: {"mostrar"=>"true", "id"=>"9"}
+  [4;36;1mFormulario Load (1.6ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 9) [0m
+Rendering template within layouts/print
+Rendering formularios/show
+Completed in 39ms (View: 11, DB: 2) | 200 OK [http://localhost/formularios/9/print?mostrar=true]
+
+
+Processing FormulariosController#print (for 127.0.0.1 at 2009-07-22 15:37:01) [GET]
+  Parameters: {"mostrar"=>"true", "id"=>"9"}
+  [4;35;1mFormulario Load (1.0ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 9) [0m
+Rendering template within layouts/print
+Rendering formularios/show
+Completed in 28ms (View: 8, DB: 1) | 200 OK [http://localhost/formularios/9/print?mostrar=true]
+
+
+Processing FormulariosController#print (for 127.0.0.1 at 2009-07-22 15:37:05) [GET]
+  Parameters: {"mostrar"=>"true", "id"=>"9"}
+  [4;36;1mFormulario Load (1.1ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 9) [0m
+Rendering template within layouts/print
+Rendering formularios/show
+Completed in 107ms (View: 7, DB: 1) | 200 OK [http://localhost/formularios/9/print?mostrar=true]
+
+
+Processing FormulariosController#print (for 127.0.0.1 at 2009-07-22 15:37:28) [GET]
+  Parameters: {"mostrar"=>"true", "id"=>"9"}
+  [4;35;1mFormulario Load (1.1ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 9) [0m
+Rendering template within layouts/print
+Rendering formularios/show
+Completed in 36ms (View: 14, DB: 1) | 200 OK [http://localhost/formularios/9/print?mostrar=true]
+
+
+Processing FormulariosController#print (for 127.0.0.1 at 2009-07-22 15:37:41) [GET]
+  Parameters: {"mostrar"=>"true", "id"=>"9"}
+  [4;36;1mFormulario Load (1.1ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 9) [0m
+Rendering template within layouts/print
+Rendering formularios/show
+Completed in 32ms (View: 7, DB: 1) | 200 OK [http://localhost/formularios/9/print?mostrar=true]
+
+
+Processing FormulariosController#print (for 127.0.0.1 at 2009-07-22 15:39:15) [GET]
+  Parameters: {"mostrar"=>"true", "id"=>"9"}
+  [4;35;1mFormulario Load (1.1ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 9) [0m
+Rendering template within layouts/print
+Rendering formularios/show
+Completed in 35ms (View: 14, DB: 1) | 200 OK [http://localhost/formularios/9/print?mostrar=true]
+
+
+Processing FormulariosController#print (for 127.0.0.1 at 2009-07-22 15:44:34) [GET]
+  Parameters: {"mostrar"=>"true", "id"=>"9"}
+  [4;36;1mFormulario Load (1.0ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 9) [0m
+Rendering template within layouts/print
+Rendering formularios/show
+Completed in 38ms (View: 15, DB: 1) | 200 OK [http://localhost/formularios/9/print?mostrar=true]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-22 15:44:47) [GET]
+  Parameters: {"id"=>"9"}
+  [4;35;1mFormulario Load (1.1ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 9) [0m
+  [4;36;1mArea Load (0.7ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) [0m
+  [4;35;1mTipo Load (0.4ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;36;1mNivel Load (0.4ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 87ms (View: 21, DB: 4) | 200 OK [http://localhost/formularios/9]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-22 15:45:13) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-22 15:45:14) [GET]
+  [4;36;1mFormulario Load (10.2ms)[0m   [0;1mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [4;36;1mArea Load (0.6ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (1.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (0.7ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 14) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (1.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (0.6ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 20) ORDER BY lft ASC[0m
+Completed in 206ms (View: 178, DB: 15) | 200 OK [http://localhost/formularios]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-22 15:45:20) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mFormulario Load (2.0ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+  [4;35;1mArea Load (0.7ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 2) [0m
+  [4;36;1mTipo Load (0.7ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mNivel Load (0.4ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 88ms (View: 21, DB: 5) | 200 OK [http://localhost/formularios/3]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-22 15:45:37) [GET]
+  Parameters: {"id"=>"9"}
+  [4;35;1mFormulario Load (1.6ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 9) [0m
+  [4;36;1mArea Load (0.7ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) [0m
+  [4;35;1mTipo Load (0.7ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;36;1mNivel Load (0.6ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 90ms (View: 20, DB: 4) | 200 OK [http://localhost/formularios/9]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-22 15:45:43) [GET]
+  Parameters: {"id"=>"9"}
+  [4;36;1mFormulario Load (1.6ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 9) [0m
+  [4;35;1mArea Load (1.1ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) [0m
+  [4;36;1mTipo Load (0.5ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mNivel Load (1.0ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 189ms (View: 23, DB: 5) | 200 OK [http://localhost/formularios/9]
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-22 15:46:38) [GET]
+  [4;35;1mFormulario Load (7.3ms)[0m   [0mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [4;35;1mArea Load (0.7ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (1.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (0.7ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 14) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (0.6ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (1.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 20) ORDER BY lft ASC[0m
+Completed in 122ms (View: 94, DB: 12) | 200 OK [http://localhost/formularios]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-22 15:46:54) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mFormulario Load (1.4ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+  [4;36;1mArea Load (0.8ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) [0m
+  [4;35;1mTipo Load (0.4ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;36;1mNivel Load (0.4ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 82ms (View: 19, DB: 4) | 200 OK [http://localhost/formularios/3]
+
+
+Processing FormulariosController#edit (for 127.0.0.1 at 2009-07-22 15:46:58) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mFormulario Load (0.9ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/edit
+  [4;35;1mArea Load (10.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;36;1mNivel Load (0.9ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;35;1mTipo Load (0.7ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (80.1ms)
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 124ms (View: 92, DB: 14) | 200 OK [http://localhost/formularios/3/edit]
+
+
+Processing FormulariosController#update (for 127.0.0.1 at 2009-07-22 15:47:23) [PUT]
+  Parameters: {"commit"=>"Salvar", "authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "id"=>"3", "formulario"=>{"descripcion_funciones_especificas"=>"1. Coordinar la elaboración y/o reformulación de los Planes Sectoriales de Desarrollo de los sectores de Hidrocarburos y Electricidad con los Viceministerios, Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE, articulado al Plan Nacional de Desarrollo PND.\r\n2. Coordinar la elaboración y/o reformulación del Plan Estratégico Institucional con los Viceministerios, Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE, articulado al Plan Sectorial de Desarrollo.\r\n3. Coordinar la elaboración y/o reformulación del Programa de Operaciones Anual (POA) con los Viceministerios y Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE.\r\n4. Coordinar la formulación y ejecución del POA de la Dirección General de Planificación. \r\n5. Compatibilizar el Programa de Operaciones Anual de la Entidad.\r\n6. Participar en comisiones técnicas, talleres y seminarios que sean encomendados por el Ministro.\r\n7. Desarrollar las funciones que le sean delegadas por el Ministro, dentro del ámbito de su competencia.\r\n    ", "areas_dependientes"=>"", "nombre"=>"", "descripcion_funcion_principal"=>"Coordinar y articular los procesos de planificación estratégica y operativa con los Viceministerios, Direcciones generales y Unidades del Ministerio.", "relaciones_coordinacion_interna"=>"aksjhdf kashd", "inmediato_superior"=>"", "relacionamiento_interinstitucional"=>" asldjñfh askjd", "objectivo_area_funcional"=>"Sobarlos a todos", "ci"=>"", "tipo_area"=>"", "cargo"=>"", "principales_resultados"=>"Todos", "apellido"=>"", "nivel_jerarquico"=>""}}
+  [4;35;1mFormulario Load (1.6ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/edit
+  [4;36;1mArea Load (10.1ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (1.3ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;36;1mTipo Load (0.7ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (78.1ms)
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 142ms (View: 93, DB: 14) | 200 OK [http://localhost/formularios/3]
+
+
+Processing FormulariosController#update (for 127.0.0.1 at 2009-07-22 15:47:39) [PUT]
+  Parameters: {"commit"=>"Salvar", "authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "id"=>"3", "formulario"=>{"descripcion_funciones_especificas"=>"1. Coordinar la elaboración y/o reformulación de los Planes Sectoriales de Desarrollo de los sectores de Hidrocarburos y Electricidad con los Viceministerios, Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE, articulado al Plan Nacional de Desarrollo PND.\r\n2. Coordinar la elaboración y/o reformulación del Plan Estratégico Institucional con los Viceministerios, Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE, articulado al Plan Sectorial de Desarrollo.\r\n3. Coordinar la elaboración y/o reformulación del Programa de Operaciones Anual (POA) con los Viceministerios y Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE.\r\n4. Coordinar la formulación y ejecución del POA de la Dirección General de Planificación. \r\n5. Compatibilizar el Programa de Operaciones Anual de la Entidad.\r\n6. Participar en comisiones técnicas, talleres y seminarios que sean encomendados por el Ministro.\r\n7. Desarrollar las funciones que le sean delegadas por el Ministro, dentro del ámbito de su competencia.\r\n    ", "areas_dependientes"=>"", "nombre"=>"", "descripcion_funcion_principal"=>"Coordinar y articular los procesos de planificación estratégica y operativa con los Viceministerios, Direcciones generales y Unidades del Ministerio.", "relaciones_coordinacion_interna"=>"aksjhdf kashd", "inmediato_superior"=>"", "relacionamiento_interinstitucional"=>" asldjñfh askjd", "objectivo_area_funcional"=>"Sobarlos a todos", "ci"=>"3376951", "tipo_area"=>"", "cargo"=>"", "principales_resultados"=>"Todos", "apellido"=>"", "nivel_jerarquico"=>""}}
+  [4;36;1mFormulario Load (1.0ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+  [4;35;1mFormulario Update (0.6ms)[0m   [0mUPDATE "formularios" SET "updated_at" = '2009-07-22 19:47:39', "inmediato_superior" = '', "areas_dependientes" = '', "tipo_area" = '', "nombre" = '', "apellido" = '', "nivel_jerarquico" = '', "ci" = '3376951', "descripcion_funciones_especificas" = '1. Coordinar la elaboración y/o reformulación de los Planes Sectoriales de Desarrollo de los sectores de Hidrocarburos y Electricidad con los Viceministerios, Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE, articulado al Plan Nacional de Desarrollo PND.
+2. Coordinar la elaboración y/o reformulación del Plan Estratégico Institucional con los Viceministerios, Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE, articulado al Plan Sectorial de Desarrollo.
+3. Coordinar la elaboración y/o reformulación del Programa de Operaciones Anual (POA) con los Viceministerios y Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE.
+4. Coordinar la formulación y ejecución del POA de la Dirección General de Planificación. 
+5. Compatibilizar el Programa de Operaciones Anual de la Entidad.
+6. Participar en comisiones técnicas, talleres y seminarios que sean encomendados por el Ministro.
+7. Desarrollar las funciones que le sean delegadas por el Ministro, dentro del ámbito de su competencia.
+ ', "descripcion_funcion_principal" = 'Coordinar y articular los procesos de planificación estratégica y operativa con los Viceministerios, Direcciones generales y Unidades del Ministerio.', "cargo" = '' WHERE "id" = 3[0m
+Redirected to http://localhost:3000/formularios/3
+Completed in 44ms (DB: 2) | 302 Found [http://localhost/formularios/3]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-22 15:47:39) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mFormulario Load (0.9ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+  [4;35;1mArea Load (0.7ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 2) [0m
+  [4;36;1mTipo Load (0.4ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mNivel Load (0.7ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 84ms (View: 20, DB: 3) | 200 OK [http://localhost/formularios/3]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-22 15:48:08) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mFormulario Load (1.0ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+  [4;36;1mArea Load (0.7ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) [0m
+  [4;35;1mTipo Load (0.4ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;36;1mNivel Load (0.4ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 87ms (View: 19, DB: 3) | 200 OK [http://localhost/formularios/3]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-22 15:48:58) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mFormulario Load (1.0ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+  [4;35;1mArea Load (0.7ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 2) [0m
+  [4;36;1mTipo Load (0.7ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mNivel Load (0.5ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 200ms (View: 34, DB: 3) | 200 OK [http://localhost/formularios/3]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-22 15:49:15) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mFormulario Load (1.0ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+  [4;36;1mArea Load (0.8ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) [0m
+  [4;35;1mTipo Load (0.4ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;36;1mNivel Load (0.4ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 94ms (View: 29, DB: 3) | 200 OK [http://localhost/formularios/3]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-22 15:49:35) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mFormulario Load (0.9ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+  [4;35;1mArea Load (0.7ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 2) [0m
+  [4;36;1mTipo Load (0.5ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mNivel Load (0.5ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 181ms (View: 31, DB: 3) | 200 OK [http://localhost/formularios/3]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-22 15:50:28) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mFormulario Load (1.2ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+  [4;36;1mArea Load (0.7ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) [0m
+  [4;35;1mTipo Load (0.4ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;36;1mNivel Load (0.5ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 94ms (View: 27, DB: 3) | 200 OK [http://localhost/formularios/3]
+
+
+Processing FormulariosController#index (for 127.0.0.1 at 2009-07-22 15:50:37) [GET]
+  [4;36;1mFormulario Load (6.4ms)[0m   [0;1mSELECT * FROM "formularios" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering formularios/index
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [4;36;1mArea Load (1.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (1.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (0.7ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 14) ORDER BY lft ASC[0m
+  [4;36;1mArea Load (0.7ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 3) ORDER BY lft ASC[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 1) ORDER BY lft ASC[0m
+  [4;35;1mArea Load (1.1ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 20) ORDER BY lft ASC[0m
+Completed in 213ms (View: 186, DB: 11) | 200 OK [http://localhost/formularios]
+
+
+Processing FormulariosController#edit (for 127.0.0.1 at 2009-07-22 15:50:44) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mFormulario Load (1.6ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/edit
+  [4;35;1mArea Load (9.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;36;1mNivel Load (0.9ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;35;1mTipo Load (0.7ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (75.8ms)
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 117ms (View: 85, DB: 13) | 200 OK [http://localhost/formularios/3/edit]
+
+
+Processing FormulariosController#update (for 127.0.0.1 at 2009-07-22 15:51:04) [PUT]
+  Parameters: {"commit"=>"Salvar", "authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "id"=>"3", "formulario"=>{"descripcion_funciones_especificas"=>"1. Coordinar la elaboración y/o reformulación de los Planes Sectoriales de Desarrollo de los sectores de Hidrocarburos y Electricidad con los Viceministerios, Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE, articulado al Plan Nacional de Desarrollo PND.\r\n2. Coordinar la elaboración y/o reformulación del Plan Estratégico Institucional con los Viceministerios, Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE, articulado al Plan Sectorial de Desarrollo.\r\n3. Coordinar la elaboración y/o reformulación del Programa de Operaciones Anual (POA) con los Viceministerios y Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE.\r\n4. Coordinar la formulación y ejecución del POA de la Dirección General de Planificación. \r\n5. Compatibilizar el Programa de Operaciones Anual de la Entidad.\r\n6. Participar en comisiones técnicas, talleres y seminarios que sean encomendados por el Ministro.\r\n7. Desarrollar las funciones que le sean delegadas por el Ministro, dentro del ámbito de su competencia.\r\n    ", "areas_dependientes"=>"", "nombre"=>"", "descripcion_funcion_principal"=>"Coordinar y articular los procesos de planificación estratégica y operativa con los Viceministerios, Direcciones generales y Unidades del Ministerio.\r\n1.- Esto es una prueba\r\n2.- Esto es una prueba\r\n3.- Esto es una prueba", "relaciones_coordinacion_interna"=>"aksjhdf kashd", "inmediato_superior"=>"", "relacionamiento_interinstitucional"=>" asldjñfh askjd", "objectivo_area_funcional"=>"Sobarlos a todos", "ci"=>"3376951", "tipo_area"=>"", "cargo"=>"", "principales_resultados"=>"Todos", "apellido"=>"", "nivel_jerarquico"=>""}}
+  [4;35;1mFormulario Load (1.0ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+  [4;36;1mFormulario Update (0.6ms)[0m   [0;1mUPDATE "formularios" SET "updated_at" = '2009-07-22 19:51:04', "descripcion_funcion_principal" = 'Coordinar y articular los procesos de planificación estratégica y operativa con los Viceministerios, Direcciones generales y Unidades del Ministerio.
+1.- Esto es una prueba
+2.- Esto es una prueba
+3.- Esto es una prueba' WHERE "id" = 3[0m
+Redirected to http://localhost:3000/formularios/3
+Completed in 40ms (DB: 2) | 302 Found [http://localhost/formularios/3]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-22 15:51:04) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mFormulario Load (1.6ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+  [4;36;1mArea Load (0.7ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) [0m
+  [4;35;1mTipo Load (0.5ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;36;1mNivel Load (0.4ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 192ms (View: 24, DB: 4) | 200 OK [http://localhost/formularios/3]
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing FormulariosController#edit (for 127.0.0.1 at 2009-07-22 15:53:33) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mFormulario Load (1.0ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/edit
+  [4;35;1mArea Load (10.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;36;1mNivel Load (1.3ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;35;1mTipo Load (0.7ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (79.8ms)
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 125ms (View: 91, DB: 15) | 200 OK [http://localhost/formularios/3/edit]
+
+
+Processing FormulariosController#update (for 127.0.0.1 at 2009-07-22 15:53:41) [PUT]
+  Parameters: {"commit"=>"Salvar", "authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "id"=>"3", "formulario"=>{"descripcion_funciones_especificas"=>"1. Coordinar la elaboración y/o reformulación de los Planes Sectoriales de Desarrollo de los sectores de Hidrocarburos y Electricidad con los Viceministerios, Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE, articulado al Plan Nacional de Desarrollo PND.\r\n2. Coordinar la elaboración y/o reformulación del Plan Estratégico Institucional con los Viceministerios, Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE, articulado al Plan Sectorial de Desarrollo.\r\n3. Coordinar la elaboración y/o reformulación del Programa de Operaciones Anual (POA) con los Viceministerios y Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE.\r\n4. Coordinar la formulación y ejecución del POA de la Dirección General de Planificación. \r\n5. Compatibilizar el Programa de Operaciones Anual de la Entidad.\r\n6. Participar en comisiones técnicas, talleres y seminarios que sean encomendados por el Ministro.\r\n7. Desarrollar las funciones que le sean delegadas por el Ministro, dentro del ámbito de su competencia.\r\n    ", "areas_dependientes"=>"", "nombre"=>"", "descripcion_funcion_principal"=>"Coordinar y articular los procesos de planificación estratégica y operativa con los Viceministerios, Direcciones generales y Unidades del Ministerio.\r\n1.- Esto es una prueba\r\n2.- Esto es una prueba\r\n3.- Esto es una prueba", "relaciones_coordinacion_interna"=>"aksjhdf kashd", "inmediato_superior"=>"", "relacionamiento_interinstitucional"=>" asldjñfh askjd", "objectivo_area_funcional"=>"Sobarlos a todos", "ci"=>"3376951", "tipo_area"=>"", "cargo"=>"", "principales_resultados"=>"Todos", "apellido"=>"", "nivel_jerarquico"=>""}}
+  [4;35;1mFormulario Load (0.9ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+Redirected to http://localhost:3000/formularios/3
+Completed in 31ms (DB: 1) | 302 Found [http://localhost/formularios/3]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-22 15:53:42) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mFormulario Load (1.5ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+  [4;35;1mArea Load (0.7ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 2) [0m
+  [4;36;1mTipo Load (0.7ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mNivel Load (0.5ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 203ms (View: 24, DB: 4) | 200 OK [http://localhost/formularios/3]
+
+
+Processing FormulariosController#edit (for 127.0.0.1 at 2009-07-22 15:53:55) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mFormulario Load (1.0ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/edit
+  [4;36;1mArea Load (9.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (0.8ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;36;1mTipo Load (0.7ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (74.3ms)
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 116ms (View: 83, DB: 13) | 200 OK [http://localhost/formularios/3/edit]
+
+
+Processing FormulariosController#update (for 127.0.0.1 at 2009-07-22 15:54:45) [PUT]
+  Parameters: {"commit"=>"Salvar", "authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "id"=>"3", "formulario"=>{"descripcion_funciones_especificas"=>"1. Coordinar la elaboración y/o reformulación de los Planes Sectoriales de Desarrollo de los sectores de Hidrocarburos y Electricidad con los Viceministerios, Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE, articulado al Plan Nacional de Desarrollo PND.\r\n2. Coordinar la elaboración y/o reformulación del Plan Estratégico Institucional con los Viceministerios, Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE, articulado al Plan Sectorial de Desarrollo.\r\n3. Coordinar la elaboración y/o reformulación del Programa de Operaciones Anual (POA) con los Viceministerios y Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE.\r\n4. Coordinar la formulación y ejecución del POA de la Dirección General de Planificación. \r\n5. Compatibilizar el Programa de Operaciones Anual de la Entidad.\r\n6. Participar en comisiones técnicas, talleres y seminarios que sean encomendados por el Ministro.\r\n7. Desarrollar las funciones que le sean delegadas por el Ministro, dentro del ámbito de su competencia.\r\n    ", "areas_dependientes"=>"", "nombre"=>"", "descripcion_funcion_principal"=>"Coordinar y articular los procesos de planificación estratégica y operativa con los Viceministerios, Direcciones generales y Unidades del Ministerio.\r\n1.- Esto es una prueba\r\n2.- Esto es una prueba\r\n3.- Esto es una prueba", "relaciones_coordinacion_interna"=>"aksjhdf kashd", "inmediato_superior"=>"", "relacionamiento_interinstitucional"=>" asldjñfh askjd", "objectivo_area_funcional"=>"Sobarlos a todos", "ci"=>"3376951", "tipo_area"=>"", "cargo"=>"", "principales_resultados"=>"Todos", "apellido"=>"", "nivel_jerarquico"=>""}}
+  [4;36;1mFormulario Load (1.4ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+Redirected to http://localhost:3000/formularios/3
+Completed in 8618ms (DB: 1) | 302 Found [http://localhost/formularios/3]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-22 15:54:54) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mFormulario Load (1.3ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+  [4;36;1mArea Load (1.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) [0m
+  [4;35;1mTipo Load (0.7ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;36;1mNivel Load (0.6ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 166ms (View: 59, DB: 4) | 200 OK [http://localhost/formularios/3]
+
+
+Processing FormulariosController#edit (for 127.0.0.1 at 2009-07-22 15:55:02) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mFormulario Load (1.5ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/edit
+  [4;35;1mArea Load (15.6ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;36;1mNivel Load (1.3ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;35;1mTipo Load (1.0ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (219.8ms)
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 298ms (View: 252, DB: 20) | 200 OK [http://localhost/formularios/3/edit]
+
+
+Processing FormulariosController#update (for 127.0.0.1 at 2009-07-22 15:55:06) [PUT]
+  Parameters: {"commit"=>"Salvar", "authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "id"=>"3", "formulario"=>{"descripcion_funciones_especificas"=>"1. Coordinar la elaboración y/o reformulación de los Planes Sectoriales de Desarrollo de los sectores de Hidrocarburos y Electricidad con los Viceministerios, Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE, articulado al Plan Nacional de Desarrollo PND.\r\n2. Coordinar la elaboración y/o reformulación del Plan Estratégico Institucional con los Viceministerios, Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE, articulado al Plan Sectorial de Desarrollo.\r\n3. Coordinar la elaboración y/o reformulación del Programa de Operaciones Anual (POA) con los Viceministerios y Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE.\r\n4. Coordinar la formulación y ejecución del POA de la Dirección General de Planificación. \r\n5. Compatibilizar el Programa de Operaciones Anual de la Entidad.\r\n6. Participar en comisiones técnicas, talleres y seminarios que sean encomendados por el Ministro.\r\n7. Desarrollar las funciones que le sean delegadas por el Ministro, dentro del ámbito de su competencia.\r\n    ", "areas_dependientes"=>"", "nombre"=>"", "descripcion_funcion_principal"=>"Coordinar y articular los procesos de planificación estratégica y operativa con los Viceministerios, Direcciones generales y Unidades del Ministerio.\r\n1.- Esto es una prueba\r\n2.- Esto es una prueba\r\n3.- Esto es una prueba", "relaciones_coordinacion_interna"=>"aksjhdf kashd", "inmediato_superior"=>"", "relacionamiento_interinstitucional"=>" asldjñfh askjd", "objectivo_area_funcional"=>"Sobarlos a todos", "ci"=>"3376951", "tipo_area"=>"", "cargo"=>"", "principales_resultados"=>"Todos", "apellido"=>"", "nivel_jerarquico"=>""}}
+  [4;35;1mFormulario Load (1.6ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+Redirected to http://localhost:3000/formularios/3
+Completed in 11003ms (DB: 2) | 302 Found [http://localhost/formularios/3]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-22 15:55:17) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mFormulario Load (1.5ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+  [4;35;1mArea Load (0.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 2) [0m
+  [4;36;1mTipo Load (0.9ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mNivel Load (0.6ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 112ms (View: 28, DB: 5) | 200 OK [http://localhost/formularios/3]
+  [4;35;1mFormulario Load (1.2ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+
+
+Processing FormulariosController#edit (for 127.0.0.1 at 2009-07-22 16:01:03) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mFormulario Load (2.2ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/edit
+  [4;36;1mArea Load (16.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (1.3ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;36;1mTipo Load (1.5ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (117.1ms)
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 283ms (View: 132, DB: 23) | 200 OK [http://localhost/formularios/3/edit]
+
+
+Processing FormulariosController#update (for 127.0.0.1 at 2009-07-22 16:01:08) [PUT]
+  Parameters: {"commit"=>"Salvar", "authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "id"=>"3", "formulario"=>{"descripcion_funciones_especificas"=>"1. Coordinar la elaboración y/o reformulación de los Planes Sectoriales de Desarrollo de los sectores de Hidrocarburos y Electricidad con los Viceministerios, Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE, articulado al Plan Nacional de Desarrollo PND.\r\n2. Coordinar la elaboración y/o reformulación del Plan Estratégico Institucional con los Viceministerios, Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE, articulado al Plan Sectorial de Desarrollo.\r\n3. Coordinar la elaboración y/o reformulación del Programa de Operaciones Anual (POA) con los Viceministerios y Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE.\r\n4. Coordinar la formulación y ejecución del POA de la Dirección General de Planificación. \r\n5. Compatibilizar el Programa de Operaciones Anual de la Entidad.\r\n6. Participar en comisiones técnicas, talleres y seminarios que sean encomendados por el Ministro.\r\n7. Desarrollar las funciones que le sean delegadas por el Ministro, dentro del ámbito de su competencia.\r\n    ", "areas_dependientes"=>"", "nombre"=>"", "descripcion_funcion_principal"=>"Coordinar y articular los procesos de planificación estratégica y operativa con los Viceministerios, Direcciones generales y Unidades del Ministerio.\r\n1.- Esto es una prueba\r\n2.- Esto es una prueba\r\n3.- Esto es una prueba", "relaciones_coordinacion_interna"=>"aksjhdf kashd", "inmediato_superior"=>"", "relacionamiento_interinstitucional"=>" asldjñfh askjd", "objectivo_area_funcional"=>"Sobarlos a todos", "ci"=>"3376951", "tipo_area"=>"", "cargo"=>"", "principales_resultados"=>"Todos", "apellido"=>"", "nivel_jerarquico"=>""}}
+  [4;36;1mFormulario Load (1.9ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+Redirected to http://localhost:3000/formularios/3
+Completed in 53ms (DB: 2) | 302 Found [http://localhost/formularios/3]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-22 16:01:08) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mFormulario Load (1.4ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) [0m
+  [4;35;1mTipo Load (0.8ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;36;1mNivel Load (0.5ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 123ms (View: 32, DB: 5) | 200 OK [http://localhost/formularios/3]
+
+
+Processing FormulariosController#edit (for 127.0.0.1 at 2009-07-22 16:01:16) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mFormulario Load (1.4ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/edit
+  [4;35;1mArea Load (16.2ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;36;1mNivel Load (1.7ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;35;1mTipo Load (1.0ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (119.6ms)
+  [4;36;1mUser Load (1.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 182ms (View: 130, DB: 22) | 200 OK [http://localhost/formularios/3/edit]
+
+
+Processing FormulariosController#update (for 127.0.0.1 at 2009-07-22 16:01:20) [PUT]
+  Parameters: {"commit"=>"Salvar", "authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "id"=>"3", "formulario"=>{"descripcion_funciones_especificas"=>"1. Coordinar la elaboración y/o reformulación de los Planes Sectoriales de Desarrollo de los sectores de Hidrocarburos y Electricidad con los Viceministerios, Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE, articulado al Plan Nacional de Desarrollo PND.\r\n2. Coordinar la elaboración y/o reformulación del Plan Estratégico Institucional con los Viceministerios, Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE, articulado al Plan Sectorial de Desarrollo.\r\n3. Coordinar la elaboración y/o reformulación del Programa de Operaciones Anual (POA) con los Viceministerios y Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE.\r\n4. Coordinar la formulación y ejecución del POA de la Dirección General de Planificación. \r\n5. Compatibilizar el Programa de Operaciones Anual de la Entidad.\r\n6. Participar en comisiones técnicas, talleres y seminarios que sean encomendados por el Ministro.\r\n7. Desarrollar las funciones que le sean delegadas por el Ministro, dentro del ámbito de su competencia.\r\n    ", "areas_dependientes"=>"", "nombre"=>"", "descripcion_funcion_principal"=>"Coordinar y articular los procesos de planificación estratégica y operativa con los Viceministerios, Direcciones generales y Unidades del Ministerio.\r\n1.- Esto es una prueba\r\n2.- Esto es una prueba\r\n3.- Esto es una prueba", "relaciones_coordinacion_interna"=>"aksjhdf kashd", "inmediato_superior"=>"", "relacionamiento_interinstitucional"=>" asldjñfh askjd", "objectivo_area_funcional"=>"Sobarlos a todos", "ci"=>"3376951", "tipo_area"=>"", "cargo"=>"", "principales_resultados"=>"Todos", "apellido"=>"", "nivel_jerarquico"=>""}}
+  [4;35;1mFormulario Load (1.4ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+Redirected to http://localhost:3000/formularios/3
+Completed in 43ms (DB: 1) | 302 Found [http://localhost/formularios/3]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-22 16:01:20) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mFormulario Load (1.3ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+  [4;35;1mArea Load (0.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 2) [0m
+  [4;36;1mTipo Load (0.6ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mNivel Load (0.6ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 117ms (View: 29, DB: 4) | 200 OK [http://localhost/formularios/3]
+
+
+Processing FormulariosController#edit (for 127.0.0.1 at 2009-07-22 16:01:24) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mFormulario Load (2.2ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/edit
+  [4;36;1mArea Load (17.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (1.2ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;36;1mTipo Load (1.5ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (111.6ms)
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 175ms (View: 125, DB: 23) | 200 OK [http://localhost/formularios/3/edit]
+
+
+Processing FormulariosController#update (for 127.0.0.1 at 2009-07-22 16:01:44) [PUT]
+  Parameters: {"commit"=>"Salvar", "authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "id"=>"3", "formulario"=>{"descripcion_funciones_especificas"=>"1. Coordinar la elaboración y/o reformulación de los Planes Sectoriales de Desarrollo de los sectores de Hidrocarburos y Electricidad con los Viceministerios, Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE, articulado al Plan Nacional de Desarrollo PND.\r\n2. Coordinar la elaboración y/o reformulación del Plan Estratégico Institucional con los Viceministerios, Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE, articulado al Plan Sectorial de Desarrollo.\r\n3. Coordinar la elaboración y/o reformulación del Programa de Operaciones Anual (POA) con los Viceministerios y Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE.\r\n4. Coordinar la formulación y ejecución del POA de la Dirección General de Planificación. \r\n5. Compatibilizar el Programa de Operaciones Anual de la Entidad.\r\n6. Participar en comisiones técnicas, talleres y seminarios que sean encomendados por el Ministro.\r\n7. Desarrollar las funciones que le sean delegadas por el Ministro, dentro del ámbito de su competencia.\r\n    ", "areas_dependientes"=>"", "nombre"=>"", "descripcion_funcion_principal"=>"Coordinar y articular los procesos de planificación estratégica y operativa con los Viceministerios, Direcciones generales y Unidades del Ministerio.\r\n1.- Esto es una prueba\r\n2.- Esto es una prueba\r\n3.- Esto es una prueba", "relaciones_coordinacion_interna"=>"aksjhdf kashd", "inmediato_superior"=>"", "relacionamiento_interinstitucional"=>" asldjñfh askjd", "objectivo_area_funcional"=>"Sobarlos a todos", "ci"=>"3376951", "tipo_area"=>"", "cargo"=>"", "principales_resultados"=>"Todos", "apellido"=>"", "nivel_jerarquico"=>""}}
+  [4;36;1mFormulario Load (1.4ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+Redirected to http://localhost:3000/formularios/3
+Completed in 37983ms (DB: 1) | 302 Found [http://localhost/formularios/3]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-22 16:02:22) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mFormulario Load (1.3ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) [0m
+  [4;35;1mTipo Load (0.8ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;36;1mNivel Load (0.6ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 117ms (View: 29, DB: 4) | 200 OK [http://localhost/formularios/3]
+
+
+Processing FormulariosController#edit (for 127.0.0.1 at 2009-07-22 16:08:12) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mFormulario Load (1.9ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/edit
+  [4;35;1mArea Load (20.2ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;36;1mNivel Load (1.2ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;35;1mTipo Load (1.4ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (116.1ms)
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 178ms (View: 125, DB: 26) | 200 OK [http://localhost/formularios/3/edit]
+
+
+Processing FormulariosController#update (for 127.0.0.1 at 2009-07-22 16:08:15) [PUT]
+  Parameters: {"commit"=>"Salvar", "authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "id"=>"3", "formulario"=>{"descripcion_funciones_especificas"=>"1. Coordinar la elaboración y/o reformulación de los Planes Sectoriales de Desarrollo de los sectores de Hidrocarburos y Electricidad con los Viceministerios, Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE, articulado al Plan Nacional de Desarrollo PND.\r\n2. Coordinar la elaboración y/o reformulación del Plan Estratégico Institucional con los Viceministerios, Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE, articulado al Plan Sectorial de Desarrollo.\r\n3. Coordinar la elaboración y/o reformulación del Programa de Operaciones Anual (POA) con los Viceministerios y Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE.\r\n4. Coordinar la formulación y ejecución del POA de la Dirección General de Planificación. \r\n5. Compatibilizar el Programa de Operaciones Anual de la Entidad.\r\n6. Participar en comisiones técnicas, talleres y seminarios que sean encomendados por el Ministro.\r\n7. Desarrollar las funciones que le sean delegadas por el Ministro, dentro del ámbito de su competencia.\r\n    ", "areas_dependientes"=>"", "nombre"=>"", "descripcion_funcion_principal"=>"Coordinar y articular los procesos de planificación estratégica y operativa con los Viceministerios, Direcciones generales y Unidades del Ministerio.\r\n1.- Esto es una prueba\r\n2.- Esto es una prueba\r\n3.- Esto es una prueba", "relaciones_coordinacion_interna"=>"aksjhdf kashd", "inmediato_superior"=>"", "relacionamiento_interinstitucional"=>" asldjñfh askjd", "objectivo_area_funcional"=>"Sobarlos a todos", "ci"=>"3376951", "tipo_area"=>"", "cargo"=>"", "principales_resultados"=>"Todos", "apellido"=>"", "nivel_jerarquico"=>""}}
+  [4;35;1mFormulario Load (1.3ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+Redirected to http://localhost:3000/formularios/3
+Completed in 28156ms (DB: 1) | 302 Found [http://localhost/formularios/3]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-22 16:08:44) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mFormulario Load (1.3ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+  [4;35;1mArea Load (0.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 2) [0m
+  [4;36;1mTipo Load (0.5ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mNivel Load (0.5ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 206ms (View: 46, DB: 4) | 200 OK [http://localhost/formularios/3]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-22 16:08:47) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mFormulario Load (1.3ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) [0m
+  [4;35;1mTipo Load (0.6ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;36;1mNivel Load (0.6ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 116ms (View: 30, DB: 4) | 200 OK [http://localhost/formularios/3]
+
+
+Processing FormulariosController#edit (for 127.0.0.1 at 2009-07-22 16:08:51) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mFormulario Load (1.3ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/edit
+  [4;35;1mArea Load (15.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;36;1mNivel Load (1.7ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;35;1mTipo Load (1.4ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (126.5ms)
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 276ms (View: 228, DB: 21) | 200 OK [http://localhost/formularios/3/edit]
+
+
+Processing FormulariosController#update (for 127.0.0.1 at 2009-07-22 16:08:54) [PUT]
+  Parameters: {"commit"=>"Salvar", "authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "id"=>"3", "formulario"=>{"descripcion_funciones_especificas"=>"1. Coordinar la elaboración y/o reformulación de los Planes Sectoriales de Desarrollo de los sectores de Hidrocarburos y Electricidad con los Viceministerios, Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE, articulado al Plan Nacional de Desarrollo PND.\r\n2. Coordinar la elaboración y/o reformulación del Plan Estratégico Institucional con los Viceministerios, Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE, articulado al Plan Sectorial de Desarrollo.\r\n3. Coordinar la elaboración y/o reformulación del Programa de Operaciones Anual (POA) con los Viceministerios y Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE.\r\n4. Coordinar la formulación y ejecución del POA de la Dirección General de Planificación. \r\n5. Compatibilizar el Programa de Operaciones Anual de la Entidad.\r\n6. Participar en comisiones técnicas, talleres y seminarios que sean encomendados por el Ministro.\r\n7. Desarrollar las funciones que le sean delegadas por el Ministro, dentro del ámbito de su competencia.\r\n    ", "areas_dependientes"=>"", "nombre"=>"", "descripcion_funcion_principal"=>"Coordinar y articular los procesos de planificación estratégica y operativa con los Viceministerios, Direcciones generales y Unidades del Ministerio.\r\n1.- Esto es una prueba\r\n2.- Esto es una prueba\r\n3.- Esto es una prueba", "relaciones_coordinacion_interna"=>"aksjhdf kashd", "inmediato_superior"=>"", "relacionamiento_interinstitucional"=>" asldjñfh askjd", "objectivo_area_funcional"=>"Sobarlos a todos", "ci"=>"3376951", "tipo_area"=>"", "cargo"=>"", "principales_resultados"=>"Todos", "apellido"=>"", "nivel_jerarquico"=>""}}
+  [4;35;1mFormulario Load (1.4ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+Redirected to http://localhost:3000/formularios/3
+Completed in 24023ms (DB: 1) | 302 Found [http://localhost/formularios/3]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-22 16:09:18) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mFormulario Load (1.4ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+  [4;35;1mArea Load (1.4ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 2) [0m
+  [4;36;1mTipo Load (0.7ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mNivel Load (0.9ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 115ms (View: 27, DB: 5) | 200 OK [http://localhost/formularios/3]
+
+
+Processing FormulariosController#edit (for 127.0.0.1 at 2009-07-22 16:09:22) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mFormulario Load (1.4ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/edit
+  [4;36;1mArea Load (13.2ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (1.2ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;36;1mTipo Load (23.1ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (216.2ms)
+  [4;35;1mUser Load (1.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 285ms (View: 219, DB: 40) | 200 OK [http://localhost/formularios/3/edit]
+
+
+Processing FormulariosController#update (for 127.0.0.1 at 2009-07-22 16:09:25) [PUT]
+  Parameters: {"commit"=>"Salvar", "authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "id"=>"3", "formulario"=>{"descripcion_funciones_especificas"=>"1. Coordinar la elaboración y/o reformulación de los Planes Sectoriales de Desarrollo de los sectores de Hidrocarburos y Electricidad con los Viceministerios, Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE, articulado al Plan Nacional de Desarrollo PND.\r\n2. Coordinar la elaboración y/o reformulación del Plan Estratégico Institucional con los Viceministerios, Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE, articulado al Plan Sectorial de Desarrollo.\r\n3. Coordinar la elaboración y/o reformulación del Programa de Operaciones Anual (POA) con los Viceministerios y Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE.\r\n4. Coordinar la formulación y ejecución del POA de la Dirección General de Planificación. \r\n5. Compatibilizar el Programa de Operaciones Anual de la Entidad.\r\n6. Participar en comisiones técnicas, talleres y seminarios que sean encomendados por el Ministro.\r\n7. Desarrollar las funciones que le sean delegadas por el Ministro, dentro del ámbito de su competencia.\r\n    ", "areas_dependientes"=>"", "nombre"=>"", "descripcion_funcion_principal"=>"Coordinar y articular los procesos de planificación estratégica y operativa con los Viceministerios, Direcciones generales y Unidades del Ministerio.\r\n1.- Esto es una prueba\r\n2.- Esto es una prueba\r\n3.- Esto es una prueba", "relaciones_coordinacion_interna"=>"aksjhdf kashd", "inmediato_superior"=>"", "relacionamiento_interinstitucional"=>" asldjñfh askjd", "objectivo_area_funcional"=>"Sobarlos a todos", "ci"=>"3376951", "tipo_area"=>"", "cargo"=>"", "principales_resultados"=>"Todos", "apellido"=>"", "nivel_jerarquico"=>""}}
+  [4;36;1mFormulario Load (1.4ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+Redirected to http://localhost:3000/formularios/3
+Completed in 84222ms (DB: 1) | 302 Found [http://localhost/formularios/3]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-22 16:10:50) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mFormulario Load (2.2ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+  [4;36;1mArea Load (0.9ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."id" = 2) [0m
+  [4;35;1mTipo Load (0.8ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;36;1mNivel Load (0.5ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 124ms (View: 29, DB: 5) | 200 OK [http://localhost/formularios/3]
+
+
+Processing FormulariosController#edit (for 127.0.0.1 at 2009-07-22 16:10:58) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mFormulario Load (1.6ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/edit
+  [4;35;1mArea Load (15.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;36;1mNivel Load (1.9ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;35;1mTipo Load (1.1ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (146.9ms)
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 240ms (View: 190, DB: 21) | 200 OK [http://localhost/formularios/3/edit]
+
+
+Processing FormulariosController#update (for 127.0.0.1 at 2009-07-22 16:11:01) [PUT]
+  Parameters: {"commit"=>"Salvar", "authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "id"=>"3", "formulario"=>{"descripcion_funciones_especificas"=>"1. Coordinar la elaboración y/o reformulación de los Planes Sectoriales de Desarrollo de los sectores de Hidrocarburos y Electricidad con los Viceministerios, Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE, articulado al Plan Nacional de Desarrollo PND.\r\n2. Coordinar la elaboración y/o reformulación del Plan Estratégico Institucional con los Viceministerios, Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE, articulado al Plan Sectorial de Desarrollo.\r\n3. Coordinar la elaboración y/o reformulación del Programa de Operaciones Anual (POA) con los Viceministerios y Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE.\r\n4. Coordinar la formulación y ejecución del POA de la Dirección General de Planificación. \r\n5. Compatibilizar el Programa de Operaciones Anual de la Entidad.\r\n6. Participar en comisiones técnicas, talleres y seminarios que sean encomendados por el Ministro.\r\n7. Desarrollar las funciones que le sean delegadas por el Ministro, dentro del ámbito de su competencia.\r\n    ", "areas_dependientes"=>"", "nombre"=>"", "descripcion_funcion_principal"=>"Coordinar y articular los procesos de planificación estratégica y operativa con los Viceministerios, Direcciones generales y Unidades del Ministerio.\r\n1.- Esto es una prueba\r\n2.- Esto es una prueba\r\n3.- Esto es una prueba", "relaciones_coordinacion_interna"=>"aksjhdf kashd", "inmediato_superior"=>"", "relacionamiento_interinstitucional"=>" asldjñfh askjd", "objectivo_area_funcional"=>"Sobarlos a todos", "ci"=>"3376951", "tipo_area"=>"", "cargo"=>"", "principales_resultados"=>"Todos", "apellido"=>"", "nivel_jerarquico"=>""}}
+  [4;35;1mFormulario Load (1.4ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+Redirected to http://localhost:3000/formularios/3
+Completed in 137355ms (DB: 1) | 302 Found [http://localhost/formularios/3]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-22 16:13:19) [GET]
+  Parameters: {"id"=>"3"}
+
+SyntaxError (/home/desarrollo/dev/ruby/manual_org_fun/app/models/formulario.rb:15: syntax error, unexpected '=', expecting kEND
+      self.send(campo.to_sym) = nl2br(send(campo))
+                               ^):
+  app/controllers/formularios_controller.rb:20:in `show'
+
+Rendered rescues/_trace (138.3ms)
+Rendered rescues/_request_and_response (14.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FormulariosController#update (for 127.0.0.1 at 2009-07-22 16:13:35) [PUT]
+  Parameters: {"commit"=>"Salvar", "authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "id"=>"3", "formulario"=>{"descripcion_funciones_especificas"=>"1. Coordinar la elaboración y/o reformulación de los Planes Sectoriales de Desarrollo de los sectores de Hidrocarburos y Electricidad con los Viceministerios, Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE, articulado al Plan Nacional de Desarrollo PND.\r\n2. Coordinar la elaboración y/o reformulación del Plan Estratégico Institucional con los Viceministerios, Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE, articulado al Plan Sectorial de Desarrollo.\r\n3. Coordinar la elaboración y/o reformulación del Programa de Operaciones Anual (POA) con los Viceministerios y Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE.\r\n4. Coordinar la formulación y ejecución del POA de la Dirección General de Planificación. \r\n5. Compatibilizar el Programa de Operaciones Anual de la Entidad.\r\n6. Participar en comisiones técnicas, talleres y seminarios que sean encomendados por el Ministro.\r\n7. Desarrollar las funciones que le sean delegadas por el Ministro, dentro del ámbito de su competencia.\r\n    ", "areas_dependientes"=>"", "nombre"=>"", "descripcion_funcion_principal"=>"Coordinar y articular los procesos de planificación estratégica y operativa con los Viceministerios, Direcciones generales y Unidades del Ministerio.\r\n1.- Esto es una prueba\r\n2.- Esto es una prueba\r\n3.- Esto es una prueba", "relaciones_coordinacion_interna"=>"aksjhdf kashd", "inmediato_superior"=>"", "relacionamiento_interinstitucional"=>" asldjñfh askjd", "objectivo_area_funcional"=>"Sobarlos a todos", "ci"=>"3376951", "tipo_area"=>"", "cargo"=>"", "principales_resultados"=>"Todos", "apellido"=>"", "nivel_jerarquico"=>""}}
+
+SyntaxError (/home/desarrollo/dev/ruby/manual_org_fun/app/models/formulario.rb:15: syntax error, unexpected '=', expecting kEND
+      self.send(campo.to_sym) = nl2br(send(campo))
+                               ^):
+  app/controllers/formularios_controller.rb:64:in `update'
+
+Rendered rescues/_trace (149.8ms)
+Rendered rescues/_request_and_response (1.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FormulariosController#update (for 127.0.0.1 at 2009-07-22 16:14:16) [PUT]
+  Parameters: {"commit"=>"Salvar", "authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "id"=>"3", "formulario"=>{"descripcion_funciones_especificas"=>"1. Coordinar la elaboración y/o reformulación de los Planes Sectoriales de Desarrollo de los sectores de Hidrocarburos y Electricidad con los Viceministerios, Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE, articulado al Plan Nacional de Desarrollo PND.\r\n2. Coordinar la elaboración y/o reformulación del Plan Estratégico Institucional con los Viceministerios, Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE, articulado al Plan Sectorial de Desarrollo.\r\n3. Coordinar la elaboración y/o reformulación del Programa de Operaciones Anual (POA) con los Viceministerios y Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE.\r\n4. Coordinar la formulación y ejecución del POA de la Dirección General de Planificación. \r\n5. Compatibilizar el Programa de Operaciones Anual de la Entidad.\r\n6. Participar en comisiones técnicas, talleres y seminarios que sean encomendados por el Ministro.\r\n7. Desarrollar las funciones que le sean delegadas por el Ministro, dentro del ámbito de su competencia.\r\n    ", "areas_dependientes"=>"", "nombre"=>"", "descripcion_funcion_principal"=>"Coordinar y articular los procesos de planificación estratégica y operativa con los Viceministerios, Direcciones generales y Unidades del Ministerio.\r\n1.- Esto es una prueba\r\n2.- Esto es una prueba\r\n3.- Esto es una prueba", "relaciones_coordinacion_interna"=>"aksjhdf kashd", "inmediato_superior"=>"", "relacionamiento_interinstitucional"=>" asldjñfh askjd", "objectivo_area_funcional"=>"Sobarlos a todos", "ci"=>"3376951", "tipo_area"=>"", "cargo"=>"", "principales_resultados"=>"Todos", "apellido"=>"", "nivel_jerarquico"=>""}}
+  [4;36;1mFormulario Load (2.2ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+  [4;35;1mFormulario Update (0.9ms)[0m   [0mUPDATE "formularios" SET "updated_at" = '2009-07-22 20:14:16', "descripcion_funciones_especificas" = '1. Coordinar la elaboración y/o reformulación de los Planes Sectoriales de Desarrollo de los sectores de Hidrocarburos y Electricidad con los Viceministerios, Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE, articulado al Plan Nacional de Desarrollo PND.<br/>2. Coordinar la elaboración y/o reformulación del Plan Estratégico Institucional con los Viceministerios, Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE, articulado al Plan Sectorial de Desarrollo.<br/>3. Coordinar la elaboración y/o reformulación del Programa de Operaciones Anual (POA) con los Viceministerios y Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE.<br/>4. Coordinar la formulación y ejecución del POA de la Dirección General de Planificación. <br/>5. Compatibilizar el Programa de Operaciones Anual de la Entidad.<br/>6. Participar en comisiones técnicas, talleres y seminarios que sean encomendados por el Ministro.<br/>7. Desarrollar las funciones que le sean delegadas por el Ministro, dentro del ámbito de su competencia.<br/> ', "descripcion_funcion_principal" = 'Coordinar y articular los procesos de planificación estratégica y operativa con los Viceministerios, Direcciones generales y Unidades del Ministerio.<br/>1.- Esto es una prueba<br/>2.- Esto es una prueba<br/>3.- Esto es una prueba' WHERE "id" = 3[0m
+Redirected to http://localhost:3000/formularios/3
+Completed in 74ms (DB: 3) | 302 Found [http://localhost/formularios/3]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-22 16:14:16) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mFormulario Load (1.4ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+  [4;35;1mArea Load (0.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 2) [0m
+  [4;36;1mTipo Load (0.6ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mNivel Load (0.6ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 131ms (View: 39, DB: 4) | 200 OK [http://localhost/formularios/3]
+
+
+Processing FormulariosController#edit (for 127.0.0.1 at 2009-07-22 16:14:31) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mFormulario Load (2.1ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/edit
+  [4;36;1mArea Load (19.3ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (1.2ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;36;1mTipo Load (1.4ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (125.1ms)
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 271ms (View: 220, DB: 25) | 200 OK [http://localhost/formularios/3/edit]
+
+
+Processing FormulariosController#edit (for 127.0.0.1 at 2009-07-22 16:19:27) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mFormulario Load (2.2ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/edit
+  [4;35;1mArea Load (16.6ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;36;1mNivel Load (1.1ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;35;1mTipo Load (0.9ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (113.7ms)
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 193ms (View: 127, DB: 22) | 200 OK [http://localhost/formularios/3/edit]
+
+
+Processing FormulariosController#edit (for 127.0.0.1 at 2009-07-22 16:19:42) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mFormulario Load (1.3ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+  app/models/formulario.rb:19:in `convertir_br2nl!'
+  app/controllers/formularios_controller.rb:41:in `edit'
+
+Rendered rescues/_trace (113.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FormulariosController#edit (for 127.0.0.1 at 2009-07-22 16:20:21) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mFormulario Load (1.4ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/edit
+  [4;35;1mArea Load (13.0ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;36;1mNivel Load (1.1ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;35;1mTipo Load (1.4ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (116.7ms)
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 176ms (View: 130, DB: 18) | 200 OK [http://localhost/formularios/3/edit]
+
+
+Processing FormulariosController#edit (for 127.0.0.1 at 2009-07-22 16:20:29) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mFormulario Load (1.4ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+  app/models/formulario.rb:19:in `convertir_br2nl!'
+  app/controllers/formularios_controller.rb:41:in `edit'
+
+Rendered rescues/_trace (111.6ms)
+Rendered rescues/_request_and_response (3.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FormulariosController#edit (for 127.0.0.1 at 2009-07-22 16:20:57) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mFormulario Load (2.2ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+  app/models/formulario.rb:19:in `convertir_br2nl!'
+  app/controllers/formularios_controller.rb:41:in `edit'
+
+Rendered rescues/_trace (115.6ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FormulariosController#edit (for 127.0.0.1 at 2009-07-22 16:21:23) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mFormulario Load (1.3ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/edit
+  [4;36;1mArea Load (17.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (1.7ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;36;1mTipo Load (0.9ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (114.6ms)
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 171ms (View: 126, DB: 22) | 200 OK [http://localhost/formularios/3/edit]
+
+
+Processing FormulariosController#edit (for 127.0.0.1 at 2009-07-22 16:24:13) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mFormulario Load (1.8ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+  app/models/formulario.rb:19:in `convertir_br2nl!'
+  app/controllers/formularios_controller.rb:41:in `edit'
+
+Rendered rescues/_trace (119.9ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FormulariosController#edit (for 127.0.0.1 at 2009-07-22 16:24:45) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mFormulario Load (1.3ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+  app/models/formulario.rb:19:in `convertir_br2nl!'
+  app/controllers/formularios_controller.rb:42:in `edit'
+
+Rendered rescues/_trace (118.2ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FormulariosController#edit (for 127.0.0.1 at 2009-07-22 16:26:03) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mFormulario Load (1.5ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+  app/models/formulario.rb:20:in `convertir_br2nl!'
+  app/controllers/formularios_controller.rb:41:in `edit'
+
+Rendered rescues/_trace (130.7ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FormulariosController#edit (for 127.0.0.1 at 2009-07-22 16:27:18) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mFormulario Load (1.3ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+  app/models/formulario.rb:21:in `convertir_br2nl!'
+  app/controllers/formularios_controller.rb:41:in `edit'
+
+Rendered rescues/_trace (121.6ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FormulariosController#edit (for 127.0.0.1 at 2009-07-22 16:28:16) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mFormulario Load (1.6ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+  app/models/formulario.rb:19:in `convertir_br2nl!'
+  app/controllers/formularios_controller.rb:41:in `edit'
+
+Rendered rescues/_trace (120.1ms)
+Rendered rescues/_request_and_response (2.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FormulariosController#edit (for 127.0.0.1 at 2009-07-22 16:28:29) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mFormulario Load (2.3ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+  app/models/formulario.rb:20:in `convertir_br2nl!'
+  app/controllers/formularios_controller.rb:41:in `edit'
+
+Rendered rescues/_trace (121.5ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FormulariosController#edit (for 127.0.0.1 at 2009-07-22 16:30:04) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mFormulario Load (1.6ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/edit
+  [4;35;1mArea Load (15.8ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;36;1mNivel Load (1.2ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;35;1mTipo Load (1.5ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (142.3ms)
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 3494ms (View: 190, DB: 21) | 200 OK [http://localhost/formularios/3/edit]
+
+
+Processing FormulariosController#edit (for 127.0.0.1 at 2009-07-22 16:30:17) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mFormulario Load (2.2ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/edit
+  [4;36;1mArea Load (15.0ms)[0m   [0;1mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;35;1mNivel Load (1.3ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;36;1mTipo Load (1.5ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (214.3ms)
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 282ms (View: 228, DB: 21) | 200 OK [http://localhost/formularios/3/edit]
+
+
+Processing FormulariosController#edit (for 127.0.0.1 at 2009-07-22 16:31:05) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mFormulario Load (2.2ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/edit
+  [4;35;1mArea Load (17.5ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."activo" = 't') ORDER BY lft ASC[0m
+  [4;36;1mNivel Load (1.7ms)[0m   [0;1mSELECT * FROM "niveles" WHERE ("niveles"."id" IN (1,2,3,4)) [0m
+  [4;35;1mTipo Load (1.1ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" IN (1,2,3)) [0m
+Rendered formularios/_forma (107.8ms)
+  [4;36;1mUser Load (1.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 173ms (View: 115, DB: 24) | 200 OK [http://localhost/formularios/3/edit]
+
+
+Processing FormulariosController#update (for 127.0.0.1 at 2009-07-22 16:31:11) [PUT]
+  Parameters: {"commit"=>"Salvar", "authenticity_token"=>"n2ZsQ8exJEHAEmldVW8RE3YJcB081GWFjDl+D15q1pM=", "id"=>"3", "formulario"=>{"descripcion_funciones_especificas"=>"1. Coordinar la elaboración y/o reformulación de los Planes Sectoriales de Desarrollo de los sectores de Hidrocarburos y Electricidad con los Viceministerios, Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE, articulado al Plan Nacional de Desarrollo PND.\r\n2. Coordinar la elaboración y/o reformulación del Plan Estratégico Institucional con los Viceministerios, Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE, articulado al Plan Sectorial de Desarrollo.\r\n3. Coordinar la elaboración y/o reformulación del Programa de Operaciones Anual (POA) con los Viceministerios y Direcciones Generales e Instituciones bajo tuición o dependencia orgánica y administrativa del MHE.\r\n4. Coordinar la formulación y ejecución del POA de la Dirección General de Planificación. \r\n5. Compatibilizar el Programa de Operaciones Anual de la Entidad.\r\n6. Participar en comisiones técnicas, talleres y seminarios que sean encomendados por el Ministro.\r\n7. Desarrollar las funciones que le sean delegadas por el Ministro, dentro del ámbito de su competencia.\r\n    ", "areas_dependientes"=>"", "nombre"=>"", "descripcion_funcion_principal"=>"Coordinar y articular los procesos de planificación estratégica y operativa con los Viceministerios, Direcciones generales y Unidades del Ministerio.\r\n1.- Esto es una prueba\r\n2.- Esto es una prueba\r\n3.- Esto es una prueba", "relaciones_coordinacion_interna"=>"aksjhdf kashd", "inmediato_superior"=>"", "relacionamiento_interinstitucional"=>" asldjñfh askjd", "objectivo_area_funcional"=>"Sobarlos a todos", "ci"=>"3376951", "tipo_area"=>"", "cargo"=>"", "principales_resultados"=>"Todos", "apellido"=>"", "nivel_jerarquico"=>""}}
+  [4;35;1mFormulario Load (1.6ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+Redirected to http://localhost:3000/formularios/3
+Completed in 159ms (DB: 2) | 302 Found [http://localhost/formularios/3]
+
+
+Processing FormulariosController#show (for 127.0.0.1 at 2009-07-22 16:31:11) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mFormulario Load (2.2ms)[0m   [0;1mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+  [4;35;1mArea Load (0.9ms)[0m   [0mSELECT * FROM "areas" WHERE ("areas"."id" = 2) [0m
+  [4;36;1mTipo Load (0.6ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mNivel Load (0.7ms)[0m   [0mSELECT * FROM "niveles" WHERE ("niveles"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering formularios/show
+  [4;36;1mUser Load (1.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Completed in 127ms (View: 39, DB: 6) | 200 OK [http://localhost/formularios/3]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-07-22 16:31:30) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing FormulariosController#print (for 127.0.0.1 at 2009-07-22 16:31:31) [GET]
+  Parameters: {"mostrar"=>"true", "id"=>"3"}
+  [4;35;1mFormulario Load (2.2ms)[0m   [0mSELECT * FROM "formularios" WHERE ("formularios"."id" = 3) [0m
+Rendering template within layouts/print
+Rendering formularios/show
+Completed in 72ms (View: 34, DB: 2) | 200 OK [http://localhost/formularios/3/print?mostrar=true]

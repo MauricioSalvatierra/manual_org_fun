@@ -2,162 +2,163 @@
 
 <%= link_to('Imprimir', print_formulario_path(@formulario, :mostrar => true), :target => '_blank' )%>
 <% end %>
-<style>
+<style type="text/css">
 #formulario_area_id{ width: 300px}
-#tableForm{width:555px}
+#tableForm{width:555px !important;}
 label{font-weight:bold}
 </style>
-<table id="tableForm">
-<tr>
-<td colspan=2>
-<div style="float:right" class="codigo">
-CODIGO <br>
-</div>
-<div style="float:left">
-<%= image_tag('escudo.jpg', :size => '150x80') %>
-</div>
-<div style="height:60px" class="title">
-MANUAL DE ORGANIZACION Y FUNCIONES
-</div>
-<div>
-</td>
-</tr>
-<tr>
-  <td>
-    <label>AREA:</label>
-  </td>
-  <td>
-    <%= @formulario.area %>
-  </td>
-</tr>
+<table id="tableForm" border="1" class="collapse">
+  <tr>
+    <td colspan=2>
+      <div style="float:right" class="codigo">
+        CODIGO <br>
+        </div>
+        <div style="float:left">
+          <%= image_tag('escudo.jpg', :size => '150x80') %>
+        </div>
+        <div style="height:60px" class="title">
+        MANUAL DE ORGANIZACION Y FUNCIONES
+        </div>
+      <div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label>CARGO:</label>
+    </td>
+    <td>
+      <%= @formulario.cargo %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label>NIVEL JERARQUICO:</label>
+    </td>
+    <td id="td_nivel">
+      <%= @formulario.nivel_jerarquico %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label>NOMBRE DEL AREA FUNCIONAL INMEDIATO SUPERIOR:</label>
+    </td>
+    <td id="td_parent">
+      <%= @formulario.inmediato_superior %>
+    </td>
+  </tr>
 
-<tr>
+  <tr>
+    <td>
+      <label>AREAS DEPENDIENTES:</label> 
+    </td>
+    <td>
+      <div>
+        <%= @formulario.areas_dependientes%>
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <label>OBJETIVO DEL CARGO</label>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <%= @formulario.objectivo_area_funcional%>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <label>DESCRIPCION DE LA FUNCION PRINCIPAL</label>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <%= @formulario.descripcion_funcion_principal %>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <label>DESCRIPCION DE LA FUNCIONES ESPECIFICAS</label>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <%= @formulario.descripcion_funciones_especificas %>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <label>RESULTADOS OBTENIDOS</label>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" >
+      <%= @formulario.principales_resultados %>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <label>TIPO DEL AREA FUNCIONAL</label>
+    </td>
+    <td id="td_tipo"><%= @formulario.tipo_area %></td>
+  </tr>
+
+  <tr>
   <td>
-    <label>NIVEL JERARQUICO:</label>
-  </td>
-  <td id="td_nivel">
-  <%= @formulario.area.nivel %>
-  </td>
-</tr>
-<tr>
-  <td>
-    <label>NOMBRE DEL AREA FUNCIONAL INMEDIATO SUPERIOR:</label>
-  </td>
-  <td id="td_parent">
-    <%= @formulario.area.buscar_parent %>
-  </td>
-</tr>
-
-<tr>
-  <td>
-    <label>AREAS DEPENDIENTES:</label> 
-  </td>
-  <td id="td_areas_dependientes" style="height:150px">
-    <div style="overflow:auto;height:150px" ><%= @formulario.area.all_children(:conditions => {:activo => true}).map{|v| v.nombre}.join("<br/>") %></div>
-  </td>
-</tr>
-
-<tr>
-  <td colspan="2">
-    <label>OBJETICO AREA FUNCIONAL</label>
-  </td>
-</tr>
-<tr>
-  <td colspan="2">
-    <%= @formulario.objectivo_area_funcional %>
-  </td>
-</tr>
-
-<tr>
-  <td colspan="2">
-    <label>DESCRIPCION DE LA FUNCION PRINCIPAL</label>
-  </td>
-</tr>
-<tr>
-  <td colspan="2">
-    <%= @formulario.descripcion_funcion_principal %>
-  </td>
-</tr>
-
-<tr>
-  <td colspan="2">
-    <label>DESCRIPCION DE LA FUNCIONES ESPECIFICAS</label>
-  </td>
-</tr>
-<tr>
-  <td colspan="2">
-    <%= @formulario.descripcion_funciones_especificas %>
-  </td>
-</tr>
-
-<tr>
-  <td colspan="2">
-    <label>RESULTADOS OBTENIDOS</label>
-  </td>
-</tr>
-<tr>
-  <td colspan="2" style="height:100px;">
-    
-  </td>
-</tr>
-
-<tr>
-  <td>
-    <label>TIPO DEL AREA FUNCIONAL</label>
-  </td>
-  <td id="td_tipo"><%= @formulario.area.tipo %></td>
-</tr>
-
-<tr>
-  <td>
-    <label class="bordeb">RELACIONES DE COORDINACION INTERNA</label>
+  <label class="bordeb">RELACIONES DE COORDINACION INTERNA</label>
   </td>
 
   <td>
-    <label class="bordeb">RELACIONAMIENTO INTERINSTITUCIONAL</label>
+  <label class="bordeb">RELACIONAMIENTO INTERINSTITUCIONAL</label>
   </td>
-</tr>
-<tr>
+  </tr>
+  <tr>
   <td>
-    <%= @formulario.relaciones_coordinacion_interna %>
+  <%= @formulario.relaciones_coordinacion_interna %>
   </td>
   <td>
-    <%= @formulario.relacionamiento_interinstitucional %>
+  <%= @formulario.relacionamiento_interinstitucional %>
   </td>
-</tr>
-<tr>
+  </tr>
+  <tr>
   <td colspan=2>
-    <label>ACTUALIZACION</label>
+  <label>ACTUALIZACION</label>
   </td>
-</tr>
+  </tr>
 
-<tr>
+  <tr>
   <td>
-    <label>FECHA: APROBACION</label>
-  </td>
-  <td></td>
-</tr>
-
-<tr>
-  <td>
-    <label>FECHA: ACTUALIZACION</label>
+  <label>FECHA: APROBACION</label>
   </td>
   <td></td>
-</tr>
+  </tr>
 
-<tr>
+  <tr>
   <td>
-    <label>RESPONSABLE DE LA ELABORACION</label>
+  <label>FECHA: ACTUALIZACION</label>
+  </td>
+  <td></td>
+  </tr>
+
+  <tr>
+  <td>
+  <label>RESPONSABLE DE LA ELABORACION</label>
   </td>
   <td><%= @formulario.ci %> - <%= "#{@formulario.nombre} #{@formulario.apellido}"%></td>
-</tr>
+  </tr>
 
-<tr>
+  <tr>
   <td>
-    <label>VoBo JEFE INMEDIATO SUPERIOR</label>
+  <label>VoBo JEFE INMEDIATO SUPERIOR</label>
   </td>
   <td></td>
-</tr>
+  </tr>
 </table>
 
 <div class="enlaces">

@@ -14,10 +14,11 @@
 
 <tr>
   <td>
-    <%= f.label :area_id, 'AREA:' %>
+    <%= f.label :area_id, 'CARGO:' %>
   </td>
   <td>
-    <%= f.select :area_id, @areas.map{|v| [v, v.id]}, :include_blank => true %>
+    <!--<%= f.select :area_id, @areas.map{|v| [v, v.id]}, :include_blank => true %>-->
+    <%= f.text_field :cargo %>
   </td>
 </tr>
 
@@ -25,14 +26,16 @@
   <td>
     <label>NIVEL JERARQUICO:</label>
   </td>
-  <td id="td_nivel">
+  <td>
+    <%= f.text_field :nivel_jerarquico %>
   </td>
 </tr>
 <tr>
   <td>
     <label>NOMBRE DEL AREA FUNCIONAL INMEDIATO SUPERIOR:</label>
   </td>
-  <td id="td_parent">
+  <td>
+    <%= f.text_field :inmediato_superior %>
   </td>
 </tr>
 
@@ -40,13 +43,14 @@
   <td>
     <label>AREAS DEPENDIENTES:</label> 
   </td>
-  <td id="td_areas_dependientes" style="height:150px"><div style="overflow:auto;height:150px" ></div>
+  <td >
+    <%= f.text_area :areas_dependientes , :size => "50x6" %>
   </td>
 </tr>
 
 <tr>
   <td colspan="2">
-    <label>OBJETIVO AREA FUNCIONAL</label>
+    <label>OBJETIVO DEL CARGO</label>
   </td>
 </tr>
 <tr>
@@ -92,7 +96,9 @@
   <td>
     <label>TIPO DEL AREA FUNCIONAL</label>
   </td>
-  <td id="td_tipo"></td>
+  <td>
+    <%= f.text_field :tipo_area %>
+  </td>
 </tr>
 
 <tr>

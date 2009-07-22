@@ -2,21 +2,24 @@ body{
     font-family:arial;
     font-size:12px;
 }
+table.collapse{border-collapse: collapse;}
 td{
-    border:1px solid black;
     padding:2px;
 }
 .title{
     float:left;
     background-color:black;
     padding:10px;
-    font-size:25px;
+    font-size:20px;
     font-family:Times;
     color:#fff;
     font-style:italic;
+    width:300px;
+    text-align:center;
 }
 .codigo{
     padding:10px;
     background-color:black;
     color:#fff;
 }
+

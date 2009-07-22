@@ -18,7 +18,6 @@ class FormulariosController < ApplicationController
   # GET /formularios/1.xml
   def show
     @formulario = Formulario.find(params[:id], :include => {:area => [:tipo, :nivel]})
-
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @formulario }
@@ -39,6 +38,7 @@ class FormulariosController < ApplicationController
   # GET /formularios/1/edit
   def edit
     @formulario = Formulario.find(params[:id])
+    @formulario.convertir_br2nl!
   end
 
   # POST /formularios
